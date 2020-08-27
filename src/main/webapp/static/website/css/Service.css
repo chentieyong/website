@@ -1,0 +1,121 @@
+.servicecontainer{position: relative;width: 100%;height: auto;margin: 5.25% auto;display: flex;flex-flow: column nowrap;justify-content: flex-start;align-items: flex-end;}
+p{margin-bottom: 0;}
+.aftersalecontainer,.financesupportcontainer{display: flex;flex-flow: column nowrap;justify-content: flex-start;align-items: center;}
+.aftersalecontainer,.servfiledownloadcontainer,.financesupportcontainer{position: relative;width: 92.7%;height: auto;}
+.aftersaletitle,.aftersaleimg{width: 100%;text-align: center;}
+.aftersaletitle p{font-size: 4.375rem;color: #004098;}
+.aftersaleimg{margin-top: 7.2%;}
+.aftersaleimg img{width: 100%;}
+.aftersalecontract{position: relative;width: 100%;height: auto;margin-top: 22%;}
+
+.servsearchbox{width: 100%;height: 120px;border-radius: 88px;border: 4px solid #D1D1D1;display: flex;flex-flow: row nowrap;justify-content: space-between;align-items: center;}
+.servsearchbox input{width: 78.6%;height: 100%;margin-left: 5%;border-style: none;background: none;font-size: 3.125rem;color: #000000;}
+.servsearchbox button{width: 5.35%;height: 58.3%;margin-right: 7%;background: url(../img/searchicon.png) no-repeat;background-size: 100% 100%;border-style: none;}
+input:focus,button:focus{outline: 0;}
+.servfiledownloadcontainer hr{width: 100%;height: 2px;background: #979797;border: none;margin-top: 54px;}
+.servtabletitel,.servfileitem{display: flex;flex-flow: row nowrap;justify-content: center;align-items: flex-start;}
+.servtabletitel{width: 100%;height: 190px;}
+.servtypebox,.servmodelbox,.servfilename,.downloadicon{width: 50%;height: 100%;display: flex;justify-content: center;align-items: center;}
+.servtypebox,.servmodelbox{border-bottom: 2px solid #979797;}
+/*.servtypebox p,.servmodelbox p{font-size: 3.125rem;color: #333334;}*/
+.servtypebox select,.servmodelbox select{border-style: none;}
+.servtypebox select:focus,.servmodelbox select:focus{outline: 0;}
+.servtypebox select,.servmodelbox select{font-size: 3.125rem;color: #333334;}
+.servtypebox select option,.servmodelbox select option{font-size: 2.5rem;}
+.servfilebox{width: 100%;margin-top: 6.9%;margin-bottom: 11.3%;}
+.servfileitem{width: 100%;height: 150px;}
+.filebg{background: #E9E9E9;}
+.servfilename p{font-size: 2.5rem;color: #4D4D4D;}
+.downloadicon a{width: 7.87%;}
+.downloadicon a img{width: 100%;}
+
+.Intothbox {width: 37%;}
+
+
+.financesupportcontainer .content{width: 100%;height: auto;overflow: hidden;margin-bottom: 5%;}
+.finasupportitem hr,.financesupportcontainer .content hr{width: 100%;height: 2px;margin: 0; margin-top: 4%;background: #979797;border: none;}
+.financesupportcontainer .content img{width: 100%;}
+
+.finasupportitem:nth-child(1){margin-bottom: 15.9%;}
+.finasupportitem:nth-child(2){margin-bottom: 12%;}
+.finasuptitle,.finasupdes,.finasupimg,.finasupimg img,.finasupcontract{width: 100%;}
+.finasuptitle p{font-size: 4.375rem;color: #004199;line-height: 1;}
+.finasupdes{margin-top: 2.35%;}
+.finasupdes p{font-size: 1.875rem;color: #606060;line-height: 45px;}
+.finasupimg{margin-top: 1.6%;}
+@media only screen and (min-width: 980px) and (max-width: 1199px) {
+    .aftersaletitle p,.finasuptitle p{font-size: 2.23rem;}
+    .servsearchbox{height: 61.2px;border-radius: 44.88px;}
+    .servsearchbox input,.servtypebox select,.servmodelbox select{font-size: 1.59rem;}
+    .servtabletitel{height: 96.9px;}
+    .servfileitem{height: 76.5px;}
+    .servfilename p,.servtypebox select option,.servmodelbox select option{font-size: 1.275rem;}
+
+    .finasupdes p{font-size: 0.956rem;line-height: 22.95px;}
+}
+
+@media only screen and (min-width: 1200px) {
+    .aftersaletitle p,.finasuptitle p{font-size: 2.73rem;}
+    .servsearchbox{height: 75px;border-radius: 55px;}
+    .servsearchbox input,.servtypebox select,.servmodelbox select{font-size: 1.95rem;}
+    .servtabletitel{height: 118.75px;}
+    .servfileitem{height: 93.75px;}
+    .servfilename p,.servtypebox select option,.servmodelbox select option{font-size: 1.56rem;}
+
+    .finasupdes p{font-size: 1.17rem;line-height: 28.125px;}
+}
+
+@media only screen and (min-width: 1405px) {
+    .aftersaletitle p,.finasuptitle p{font-size: 3.28rem;}
+    .servsearchbox{height: 90px;border-radius: 66px;}
+    .servsearchbox input,.servtypebox select,.servmodelbox select{font-size: 2.34rem;}
+    .servtabletitel{height: 142.5px;}
+    .servfileitem{height: 112.5px;}
+    .servfilename p,.servtypebox select option,.servmodelbox select option{font-size: 1.875rem;}
+
+    .finasupdes p{font-size: 1.41rem;line-height: 33.75px;}
+}
+
+@media only screen and (min-width: 1600px) {
+    .aftersaletitle p,.finasuptitle p{font-size: 3.83rem;}
+    .servsearchbox{height: 105px;border-radius: 77px;}
+    .servsearchbox input,.servtypebox select,.servmodelbox select{font-size: 2.73rem;}
+    .servtabletitel{height: 166.25px;}
+    .servfileitem{height: 131.25px;}
+    .servfilename p,.servtypebox select option,.servmodelbox select option{font-size: 2.19rem;}
+
+    .finasupdes p{font-size: 1.64rem;line-height: 39.375px;}
+}
+
+@media only screen and (min-width: 1900px) {
+    .aftersaletitle p,.finasuptitle p{font-size: 4.375rem;}
+
+    .servsearchbox{height: 120px;border-radius: 88px;}
+    .servsearchbox input,.servtypebox select,.servmodelbox select{font-size: 3.125rem;}
+    .servtabletitel{height: 190px;}
+    .servfileitem{height: 150px;}
+    .servfilename p,.servtypebox select option,.servmodelbox select option{font-size: 2.5rem;}
+    .finasupdes p{font-size: 1.875rem;line-height: 45px;}
+}
+
+@media only screen and (min-width: 2048px) {
+    .aftersaletitle p,.finasuptitle p{font-size: 4.67rem;}
+    .servsearchbox{height: 128.04px;border-radius: 93.896px;}
+    .servsearchbox input,.servtypebox select,.servmodelbox select{font-size: 3.33rem;}
+    .servtabletitel{height: 202.73px;}
+    .servfileitem{height: 160.05px;}
+    .servfilename p,.servtypebox select option,.servmodelbox select option{font-size: 2.67rem;}
+
+    .finasupdes p{font-size: 2rem;line-height: 48px;}
+}
+
+@media only screen and (min-width: 2160px) {
+    .aftersaletitle p,.finasuptitle p{font-size: 4.92rem;}
+    .servsearchbox{height: 135px;border-radius: 99px;}
+    .servsearchbox input,.servtypebox select,.servmodelbox select{font-size: 3.52rem;}
+    .servtabletitel{height: 213.75px;}
+    .servfileitem{height: 168.75px;}
+    .servfilename p,.servtypebox select option,.servmodelbox select option{font-size: 2.81rem;}
+
+    .finasupdes p{font-size: 2.1rem;line-height: 50.625px;}
+}

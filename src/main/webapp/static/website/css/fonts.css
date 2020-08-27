@@ -1,0 +1,45 @@
+@font-face {
+	font-family:"AlibabaPuHuiTi-Regular";
+	src: url(http://wj.haoju.me/Alibaba-PuHuiTi-Regular.ttf) format('truetype');
+}
+@font-face {
+	font-family:"AlibabaPuHuiTi-Bold";
+	src: url(http://wj.haoju.me/Alibaba-PuHuiTi-Bold.ttf) format('truetype');
+}
+@font-face {
+	font-family:"AlibabaPuHuiTi-Heavy";
+	src: url(http://wj.haoju.me/Alibaba-PuHuiTi-Heavy.ttf) format('truetype');
+}
+@font-face {
+	font-family:"AlibabaPuHuiTi-Light";
+	src: url(http://wj.haoju.me/Alibaba-PuHuiTi-Light.ttf) format('truetype');
+}
+@font-face {
+	font-family:"AlibabaPuHuiTi-Medium";
+	src: url(http://wj.haoju.me/Alibaba-PuHuiTi-Medium.ttf) format('truetype');
+}
+html,body,.footitem ul li a,.copyrightbox p,.totaldesinfobox p,.totalmoreinfobox a,.compwordsbox p,.compmoreinfobox button[type='button'],.newsdesbox p,.newsmoreinfobox a,
+.ctipt,.usermessage,.contractotherbox .kfname,.typelistbox .ul li a,
+.Intrightdes p,.itemright .itemdes p,.Intcasedes p,.Intcasedesbox p:nth-child(2),.Intcasetitle p,.Intdownloadtitle p,.Intothbox .wxqrcode p,.carinfoitem .carnamebox p,
+.daoyaninfo p,.branddes p,.prodes p,.compjsinfowords p,.compcxdes p,.compwhdes p,.compnewstime p,.compnewdesinfo p,.compnewsmoreinfo a,.newsdate p,.newspre a,.newsnext a,
+.servfilename p,.finasupdes p,.brandinfodes p,.brandpre a,.brandnext a,.profetinfodes p
+{
+	font-family: "AlibabaPuHuiTi-Regular";
+}
+.sloganbox p:nth-child(1),.slidecont p,.totaldestitlebox p,.totaldeswordsbox p,.newstitlebox p,.contract_submit,.servicetelbox p,.typelistbox .ul li:nth-child(1) a,.sloganbox p:nth-child(2),
+.Intleftbox ul li a,.Intrighttitle p,.itemright .itemtitle p,.Intcasedesbox p:nth-child(1),.Intfrmbox .lxtxt,.Intothbox .QQ p,.Intothbox .phone p,
+.cartitle p,.caritem .caritemtile p,.daoyantitile p,.brandtitle p,.pagesbox button,.pagesbox p,
+.proname p,.pronametype p,.profetinfotitle p,.paramnamebox p,.paramnumbox p,.profileitem p,
+.tab-box .tab ul li a,.compjstitle p,.compfztitle p,.compyear p,.compcxtitle p,.compwhtitle p,.compnewstitle p,.contracticon p,.newstitle p,.sharebox a p,
+.comphonortitle p,.comphonorname p,.aftersaletitle p,.servtypebox p,.servmodelbox p,.finasuptitle p,.brandinfotitle p,.hangyetab .hylefttab ul li a,.hyproname p,.hytitle p,.servtypebox select,.servmodelbox select
+{
+	font-family: "AlibabaPuHuiTi-Medium";
+}
+.searchtitlebox p,.comptitlebox p,.contracttitle
+{
+	font-family: "AlibabaPuHuiTi-Bold";
+}
+
+.navbox ul li ul li a{
+	font-family: "AlibabaPuHuiTi-Light";
+}

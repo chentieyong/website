@@ -1,0 +1,398 @@
+html,body {position: relative;width: 100%;height: 100%;margin: 0;padding: 0;color: #FFFFFF;background: #FFFFFF;font-size:16px;}
+a:hover{cursor: pointer;text-decoration: none;}
+ul{margin-block-start: 0;margin-block-end: 0;padding-inline-start: 0;}
+ul li{list-style: none;}
+p {margin-top: 0;margin-bottom: 0!important;margin-block-start: 0;margin-block-end: 0;}
+.wrapper{position: absolute;top: 0;width: 100%;height: auto;margin: 0;}
+.hidden{display: none!important;}
+/*头部*/
+.header{width: 100%;}
+.nav-top-lg{margin:0;padding:0;}
+.header-top{position: relative; width: 100%;margin: 1.5rem auto;}
+.header-top,.languagebox{display: flex;flex-flow: row nowrap;justify-content: flex-start;align-items: center;}
+.navlogo{width: 8.1%;margin-left: 6.35%;}
+.navline{width:2px;background: #C2C2C2;margin: 0 2.8% 0 3.3%;}
+.sloganbox p{margin-bottom: 0;}
+.navslogan{font-size: 2.5rem;color: #004098;font-weight:500;}
+.navsloganEn{font-size: 1.5rem;color: #ABABAB;}
+.languagebox{position: absolute;right: 5.2%;width: 10%;margin-top: 2rem;display: flex;flex-flow: row nowrap;justify-content: flex-end;align-items: center;}
+.languagebox img{width: 18%;}
+.languagebox span{color: #595959;font-size: 1.875rem;margin-left: 8%;align-self: flex-end;}
+.languagebox span .lgeactive{color: #004098}
+.languagebox span a:hover{color: #01419B!important;}
+.navbox{position: relative; width: 100%;height: 100px;background:linear-gradient(315deg,rgba(58,118,213,1) 0%,rgba(59,135,225,1) 100%);}
+.navbox ul{height: 100%;height: 100%;display: flex;flex-flow: row nowrap;justify-content: center;align-items: center;}
+.navbox ul li{position: relative;min-width:10%;height: 100%;padding: 0 2.5rem;display: flex;flex-flow: row nowrap;justify-content: center;align-items: center;}
+.navbox ul li:hover{border-bottom: 4px solid #56A4FF;box-sizing: border-box;}
+.navbox ul li a{font-size: 1.875rem;color: #FFFFFF;font-weight: 500;}
+.navbox ul li a img{width: 25px;padding-left: 10px;}
+/*二级菜单*/
+.navbox ul li ul{position: absolute;top: 100px;z-index: 9; width: 100%;height: auto;display: flex;flex-flow: column nowrap;justify-content: flex-start;align-items: center;}
+.navbox ul li ul li{opacity: 0;width: 100%;height: 80px;justify-content:flex-start;padding: 0 5%;background:linear-gradient(315deg,rgba(58,118,213,1) 0%,rgba(59,135,225,1) 100%);border-bottom: 2px solid #3A76D5;border-top: 2px solid #3B87E1;}
+.navbox ul li ul li:hover{border-bottom: none!important;background:linear-gradient(312deg,rgba(11,78,157,1) 0%,rgba(13,82,164,1) 10%,rgba(35,123,225,1) 100%);}
+.navbox ul li ul li a{font-size: 1.5rem;}
+.navbox ul > li:hover .nav_droplist li, .navbox ul > li:focus .nav_droplist li {opacity: 1!important;}
+
+.nav-button{display: none;}
+/*banner*/
+.slidebox{position: relative;width: 100%;height: auto;max-height: 900px;}
+.swiper-container{width: 100%;height: 100%;}
+.swiper-wrapper{position: relative;z-index: 3;}
+.swiper-slide{position: relative; width: 100%;height: 100%;display: flex;justify-content: center;align-items: center;}
+.swiper-pagination .swiper-pagination-bullet{background: #FFFFFF;opacity: 1;}
+.swiper-pagination .swiper-pagination-bullet-active{background: #2D8EFF;}
+.swiper-slide img{width: 100%;}
+.bannerslidebox{position: absolute;top: 0;left: 0;width: 100%;height: 100%;}
+.slidecont{position: absolute;top: 15%;right: 8%;width: 60%;display: flex;flex-flow: column nowrap;justify-content: flex-end;align-items: flex-end;}
+.slidecont p{color: #FFFFFF;margin-bottom: 0;}
+.slidecont p:first-child{font-weight: bold;font-size: 5.625rem;}
+.bannerslideline{width: 40%;height: 3px;background: #FFFFFF; margin: 0.5rem 0 1rem 0;}
+.slidecont p:last-child{font-size: 2.8125rem;}
+/*底部*/
+.footer{width: 100%;height: auto;background: url(../img/botbg.png) no-repeat;background-size: 100% 100%;display: flex;justify-content: flex-start;align-items: center;}
+.footcontainer{width: 82.7%;margin-top: 7%; margin-bottom: 4%;margin-left: 6.5%; display: flex;flex-flow: column nowrap;justify-content: flex-start;align-items: flex-start;}
+.indexfootlogo{width: 10.3%;margin-left: -1%;}
+.footitembox{width: 100%;margin-top: 5.3%;display: flex;flex-flow: row nowrap;justify-content: space-between;align-items: flex-start;}
+.footitem ul{width: 100%;margin-block-start: 0;margin-block-end: 0;padding-inline-start: 0;}
+.footitem ul li{width: 100%;list-style: none;}
+.footitem ul li a{font-weight: bold;}
+.footitem ul,.footitem ul li,.footitem ul ul,.footitem ul ul li{margin: 0;padding: 0;}
+.footitem ul ul li a{font-weight: normal;}
+.footitem ul li a,.copyrightbox p{color: #FFFFFF;line-height:42px;font-size:1.875rem;margin: 0;}
+.footitem ul li a:hover{color: #FFFFFF;text-decoration: none;cursor: pointer;}
+.copyrightbox,.contracticon{display: flex;flex-flow: column nowrap;justify-content: center;align-items: center;}
+.copyrightbox{width: 100%;margin-top: 10.2%;}
+.copyrightbox div{width: 100%;display: flex;flex-flow: row nowrap;justify-content: center;align-items: center;}
+.copyrightbox div p{padding-left: 3rem;padding-top: 6px;}
+/*联系我们*/
+.Intcontract{position: relative;z-index: 3; width: 100%;height: auto;background: #2972C8;color: #FFFFFF;margin-top: 17.8%;display: flex;flex-flow: row nowrap;justify-content: center;align-items: center;}
+.Intfrmbox{width: 44.37%;height: auto;}
+.fgline{width: 2px;height: 750px;background: #C6C6C6;margin: 3% 4.2%;}
+.Intothbox{width: 35%;height: auto;}
+.Intfrmbox .lxtxt{font-size: 4.375rem;line-height:97px;}
+.Intfrmbox form{width: 100%;height: auto;margin-top: 10%;display: flex;flex-flow: column nowrap;justify-content: flex-start;align-items: flex-start;}
+.Intfrmbox form .lxfrmitem{width: 100%;height: 60px;margin-bottom: 4.9%;display: flex;flex-flow: row nowrap;justify-content: space-between;align-items: flex-start;}
+.Intfrmbox form .lxfrmitem input,.usermessage{font-size: 1.25rem;background: #FFFFFF;border-radius: 10px;border-style: none;color: #000000;}
+.Intfrmbox form .lxfrmitem input{width: 47.6%;height: 100%;text-indent: 6.7%;}
+.usermessage{width: 100%;height: 150px;padding-top: 20px;text-indent: 1rem;}
+.contract_submit{align-self: flex-end;width: 31.7%;height: 60px;margin-top: 4.9%;border-radius:30px;border: 2px solid #FFFFFF;box-sizing: border-box;background:none;text-align: center;font-size: 1.875rem;line-height: 42px;color: #FFFFFF;}
+.Intothbox .QQ,.Intothbox .phone{width: 100%;height: 72px;display: flex;flex-flow: row nowrap;justify-content: flex-start;align-items: center;}
+.Intothbox .QQ img{width: 12.8%;}
+.Intothbox .QQ p,.Intothbox .phone p{font-size: 3.125rem;line-height: 50px;margin-left: 13.6%;}
+.Intothbox .phone img{width: 14.5%;}
+.Intothbox .phone{margin-top: 12%;}
+.Intothbox .wxqrcode{width: 100%;text-align: right;margin-top: 25%;}
+.Intothbox .wxqrcode img{width: 45.5%;}
+.Intothbox .wxqrcode p{padding-top: 4%;padding-right: 5%; font-size: 1.25rem;line-height:30px;}
+/*返回顶部*/
+.backtotop{width: 5.625%;position: fixed;right: 2.3%;bottom: 10%;z-index: 99;/*border-radius: 50%;box-shadow:0px 2px 4px 0px rgba(134,134,134,0.5);*/}
+/*分页*/
+.pagesbox{width: 100%;height: auto;display: flex;flex-flow: row nowrap;justify-content: space-between;align-items: center;}
+.pagesbox button{border-style: none;width: 19.7%;height: 90px;border-radius: 10px;background: #317BD2;font-size: 2.5rem;color: #FFFFFF;text-align: center;}
+.pagesbox button:focus{outline: 0;}
+.pagesbox p{font-size: 3.125rem;color: #317BD2;}
+/*联系我们 右边固定小图标*/
+.contracticon{position: fixed;right: 0;top: calc(50% - 150px);z-index: 9; width:200px;height:150px;background:linear-gradient(312deg,rgba(11,78,157,1) 0%,rgba(13,82,164,1) 10%,rgba(35,123,225,1) 100%);box-shadow:0px 2px 4px 0px rgba(126,126,126,0.5);}
+.contracticon img{width: 25%;}
+.contracticon p{font-size: 1.875rem;color: #FFFFFF;padding-top: 2%;}
+/*一键分享*/
+.sharebox{position: absolute;top: 12%;right: 0; width: 13%;}
+.sharebox a{width: 100%;display: flex;justify-content: space-between;align-items: center;}
+.sharebox img{width: 17.8%;}
+.sharebox a p{font-size: 1.875rem;color: #004199!important;}
+.sharebox a:hover{text-decoration: none;}
+
+/*tab*/
+.clearfix:after{ content: ""; clear: both; display: block; }
+.tab-box{width: 94.8%; height: auto;display: flex;flex-flow: row nowrap;justify-content: space-between;align-items: flex-start;}
+.tab-box .tab{width: 20.3%;height: auto;}
+.tab-box .tab ul{width: 100%;height: auto; display: flex;flex-flow: column nowrap;justify-content: flex-start;align-items: center;}
+.tab-box .tab ul li{width: 100%;height: 100px;border-bottom: 2px solid #DCDCDC;}
+.tab-box .tab ul li a{color: #4D4D4D;font-size: 2.5rem;line-height: 100px;}
+.tab-box .tab ul li.action a{color: #004098;}
+.tab-box .tab ul li a:hover{color: #004098;}
+.tab-box .box{width: 75.27%;height: auto;}
+.tab-box .box .item{width: 100%;height: auto;display: none;}
+.tab-box .box .item:nth-child(1){display: block;}
+@media only screen and (max-width: 980px) {
+	.languagebox{display: none!important;}
+	.nav-top-lg{margin-bottom: 1rem;}
+	button {background: none;border: none;}
+    button:focus {outline: none;}	
+	.nav-button {position: absolute;top: 0;right: 20px;width: 80px;height: 80px;display: flex;justify-content: center;align-items: center;flex-direction: column;cursor: pointer;z-index: 12;}
+    .nav-button.close{opacity: 1!important;}
+    .nav-button.close .line__1 {transform: rotate(45deg) translate(8px, -5px);}
+    .nav-button.close .line__2 {transform: rotate(-45deg);}
+    .nav-button.close .line__3 {transform: rotate(45deg) translate(-6px, 7.3px);box-shadow: none;}
+    .nav-button.close:focus,.nav-button.close:hover{opacity: 1!important;}
+    .nav-button .line {width: 55px;background: #FFFFFF;box-shadow: 2px 2px 3px #6F6F6F;height: 3px;margin: 8px 0; transition: all 0.2s cubic-bezier(0.9, 0, 0.33, 1);}
+    .nav-button .line__1 {width: 55px;transform-origin: left;}
+    .nav-button .line__2 {width: 55px;transform-origin: center;}
+    .nav-button .line__3 {width: 55px;transform-origin: right;}
+    .navbox{display: none;position: fixed;top: 0;left: 0;width: 100%;min-height: 100%;margin: 0!important;z-index: 10;overflow: scroll;}
+	.navbox ul{width: 100%;margin-top: 100px;display: flex;flex-flow: column nowrap;justify-content: flex-start;align-items: flex-start;}
+	.navbox ul li{width: 100%;height:auto;display: flex;flex-flow: column nowrap;justify-content: flex-start;align-items: flex-start;padding: 0 5%!important;border-bottom: 4px solid #FFFFFF;}
+	.navbox ul li a{font-size: 2.5rem!important;line-height: 120px;}
+	.navbox ul li a img{width: 26px!important;}
+	.navbox ul li ul{display: none;width: 100%;position: relative;top: 0!important; z-index: 12;margin: 0;}			
+	.navbox ul li ul li{display: none;opacity: 1!important;height: auto!important;border: none;background: none;border-bottom: 2px solid #FFFFFF;}
+	.navbox ul li.on ul li{display: flex;}
+	.navbox ul li ul li:last-child{border: none;}
+	.navbox ul li ul li a{font-size: 2rem!important;}
+	.navbox ul li:hover {border-bottom: 4px solid #FFFFFF;box-sizing: border-box;}	
+	.indexfootlogo{margin: -0.6%;}
+    
+}
+@media only screen and (min-width: 980px){
+	.header-top{margin: 0.765rem auto;}    
+    .languagebox span,.navbox ul li a,.contracticon p,.sharebox a p{font-size: 0.956rem;}
+    .languagebox{margin-top: 1.02rem;}
+    .navsloganEn{font-size: 0.765rem;}
+    .navbox{height: 51px;}
+    .navbox ul li{padding: 0 1.275rem;}
+    .navbox ul li a img{width: 12.75px;padding-left: 5.1px;}
+    .navbox ul li ul{top: 51px;}
+    .navbox ul li ul li{height: 40.8px;}  
+    .navbox ul li ul li a{font-size: 0.765rem;}
+	
+	.slidecont p:first-child{font-size: 2.87rem;}
+    .bannerslideline{margin: 0.225rem 0 0.51rem 0;}
+    .slidecont p:last-child{font-size: 1.43rem;}	
+	.footitem ul li a,.copyrightbox p{line-height:21.42px;font-size:0.956rem;}
+    .copyrightbox div p{padding-left: 1.53rem;padding-top: 3.06px;}
+	
+	.fgline{height: 382.5px;}
+    .Intfrmbox .lxtxt{font-size: 2.23rem;line-height:49.47px;}
+    .Intfrmbox form .lxfrmitem,.contract_submit{height: 30.6px;}
+    .Intfrmbox form .lxfrmitem input,.usermessage{font-size: 0.6375rem;border-radius: 5px;}
+    .usermessage,.Intothbox .wxqrcode p{padding-top: 10.2px;}
+    .usermessage{height: 76.5px;}
+    .contract_submit{font-size: 0.96rem;}
+    .contract_submit{border-radius:15.3px;line-height: 21.4px;}
+    .Intothbox .QQ,.Intothbox .phone{height: 36.7px;}
+    .Intothbox .QQ p,.Intothbox .phone p{font-size: 1.59rem;line-height: 25.5px;}
+    .Intothbox .wxqrcode p{line-height:15.3px;font-size: 0.6375rem;}
+    .pagesbox p{font-size: 1.59rem;}.navslogan,.pagesbox button,.tab-box .tab ul li a{font-size: 1.275rem;}.pagesbox button{height: 45.9px;}
+    .contracticon{top: calc(50% - 76.5px);width:102px;height:76.5px;}
+    .tab-box .tab ul li{height: 51px;}
+    .tab-box .tab ul li a{line-height: 51px;}
+}
+
+@media only screen and (min-width: 1200px) {
+	.header-top{margin: 0.94rem auto;}
+    .languagebox span,.navbox ul li a,.contracticon p,.sharebox a p{font-size: 1.17rem;}
+    .languagebox{margin-top: 1.25rem;}
+    .navsloganEn{font-size: 0.9375rem;}
+    .navbox{height: 62.5px;}
+    .navbox ul li{padding: 0 1.56rem;}
+    .navbox ul li a img{width: 15.6px;padding-left: 6.25px;}
+    .navbox ul li ul{top: 62.5px;}
+    .navbox ul li ul li{height: 50px;}
+    .navbox ul li ul li a{font-size: 0.94rem;}
+	
+	.slidecont p:first-child{font-size: 3.5rem;}
+    .bannerslideline{margin: 0.3rem 0 0.625rem 0;}
+    .slidecont p:last-child{font-size: 1.76rem;}
+	
+	.footitem ul li a,.copyrightbox p{line-height:26.25px;font-size:1.17rem;}
+    .copyrightbox div p{padding-left: 1.875rem;padding-top: 3.75px;}
+	
+	.fgline{height: 468.75px;}
+    .Intfrmbox .lxtxt{font-size: 2.73rem;line-height:61px;}
+    .Intfrmbox form .lxfrmitem,.contract_submit{height: 37.5px;}
+    .Intfrmbox form .lxfrmitem input,.usermessage{font-size: 0.78rem;border-radius: 6.25px;}
+    .usermessage,.Intothbox .wxqrcode p{padding-top: 12.5px;}
+    .usermessage{height: 93.75px;}
+    .contract_submit{font-size: 1.17rem;}
+    .contract_submit{border-radius:18.75px;line-height: 26px;}
+    .Intothbox .QQ,.Intothbox .phone{height: 45px;}
+    .Intothbox .QQ p,.Intothbox .phone p{font-size: 1.95rem;line-height: 31.25px;}
+    .Intothbox .wxqrcode p{line-height:18.75px;font-size: 0.78rem;}	
+    
+    .pagesbox p{font-size: 1.95rem;}.navslogan,.pagesbox button,.tab-box .tab ul li a{font-size: 1.56rem;}.pagesbox button{height: 56.25px;}
+    .contracticon{top: calc(50% - 93.75px);width:125px;height:93.75px;}
+    .tab-box .tab ul li{height: 62.5px;}
+    .tab-box .tab ul li a{line-height: 62.5px;}
+}
+
+@media only screen and (min-width: 1405px){
+	.header-top{margin: 1.125rem auto;}
+    .languagebox span,.navbox ul li a,.contracticon p,.sharebox a p{font-size: 1.41rem;}
+    .languagebox{margin-top: 1.5rem;}
+    .navsloganEn{font-size: 1.125rem;}
+    .navbox{height: 75px;}
+    .navbox ul li{padding: 0 1.875rem;}
+    .navbox ul li a img{width: 18.75px;padding-left: 7.5px;}
+    .navbox ul li ul{top: 75px;}
+    .navbox ul li ul li{height: 60px;}
+    .navbox ul li ul li a{font-size: 1.125rem;}
+	
+	.slidecont p:first-child{font-size: 4.2rem;}
+    .bannerslideline{margin: 0.375rem 0 0.75rem 0;}
+    .slidecont p:last-child{font-size: 2.1rem;} 
+	
+	.footitem ul li a,.copyrightbox p{line-height:31.5px;font-size:1.41rem;}
+    .copyrightbox div p{padding-left: 2.25rem;padding-top: 4.5px;}
+	
+	.fgline{height: 562.5px;}
+    .Intfrmbox .lxtxt{font-size: 3.28rem;line-height:72.75px;}
+    .Intfrmbox form .lxfrmitem,.contract_submit{height: 45px;}
+    .Intfrmbox form .lxfrmitem input,.usermessage{font-size: 0.94rem;border-radius: 7.5px;}
+    .usermessage,.Intothbox .wxqrcode p{padding-top: 15px;}
+    .usermessage{height: 112.5px;}
+    .contract_submit{font-size: 1.41rem;}
+    .contract_submit{border-radius:22.5px;line-height: 31.5px;}
+    .Intothbox .QQ,.Intothbox .phone{height: 54px;}
+    .Intothbox .QQ p,.Intothbox .phone p{font-size: 2.34rem;line-height: 37.5px;}
+    .Intothbox .wxqrcode p{line-height:22.5px;font-size: 0.94rem;}
+    
+    .pagesbox p{font-size: 2.34rem;}.navslogan,.pagesbox button,.tab-box .tab ul li a{font-size: 1.875rem;}.pagesbox button{height: 67.5px;}
+    .contracticon{top: calc(50% - 112.5px);width:150px;height:112.5px;}
+    .tab-box .tab ul li{height: 75px;}
+    .tab-box .tab ul li a{line-height: 75px;}
+}
+
+@media only screen and (min-width: 1600px) {
+	.header-top{margin: 1.31rem auto;}
+    .languagebox span,.navbox ul li a,.contracticon p,.sharebox a p{font-size: 1.64rem;}
+    .languagebox{margin-top: 1.75rem;}
+    .navsloganEn{font-size: 1.3125rem;}
+    .navbox{height: 87.5px;}
+    .navbox ul li{padding: 0 2.19rem;}
+    .navbox ul li a img{width: 21.875px;padding-left: 8.75px;}
+    .navbox ul li ul{top: 87.5px;}
+    .navbox ul li ul li{height: 70px;}
+    .navbox ul li ul li a{font-size: 1.31rem;}
+	
+	.slidecont p:first-child{font-size: 4.92rem;}
+    .bannerslideline{margin: 0.44rem 0 0.875rem 0;}
+    .slidecont p:last-child{font-size: 2.46rem;}
+	
+	.footitem ul li a,.copyrightbox p{line-height:36.75px;font-size:1.64rem;}
+    .copyrightbox div p{padding-left: 2.625rem;padding-top: 5.25px;}
+	
+	.fgline{height: 656px;}
+    .Intfrmbox .lxtxt{font-size: 3.83rem;line-height:85px;}
+    .Intfrmbox form .lxfrmitem,.contract_submit{height: 52.5px;}
+    .Intfrmbox form .lxfrmitem input,.usermessage{font-size: 1.1rem;border-radius: 8.85px;}
+    .usermessage,.Intothbox .wxqrcode p{padding-top: 17.5px;}
+    .usermessage{height: 131px;}
+    .contract_submit{font-size: 1.64rem;}
+    .contract_submit{border-radius:26.25px;line-height: 36.75px;}
+    .Intothbox .QQ,.Intothbox .phone{height: 63px;}
+    .Intothbox .QQ p,.Intothbox .phone p{font-size: 2.73rem;line-height: 43.75px;}
+    .Intothbox .wxqrcode p{line-height:26.25px;font-size: 1.1rem;}
+    
+    .pagesbox p{font-size: 2.73rem;}.navslogan,.pagesbox button,.tab-box .tab ul li a{font-size: 2.19rem;}.pagesbox button{height: 78.75px;}
+    .contracticon{top: calc(50% - 131.25px);width:150px;height:131.25px;}
+    .tab-box .tab ul li{height: 87.5px;}
+    .tab-box .tab ul li a{line-height: 87.5px;}
+}
+@media only screen and (min-width: 1900px) {
+	.header-top{margin: 1.5rem auto;}
+    .languagebox span,.navbox ul li a,.contracticon p,.sharebox a p{font-size: 1.875rem;}
+    .languagebox{margin-top: 2rem;}
+    .navsloganEn{font-size: 1.5rem;}
+    .navbox{height: 100px;}
+    .navbox ul li{padding: 0 2.5rem;}
+    .navbox ul li a img{width: 25px;padding-left: 10px;}
+    .navbox ul li ul{top: 100px;}
+    .navbox ul li ul li{height: 80px;}
+    .navbox ul li ul li a{font-size: 1.5rem;}
+    
+    .slidecont p:first-child{font-size: 5.625rem;}
+    .bannerslideline{margin: 0.5rem 0 1rem 0;}
+    .slidecont p:last-child{font-size: 2.8125rem;}
+		
+    .footitem ul li a,.copyrightbox p{line-height:42px;font-size:1.875rem;}
+    .copyrightbox div p{padding-left: 3rem;padding-top: 6px;}	
+	
+	.fgline{height: 750px;}
+    .Intfrmbox .lxtxt{font-size: 4.375rem;line-height:97px;}
+    .Intfrmbox form .lxfrmitem,.contract_submit{height: 60px;}
+    .Intfrmbox form .lxfrmitem input,.usermessage{font-size: 1.25rem;border-radius: 10px;}
+    .usermessage,.Intothbox .wxqrcode p{padding-top: 20px;}
+    .usermessage{height: 150px;}
+    .contract_submit{font-size: 1.875rem;}
+    .contract_submit{border-radius:30px;line-height: 42px;}
+    .Intothbox .QQ,.Intothbox .phone{height: 72px;}
+    .Intothbox .QQ p,.Intothbox .phone p{font-size: 3.125rem;line-height: 50px;}
+    .Intothbox .wxqrcode p{line-height:30px;font-size: 1.25rem;}
+    
+    .pagesbox p{font-size: 3.125rem;}.navslogan,.pagesbox button,.tab-box .tab ul li a{font-size: 2.5rem;}.pagesbox button{height: 90px;} 
+	.contracticon{top: calc(50% - 150px);width:200px;height:150px;}
+	.tab-box .tab ul li{height: 100px;}
+    .tab-box .tab ul li a{line-height: 100px;}
+}
+@media only screen and (min-width: 2048px) {	
+	.header-top{margin: 1.6rem auto;}
+    .languagebox span,.navbox ul li a,.contracticon p,.sharebox a p{font-size: 2rem;}
+    .languagebox{margin-top: 2.13rem;}
+    .navsloganEn{font-size: 1.6rem;}
+    .navbox{height: 106.7px;}
+    .navbox ul li{padding: 0 2.67rem;}
+    .navbox ul li a img{width: 26.675px;padding-left: 10.67px;}
+    .navbox ul li ul{top: 106.7px;}
+    .navbox ul li ul li{height: 85.36px;}
+    .navbox ul li ul li a{font-size: 1.6rem;}
+    
+    .slidecont p:first-child{font-size: 6rem;}
+    .bannerslideline{margin: 0.53rem 0 1.067rem 0;}
+    .slidecont p:last-child{font-size: 3rem;}
+    
+    .footitem ul li a,.copyrightbox p{line-height:44.8px;font-size:2rem;}
+    .copyrightbox div p{padding-left: 3.2rem;padding-top: 6.4px;}
+       
+    .fgline{height: 800px;}
+    .Intfrmbox .lxtxt{font-size: 4.67rem;line-height:103px;}
+    .Intfrmbox form .lxfrmitem,.contract_submit{height: 64px;}
+    .Intfrmbox form .lxfrmitem input,.usermessage{font-size: 1.33rem;border-radius: 10.67px;}
+    .usermessage,.Intothbox .wxqrcode p{padding-top: 21.34px;}
+    .usermessage{height: 160px;}
+    .contract_submit{font-size: 2rem;}
+    .contract_submit{border-radius:32px;line-height: 44.8px;}
+    .Intothbox .QQ,.Intothbox .phone{height: 76.8px;}
+    .Intothbox .QQ p,.Intothbox .phone p{font-size: 3.33rem;line-height: 53.35px;}
+    .Intothbox .wxqrcode p{line-height:32px;font-size: 1.33rem;}
+    
+    .pagesbox p{font-size: 3.33rem;}.navslogan,.pagesbox button,.tab-box .tab ul li a{font-size: 2.67rem;}.pagesbox button{height: 96px;}
+    .contracticon{top: calc(50% - 160.05px);width:213.4px;height:160.05px;}
+    .tab-box .tab ul li{height: 106.7px;}
+    .tab-box .tab ul li a{line-height: 106.7px;}
+}
+@media only screen and (min-width: 2160px) {
+	.header-top{margin: 1.69rem auto;}
+    .languagebox span,.navbox ul li a,.contracticon p,.sharebox a p{font-size: 2.1rem;}
+    .languagebox{margin-top: 2.25rem;}
+    .navsloganEn{font-size: 1.6875rem;}
+    .navbox{height: 112.5px;}
+    .navbox ul li{padding: 0 2.81rem;}
+    .navbox ul li a img{width: 28px;padding-left: 11.25px;}
+    .navbox ul li ul{top: 112.5px;}
+    .navbox ul li ul li{height: 90px;}
+    .navbox ul li ul li a{font-size: 1.69rem;}
+    
+    .slidecont p:first-child{font-size: 6.33rem;}
+    .bannerslideline{margin: 0.56rem 0 1.125rem 0;}
+    .slidecont p:last-child{font-size: 3.16rem;}
+    
+    .footitem ul li a,.copyrightbox p{line-height:47.25px;font-size:2.1rem;}
+    .copyrightbox div p{padding-left: 3.375rem;padding-top: 6.75px;}
+    
+    .fgline{height: 843.75px;}
+    .Intfrmbox .lxtxt{font-size: 4.92rem;line-height:109px;}
+    .Intfrmbox form .lxfrmitem,.contract_submit{height: 67.5px;}
+    .Intfrmbox form .lxfrmitem input,.usermessage{font-size: 1.4rem;border-radius: 1.125px;}
+    .usermessage,.Intothbox .wxqrcode p{padding-top: 22.5px;}
+    .usermessage{height: 168.75px;}
+    .contract_submit{font-size: 2.1rem;}
+    .contract_submit{border-radius:33.75px;line-height: 47.25px;}
+    .Intothbox .QQ,.Intothbox .phone{height: 81px;}
+    .Intothbox .QQ p,.Intothbox .phone p{font-size: 3.5rem;line-height: 56.25px;}
+    .Intothbox .wxqrcode p{line-height:33.75px;font-size: 1.4rem;}
+    
+    .pagesbox p{font-size: 3.5rem;}.navslogan,.pagesbox button,.tab-box .tab ul li a{font-size: 2.8rem;}.pagesbox button{height: 101.25px;}
+    .contracticon{top: calc(50% - 168.75px);width:225px;height:168.75px;}
+    .tab-box .tab ul li{height: 112.5px;}
+    .tab-box .tab ul li a{line-height: 112.5px;}
+}

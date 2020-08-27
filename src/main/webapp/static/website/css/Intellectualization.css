@@ -1,0 +1,239 @@
+.Intcontainer{width: 95%;height: auto;align-self: flex-start;margin: 6rem 0 6rem 5%;}
+.Intcontainer,.specialinfoitem{display: flex;flex-flow: row nowrap;justify-content: space-between;align-items: flex-start;}
+.Intleftbox{width: 19.23%;height: auto;}
+.Intleftbox ul{width: 100%;}
+.Intleftbox ul li{width: 100%;border-bottom: 2px solid #DADADA;padding: 20px 0;}
+.Intleftbox ul li:nth-child(1){padding-top: 0;}
+.Intleftbox ul li a{color: #4D4D4D!important;font-size: 1.875rem;line-height: 42px;}
+.Intleftbox ul li a:hover{text-decoration: none;color: #4D4D4D;}
+.Intleftbox ul li.action a{color: #004098!important;}
+.Intrightbox{width: 78.02%;height: auto;}
+.Intrightitem{width: 100%;height: auto;display: flex;flex-flow: column nowrap;justify-content: flex-start;align-items: flex-end;}
+.Intrightconainer,.Intfiledownload{width: 89.4%;height:auto;margin-right: 7%;display: flex;flex-flow: column nowrap;justify-content: flex-start;align-content: flex-start;}
+.Intrighttitle,.Intrightdes,.czczxtvideo,.Intrightspecial,.Intrightspecialinfobox{width: 100%;height: auto;}
+.Intrighttitle{height: 90px;}
+.Intrighttitle p{font-size: 5rem;font-weight:500;color:#004098;line-height: 1;}
+.Intrightdes{margin-top: 30px;}
+.Intrightdes p{font-size: 1.875rem;color: #4D4D4D;line-height:45px;text-align: justify;}
+.Intrightvideo{margin-top: 20px;}
+.Intrightvideo video{width: 100%;}
+.Intrightspecial{margin: 6rem 0;}
+.Intrightspecialtitle{width: 100%;display: flex;flex-flow: row nowrap;justify-content: flex-start;align-items: center;}
+.Intrightspecialtitle p{color: #004199;font-size: 2.5rem;line-height: 50px;}
+.Intrightspecialinfobox{margin-top: 40px;}
+.specialinfoitem{width: 100%;margin-bottom: 50px;}
+.itemleft{width: 39.37%;height: auto;overflow: hidden;}
+.itemleft img{width: 100%;}
+.itemright{width: 58.26%;height: auto;}
+.itemright .itemtitle,.itemright .itemdes{width: 100%;}
+.itemright .itemtitle p{color: #004199;font-size: 3.125rem;font-weight:500;line-height:69px;}
+.itemright .itemdes{margin-top: 30px;text-align: justify;}
+.itemright .itemdes p{color: #606060;font-size:1.875rem;line-height:45px;}
+.Intcasebox{/*width: 96.5%;*/width: 89.4%;height: auto;margin-right: 7%;/*background: #F8F8F8;*/border-radius: 10px;display: flex;flex-flow: column nowrap;justify-content: center;align-items: center;}
+.Intcasetitle{width: 100%;margin-top: 150px;}
+.Intcasetitle p{color: #004199;font-size: 2.5rem;font-weight:500;line-height: 50px;}
+.Intcasedes{/*width: 78.1%;*/width:100%;margin-top: 70px;}
+.Intcasedes p{color: #606060;font-size: 1.875rem;line-height:45px;text-align: justify;}
+.Intcaseitembox{width: 100%;margin-top: 40px;margin-bottom: 200px;display: flex;flex-flow: row nowrap;justify-content: flex-start;align-items: flex-start;}
+.Intcaseitembox .Intcaseitem{width: 25%;overflow: hidden;display: flex;flex-flow: column nowrap;justify-content: flex-start;align-items: center;}
+.Intcaseitem img{width: 100%;}
+.Intcasedesbox{width: 100%;margin-top: 30px;}
+.Intcasedesbox p{color: #606060;font-size: 1.875rem;line-height:45px;text-align: center;}
+
+.Intfiledownload{margin-top: 140px;}
+.Intdownloadtitle{width: 100%;}
+.Intdownloadtitle p{color:#004199;font-size: 2.5rem;line-height:30px;}
+.Intdownloadtable{width: 100%;margin-top: 30px;}
+.Intdownitem{width: 100%;height: 80px;display: flex;justify-content: flex-start;align-items: center;}
+.Intdownitem p{font-size: 1.875rem;color: #4D4D4D;line-height:30px;margin-left: 3.9%;}
+.activebg{background: #E9E9E9;}
+.Intdownitem a{width: 2.4%;margin-left: 2.36%;}
+.Intdownitem a:hover{cursor: pointer;}
+.Intdownitem a img{width: 100%;}
+
+@media only screen and (min-width: 980px) and (max-width: 1199px) {
+	.Intcontainer{margin: 3.06rem 0 3.06rem 5%;}
+	.Intrightspecial{margin: 3.06rem 0;}
+	.Intleftbox ul li{padding: 10.2px 0;}
+	.Intleftbox ul li a{font-size: 0.96rem;line-height: 21.4px;}	
+	.Intrighttitle{height: 45.9px;}
+	.Intrighttitle p{font-size: 2.55rem;}
+	.Intrightdes,.itemright .itemdes,.Intcasedesbox,.Intdownloadtable{margin-top: 15.3px;}
+    .Intrightdes p,.itemright .itemdes p,.Intcasedes p,.Intcasedesbox p{font-size: 0.96rem;line-height:23px;}
+    .Intrightvideo{margin-top: 10.2px;}    
+    .itemright .itemtitle p{font-size: 1.59rem;}
+    .Intrightspecialtitle p{line-height: 25.5px;}
+    .Intrightspecialinfobox,.Intcaseitembox{margin-top: 20.4px;}
+    .specialinfoitem{margin-bottom: 25.5px;}
+    .itemright .itemtitle p{line-height:35px;}
+    .Intcasetitle{margin-top: 76.5px;}
+    .Intcasetitle p{line-height: 25.5px;}
+    .Intcasedes{margin-top: 35.7px;}
+    .Intcaseitembox{margin-bottom: 102px;}    
+    .Intfiledownload{margin-top: 71.4px;}
+    .Intdownloadtitle p,.Intdownitem p{line-height:15.3px;}
+    .Intrightspecialtitle p,.Intcasetitle p,.Intdownloadtitle p{font-size: 1.275rem;}
+    .Intdownitem{height: 40.8px;}
+    .Intdownitem p{font-size: 0.96rem;}
+    
+}
+@media only screen and (min-width: 1200px) {
+	.Intcontainer{margin: 3.75rem 0 3.75rem 5%;}
+	.Intrightspecial{margin: 3.75rem 0;}
+	.Intrighttitle{height: 56.25px;}
+	.Intleftbox ul li{padding: 12.5px 0;}
+	.Intleftbox ul li a{font-size: 1.17rem;line-height: 26.25px;}	
+	.Intrighttitle p{font-size: 3.125rem;}
+	.Intrightdes,.itemright .itemdes,.Intcasedesbox,.Intdownloadtable{margin-top: 18.75px;}
+    .Intrightdes p,.itemright .itemdes p,.Intcasedes p,.Intcasedesbox p{font-size: 1.17rem;line-height:28px;}
+    .Intrightvideo{margin-top: 12.5px;}    
+    .itemright .itemtitle p{font-size: 2rem;}
+    .Intrightspecialtitle p{line-height: 31.25px;}
+    .Intrightspecialinfobox,.Intcaseitembox{margin-top: 25px;}
+    .specialinfoitem{margin-bottom: 31.25px;}
+    .itemright .itemtitle p{line-height:43px;}    
+    .Intcasetitle{margin-top: 93.75px;}
+    .Intcasetitle p{line-height: 31px;}
+    .Intcasedes{margin-top: 43.75px;}
+    .Intcaseitembox{margin-bottom: 125px;}    
+    .Intfiledownload{margin-top: 87.5px;}
+    .Intdownloadtitle p,.Intdownitem p{line-height:18.75px;}
+    .Intrightspecialtitle p,.Intcasetitle p,.Intdownloadtitle p{font-size: 1.56rem;}
+    .Intdownitem{height: 50px;}
+    .Intdownitem p{font-size: 1.17rem;}
+    
+}
+@media only screen and (min-width: 1400px) {
+	.Intcontainer{margin: 4.5rem 0 4.5rem 5%;}
+	.Intrightspecial{margin: 4.5rem 0;}
+	.Intrighttitle{height: 67.5px;}
+	.Intleftbox ul li{padding: 15px 0;}
+	.Intleftbox ul li a{font-size: 1.41rem;line-height: 31.5px;}	
+	.Intrighttitle p{font-size: 3.75rem;}
+	.Intrightdes,.itemright .itemdes,.Intcasedesbox,.Intdownloadtable{margin-top: 22.5px;}
+    .Intrightdes p,.itemright .itemdes p,.Intcasedes p,.Intcasedesbox p{font-size: 1.41rem;line-height:33.75px;}
+    .Intrightvideo{margin-top: 15px;}    
+    .itemright .itemtitle p{font-size: 2.34rem;}
+    .Intrightspecialtitle p{line-height: 37.5px;}
+    .Intrightspecialinfobox,.Intcaseitembox{margin-top: 30px;}
+    .specialinfoitem{margin-bottom: 37.5px;}
+    .itemright .itemtitle p{line-height:52px;}    
+    .Intcasetitle{margin-top: 112.5px;}
+    .Intcasetitle p{line-height: 37.5px;}
+    .Intcasedes{margin-top: 52.5px;}
+    .Intcaseitembox{margin-bottom: 150px;}    
+    .Intfiledownload{margin-top: 105px;}
+    .Intdownloadtitle p,.Intdownitem p{line-height:22.5px;}
+    .Intrightspecialtitle p,.Intcasetitle p,.Intdownloadtitle p{font-size: 1.875rem;}
+    .Intdownitem{height: 60px;}
+    .Intdownitem p{font-size: 1.41rem;}
+    
+}
+@media only screen and (min-width: 1600px) {
+	.Intcontainer{margin: 5.25rem 0 5.25rem 5%;}
+	.Intrightspecial{margin: 5.25rem 0;}
+	.Intrighttitle{height: 78.75px;}
+	.Intleftbox ul li{padding: 17.5px 0;}
+	.Intleftbox ul li a{font-size: 1.64rem;line-height: 36.75px;}	
+	.Intrighttitle p{font-size: 4.375rem;}
+	.Intrightdes,.itemright .itemdes,.Intcasedesbox,.Intdownloadtable{margin-top: 26.25px;}
+    .Intrightdes p,.itemright .itemdes p,.Intcasedes p,.Intcasedesbox p{font-size: 1.64rem;line-height:39px;}
+    .Intrightvideo{margin-top: 17.5px;}    
+    .itemright .itemtitle p{font-size: 2.73rem;}
+    .Intrightspecialtitle p{line-height: 43.75px;}
+    .Intrightspecialinfobox,.Intcaseitembox{margin-top: 35px;}
+    .specialinfoitem{margin-bottom: 43.75px;}
+    .itemright .itemtitle p{line-height:60.4px;}    
+    .Intcasetitle{margin-top: 131px;}
+    .Intcasetitle p{line-height: 43.75px;}
+    .Intcasedes{margin-top: 61px;}
+    .Intcaseitembox{margin-bottom: 175px;}    
+    .Intfiledownload{margin-top: 122.5px;}
+    .Intdownloadtitle p,.Intdownitem p{line-height:26.25px;}
+    .Intrightspecialtitle p,.Intcasetitle p,.Intdownloadtitle p{font-size: 2.2rem;}
+    .Intdownitem{height: 70px;}
+    .Intdownitem p{font-size: 1.64rem;}
+    
+}
+@media only screen and (min-width: 1900px) {	
+	.Intcontainer{margin: 6rem 0 6rem 5%;}
+	.Intrightspecial{margin: 6rem 0;}
+	.Intrighttitle{height: 90px;}
+	.Intleftbox ul li{padding: 20px 0;}
+	.Intleftbox ul li a{font-size: 1.875rem;line-height: 42px;}		
+	.Intrighttitle p{font-size: 5rem;}
+	.Intrightdes,.itemright .itemdes,.Intcasedesbox,.Intdownloadtable{margin-top: 30px;}
+    .Intrightdes p,.itemright .itemdes p,.Intcasedes p,.Intcasedesbox p{font-size: 1.875rem;line-height:45px;}
+    .Intrightvideo{margin-top: 20px;}    
+    .itemright .itemtitle p{font-size: 3.125rem;}
+    .Intrightspecialtitle p{line-height: 50px;}
+    .Intrightspecialinfobox,.Intcaseitembox{margin-top: 40px;}
+    .specialinfoitem{margin-bottom: 50px;}
+    .itemright .itemtitle p{line-height:69px;}    
+    .Intcasetitle{margin-top: 150px;}
+    .Intcasetitle p{line-height: 50px;}
+    .Intcasedes{margin-top: 70px;}
+    .Intcaseitembox{margin-bottom: 200px;}    
+    .Intfiledownload{margin-top: 140px;}
+    .Intdownloadtitle p,.Intdownitem p{line-height:30px;}
+    .Intrightspecialtitle p,.Intcasetitle p,.Intdownloadtitle p{font-size: 2.5rem;}
+    .Intdownitem{height: 80px;}
+    .Intdownitem p{font-size: 1.875rem;}   
+    
+}
+@media only screen and (min-width: 2048px) {
+	.Intcontainer{margin: 6.4rem 0 6.4rem 5%;}
+	.Intrightspecial{margin: 6.4rem 0;}
+	.Intrighttitle{height: 96px;}
+	.Intleftbox ul li{padding: 21.34px 0;}
+	.Intleftbox ul li a{font-size: 2rem;line-height: 44.8px;}		
+	.Intrighttitle p{font-size: 5.335rem;}
+	.Intrightdes,.itemright .itemdes,.Intcasedesbox,.Intdownloadtable{margin-top: 32px;}
+    .Intrightdes p,.itemright .itemdes p,.Intcasedes p,.Intcasedesbox p{font-size: 2rem;line-height:48px;}
+    .Intrightvideo{margin-top: 21.34px;}    
+    .itemright .itemtitle p{font-size: 3.33rem;}
+    .Intrightspecialtitle p{line-height: 53px;}
+    .Intrightspecialinfobox,.Intcaseitembox{margin-top: 42px;}
+    .specialinfoitem{margin-bottom: 53px;}
+    .itemright .itemtitle p{line-height:73.6px;}
+    
+    .Intcasetitle{margin-top: 160px;}
+    .Intcasetitle p{line-height: 53.35px;}
+    .Intcasedes{margin-top: 75px;}
+    .Intcaseitembox{margin-bottom: 213px;}
+    
+    .Intfiledownload{margin-top: 149px;}
+    .Intdownloadtitle p,.Intdownitem p{line-height:32px;}
+    .Intrightspecialtitle p,.Intcasetitle p,.Intdownloadtitle p{font-size: 2.67rem;}
+    .Intdownitem{height: 85px;}
+    .Intdownitem p{font-size: 2rem;}
+    
+}
+@media only screen and (min-width: 2160px) {
+	.Intcontainer{margin: 6.75rem 0 6.75rem 5%;}
+	.Intrightspecial{margin: 6.75rem 0;}
+	.Intrighttitle{height: 101px;}
+	.Intleftbox ul li{padding: 22.5px 0;}
+	.Intleftbox ul li a{font-size: 2.1rem;line-height: 47.25px;}	
+	.Intrighttitle p{font-size: 5.625rem;}
+	.Intrightdes,.itemright .itemdes,.Intcasedesbox,.Intdownloadtable{margin-top: 33.75px;}
+    .Intrightdes p,.itemright .itemdes p,.Intcasedes p,.Intcasedesbox p{font-size: 2.1rem;line-height:50.6px;}
+    .Intrightvideo{margin-top: 22.5px;}    
+    .itemright .itemtitle p{font-size: 3.5rem;}
+    .Intrightspecialtitle p{line-height: 56px;}
+    .Intrightspecialinfobox,.Intcaseitembox{margin-top: 45px;}
+    .specialinfoitem{margin-bottom: 56px;}
+    .itemright .itemtitle p{line-height:77.6px;}
+    
+    .Intcasetitle{margin-top: 168.75px;}
+    .Intcasetitle p{line-height: 56px;}
+    .Intcasedes{margin-top: 79px;}
+    .Intcaseitembox{margin-bottom: 225px;}
+    
+    .Intfiledownload{margin-top: 157.5px;}
+    .Intdownloadtitle p,.Intdownitem p{line-height:33.75px;}
+    .Intrightspecialtitle p,.Intcasetitle p,.Intdownloadtitle p{font-size: 2.8rem;}
+    .Intdownitem{height: 90px;}
+    .Intdownitem p{font-size: 2.1rem;}
+    
+}

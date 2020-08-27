@@ -1,0 +1,76 @@
+.Hangyecontainer{position: relative;width: 100%;height: auto;margin: 5.25% auto;display: flex;flex-flow: column nowrap;justify-content: flex-start;align-items: flex-end;}
+p{margin-bottom: 0;}
+.clearfix:after{ content: ""; clear: both; display: block; }
+.hangyetab{width: 94.8%; height: auto;display: flex;flex-flow: row nowrap;justify-content: space-between;align-items: flex-start;}
+.hangyetab .hylefttab{width: 20.3%;height: auto;}
+.hangyetab .hylefttab ul{width: 100%;height: auto; display: flex;flex-flow: column nowrap;justify-content: flex-start;align-items: center;}
+.hangyetab .hylefttab ul li{width: 100%;height: 100px;border-bottom: 2px solid #DCDCDC;}
+.hangyetab .hylefttab ul li a{color: #4D4D4D;font-size: 2.5rem;line-height: 100px;}
+.hangyetab .hylefttab ul li.action a{color: #004098;}
+.hangyetab .hylefttab ul li a:hover{color: #004098;}
+.hangyetab .Hangyebox{width: 75.27%;height: auto;}
+.hangyetab .Hangyebox .hyitembox{width: 92.7%;height: auto;margin-bottom: 5.25%;}
+.hytitle,.hyinfocontainer,.hyinfoimg,.hyinfoimg img,.hyproname{width: 100%;}
+.hytitle p{font-size: 4.375rem;color: #004098;line-height: 1;}
+.hyinfocontainer{display: flex;flex-flow: row wrap;justify-content: space-between;align-items: center;}
+.hyinfoitem{width: 31.5%;height: auto;margin-top: 3.98%;}
+.hyproname{margin-top: 7.85%;}
+.hyproname p{font-size: 1.875rem;color: #4D4D4D;line-height: 1;}
+.hyitembox hr{width: 100%;height: 4px;background: #CDCDCD;border: none;margin: 12% auto;}
+
+@media only screen and (min-width: 980px) and (max-width: 1199px) {
+    .hangyetab .hylefttab ul li a{font-size: 1.275rem;}
+    .hangyetab .hylefttab ul li{height: 51px;}
+    .hangyetab .hylefttab ul li a{line-height: 51px;}
+    .hytitle p{font-size: 2.23rem;}
+    .hyproname p{font-size: 0.956rem;} 
+}
+
+@media only screen and (min-width: 1200px) {
+    .hangyetab .hylefttab ul li a{font-size: 1.56rem;}
+    .hangyetab .hylefttab ul li{height: 62.5px;}
+    .hangyetab .hylefttab ul li a{line-height: 62.5px;}
+    .hytitle p{font-size: 2.73rem;}
+    .hyproname p{font-size: 1.17rem;} 
+}
+
+@media only screen and (min-width: 1405px) {
+    .hangyetab .hylefttab ul li a{font-size: 1.875rem;}
+    .hangyetab .hylefttab ul li{height: 75px;}
+    .hangyetab .hylefttab ul li a{line-height: 75px;}
+    .hytitle p{font-size: 3.28rem;}
+    .hyproname p{font-size: 1.41rem;} 
+}
+
+@media only screen and (min-width: 1600px) {
+    .hangyetab .hylefttab ul li a{font-size: 2.19rem;}
+    .hangyetab .hylefttab ul li{height: 87.5px;}
+    .hangyetab .hylefttab ul li a{line-height: 87.5px;}
+    .hytitle p{font-size: 3.83rem;}
+    .hyproname p{font-size: 1.64rem;} 
+}
+
+@media only screen and (min-width: 1900px) {
+    .hangyetab .hylefttab ul li a{font-size: 2.5rem;}  
+    .hangyetab .hylefttab ul li{height: 100px;}
+    .hangyetab .hylefttab ul li a{line-height: 100px;}  
+    
+    .hytitle p{font-size: 4.375rem;}
+    .hyproname p{font-size: 1.875rem;}    
+}
+
+@media only screen and (min-width: 2048px) {
+    .hangyetab .hylefttab ul li a{font-size: 2.67rem;}
+    .hangyetab .hylefttab ul li{height: 106.7px;}
+    .hangyetab .hylefttab ul li a{line-height: 106.7px;}
+    .hytitle p{font-size: 4.67rem;}
+    .hyproname p{font-size: 2rem;} 
+}
+
+@media only screen and (min-width: 2160px) {
+	.hangyetab .hylefttab ul li a{font-size: 2.8rem;}
+	.hangyetab .hylefttab ul li{height: 112.5px;}
+    .hangyetab .hylefttab ul li a{line-height: 112.5px;}
+    .hytitle p{font-size: 4.92rem;}
+    .hyproname p{font-size: 2.1rem;} 
+}

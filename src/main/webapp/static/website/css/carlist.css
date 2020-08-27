@@ -1,0 +1,205 @@
+.carlistcontainer{width: 100%;height: auto;}
+.cartypebox{width: 95%;height: auto;margin-left: 5%; margin-top: 5%; display: flex;flex-flow: row nowrap;justify-content: space-between;align-items: flex-start;}
+.typelistbox{width: 19.23%;}
+.typelistbox .ul li{border-bottom: 2px solid #DADADA;transform: translateY(0);-webkit-transform: translateY(100%);transform: translateY(100%);-webkit-transition: all .6s cubic-bezier(.77, 0, .175, 1) 0ms;transition: all .6s cubic-bezier(.77, 0, .175, 1) 0ms;opacity: 0;}
+.typelistbox.open .ul li{opacity: 1;-webkit-transform: translateY(0);transform: translateY(0);}
+.typelistbox .ul li:nth-child(1) a{color: #4D4D4D;}
+.typelistbox .ul li:nth-child(1) {-webkit-transition: all .2s cubic-bezier(.77, 0, .175, 1) 0ms;transition: all .2s cubic-bezier(.77, 0, .175, 1) 0ms;}
+.typelistbox .ul li:nth-child(2) {-webkit-transition: all .4s cubic-bezier(.77, 0, .175, 1) 0ms;transition: all .4s cubic-bezier(.77, 0, .175, 1) 0ms;}
+.typelistbox .ul li:nth-child(3) {-webkit-transition: all .6s cubic-bezier(.77, 0, .175, 1) 0ms;transition: all .6s cubic-bezier(.77, 0, .175, 1) 0ms;}
+.typelistbox .ul li:nth-child(4) {-webkit-transition: all .8s cubic-bezier(.77, 0, .175, 1) 0ms; transition: all .8s cubic-bezier(.77, 0, .175, 1) 0ms;}
+.typelistbox .ul li:nth-child(5) {-webkit-transition: all 1.0s cubic-bezier(.77, 0, .175, 1) 0ms;transition: all 1.0s cubic-bezier(.77, 0, .175, 1) 0ms;}
+.typelistbox .ul li:nth-child(6) {-webkit-transition: all 1.2s cubic-bezier(.77, 0, .175, 1) 0ms;transition: all 1.2s cubic-bezier(.77, 0, .175, 1) 0ms;}
+.typelistbox .ul li a{display: block;text-decoration: none;color: #4D4D4D;font-size: 1.875rem;width: 100%;height: 70px;line-height: 70px;}
+.typelistbox .ul li a img{width: 8.57%;padding-right: 0.2rem;}
+.typelistbox .ul li .dropdown_menu{	display: none;}
+.typelistbox .ul li.dropdown.active .dropdown_menu{	display: block;}
+.typelistbox .ul li .dropdown_menu a{display: block;height: 80px;line-height: 80px;padding: 0 40px;box-sizing: border-box;border-bottom: 2px solid #DADADA;color: #6F6F6F;text-decoration: none;-webkit-transition: color .2s ease-in-out;-moz-transition: color .2s ease-in-out;transition: color .2s ease-in-out;-webkit-transition: background-color .2s ease-in-out;-moz-transition: background-color .2s ease-in-out;transition: background-color .2s ease-in-out;}
+.typelistbox .ul li .dropdown_menu a:last-child{border: none;}
+.rotate90deg{transform: rotate(90deg);transition: all 0.5s ease;-webkit-transition:all 0.5s ease;}
+.rotate0deg{transform: rotate(0deg);transition: all 0.5s ease;-webkit-transition:all 0.5s ease;}
+.containbox{position: relative;width: 78.02%;height: auto;display: flex;flex-flow: column nowrap;justify-content: flex-start;align-items: flex-end;}
+.containinfobox{width: 89.4%;height:auto;margin-right: 7%;margin-left: 3.6%;}
+.shizhengbox,.tezhongbox,.xinengyuanbox,.cartitle,.carinfobox,.caritem,.caritem .caritemtile,.caritembox{width: 100%;}
+.cartitle p{font-size: 3.125rem;color: #004098;line-height:50px;}
+.carinfobox{margin-top: 2.5%;}
+.caritem .caritemtile p{font-size: 2.5rem;color: #4D4D4D;line-height: 40px;}
+.caritembox{margin-top: 5%;display: flex;flex-flow: row wrap;justify-content: space-between;align-items: flex-start;}
+.carinfop{width: 31.5%;height: auto;margin-bottom: 8%;}
+.carinfoitem{width: 100%;display: flex;flex-flow: column nowrap;justify-content: flex-start;align-items: center;}
+.carinfoitem img{width: 100%;}
+.carinfoitem .carnamebox{width: 100%;margin-top: 8%;text-align: center;}
+.carinfoitem .carnamebox p{font-size: 1.875rem;color: #084AA7;line-height: 30px;}
+.carfgline{width: 100%;height: 2px;background: #B2B2B2;margin-bottom: 8%;}
+a:hover{text-decoration: none;}
+/*info*/
+.proimgbox{width: 96.875%;text-align: center;margin: 0.95% auto 7.35% auto;}
+.proimgbox img{width: 100%;}
+.proinfobox{position: relative;width: 100%;height: auto;}
+.proinfo,.profeaturesbox,.profiledownloadbox,.usercasebox{position: relative;width: 89.4%;height:auto;margin-right: 7%;margin-left: 3.6%;display: flex;flex-flow: column nowrap;justify-content: flex-start;align-content: flex-start;}
+.proname,.pronametype,.proinfo hr,.prodes,.provideo,.provideo video,.profettitle,
+.profetinfobox,.profetinfotitle,.profetinfodes,.outsideparameterbox,.insideparameterbox,.filetablebox,.caseswiperbox{width: 100%;}
+.proname p{font-size: 5rem;color: #004199;line-height: 1;}
+.pronametype{margin-top: 2.4%;}
+.pronametype p{font-size: 3.75rem;color: #4D4D4D;line-height: 1.36;}
+.proinfo hr{height: 2px;background: #DADADA;border: none;margin-top: 2.4%;}
+.prodes{margin-top: 1.5%;text-align: justify;}
+.prodes p{font-size: 1.875rem;color: #6F6F6F;line-height: 45px;}
+.provideo{margin-top: 2.4%;}
+.provideo video{object-fit: contain;}
+
+.profeaturesbox,.profiledownloadbox,.usercasebox{margin-top: 9.6%;}
+.profettitle p{font-size: 2.5rem;color: #004199;line-height: 1;}
+.profetinfobox,.outsideparameterbox,.insideparameterbox,.filetablebox,.caseswiperbox{margin-top: 2.4%;}
+.profetitem{width: 100%;margin-bottom: 2.4%;display: flex;flex-flow: row nowrap;justify-content: space-between;align-items: flex-start;}
+.profetimg{width: 39.4%;overflow: hidden;}
+.profetimg img{width: 100%;}
+.profetdes{width: 58.3%;}
+.profetinfotitle p{font-size: 3.125rem;color: #004199;line-height: 1;}
+.profetinfodes{margin-top: 4.1%;}
+.profetinfodes p{font-size: 1.875rem;color: #6F6F6F;line-height: 45px;}
+.outsideparamitem,.insideparamitem,.profileitem{width: 100%;height: 80px;}
+.outsideparamitem,.insideparamitem{display: flex;flex-flow: row nowrap;justify-content: space-between;align-items: center;}
+.paramnamebox,.paramnumbox{width: 50%;height: 100%;text-align: left;}
+.actbg{background: #E9E9E9;}
+.paramnamebox p,.paramnumbox p,.profileitem p{font-size: 1.875rem;color: #505050;line-height: 80px;}
+.paramnamebox p,.paramnumbox p{padding-left: 7.8%;}
+.profileitem{display: flex;flex-flow: row nowrap; justify-content: flex-start;align-items: center;}
+.profileitem p{margin-left: 3.9%;margin-right:2.36%;}
+.profileitem a{width: 2.4%;}
+.profileitem a:hover{cursor: pointer;}
+.profileitem a img{width: 100%;}
+
+.caseswiperbox{position: relative;}
+.caseswiperbox .swiper-container,.swiper-wrapper,.swiper-slide a{position: relative;width: 100%;height: auto;}
+.swiper-slide img{width: 100%;}
+.swipercontrolbox{width: 100%;margin-top: 4%; display: flex;flex-flow: row nowrap;justify-content: center;align-items: center;}
+.swipercontrolbox img{width: 3.9%;}
+.swipertoright{margin-left: 26.8%;}
+.Intcontract{margin-top: 5.6%;margin-bottom: 7.5%;}
+
+@media only screen and (min-width: 980px) and (max-width: 1199px) {
+    .typelistbox .ul li a{font-size: 0.96rem;}
+    .typelistbox .ul li .dropdown_menu a{padding: 0 20.4px;}
+    .typelistbox .ul li a,.typelistbox .ul li .dropdown_menu a{height: 40.8px;line-height: 40.8px;}
+
+    .cartitle p{font-size: 1.59rem;line-height:25.5px;}
+    .caritem .caritemtile p{font-size: 1.275rem;line-height: 20.4px;}
+    .carinfoitem .carnamebox p{font-size: 0.96rem;line-height: 15.3px;}
+
+    .proname p{font-size: 2.55rem;}
+    .pronametype p{font-size: 1.91rem;line-height: 1;}
+    .prodes p,.profetinfodes p{font-size: 0.96rem;line-height: 22.95px;}
+    .profettitle p{font-size: 1.275rem;}
+    .profetinfotitle p{font-size: 1.59rem;}
+    .outsideparamitem,.insideparamitem,.profileitem{height: 40.8px;}
+    .paramnamebox p,.paramnumbox p,.profileitem p{font-size: 0.96rem;line-height: 40.8px;}
+}
+
+@media only screen and (min-width: 1200px) {
+    .typelistbox .ul li a{font-size: 1.17rem;}
+    .typelistbox .ul li .dropdown_menu a{padding: 0 25px;}
+    .typelistbox .ul li a,.typelistbox .ul li .dropdown_menu a{height: 50px;line-height: 50px;}
+
+    .cartitle p{font-size: 1.95rem;line-height:31.25px;}
+    .caritem .caritemtile p{font-size: 1.56rem;line-height: 15.5px;}
+    .carinfoitem .carnamebox p{font-size: 1.17rem;line-height: 18.75px;}
+
+    .proname p{font-size: 3.125rem;}
+    .pronametype p{font-size: 2.34rem;line-height: 1;}
+    .prodes p,.profetinfodes p{font-size: 1.17rem;line-height: 28px;}
+    .profettitle p{font-size: 1.56rem;}
+    .profetinfotitle p{font-size: 1.95rem;}
+    .outsideparamitem,.insideparamitem,.profileitem{height: 50px;}
+    .paramnamebox p,.paramnumbox p,.profileitem p{font-size: 1.17rem;line-height: 50px;}
+}
+
+@media only screen and (min-width: 1400px) {
+    .typelistbox .ul li a{font-size: 1.41rem;}
+    .typelistbox .ul li .dropdown_menu a{padding: 0 30px;}
+    .typelistbox .ul li a,.typelistbox .ul li .dropdown_menu a{height: 60px;line-height: 60px;}
+
+    .cartitle p{font-size: 2.34rem;line-height:37.5px;}
+    .caritem .caritemtile p{font-size: 1.875rem;line-height: 30px;}
+    .carinfoitem .carnamebox p{font-size: 1.41rem;line-height: 22.5px;}
+
+    .proname p{font-size: 3.75rem;}
+    .pronametype p{font-size: 2.8rem;line-height: 1;}
+    .prodes p,.profetinfodes p{font-size: 1.41rem;line-height: 33.75px;}
+    .profettitle p{font-size: 1.875rem;}
+    .profetinfotitle p{font-size: 2.34rem;}
+    .outsideparamitem,.insideparamitem,.profileitem{height: 60px;}
+    .paramnamebox p,.paramnumbox p,.profileitem p{font-size: 1.41rem;line-height: 60px;}
+}
+
+@media only screen and (min-width: 1600px) {
+    .typelistbox .ul li a{font-size: 1.64rem;}
+    .typelistbox .ul li .dropdown_menu a{padding: 0 35px;}
+    .typelistbox .ul li a,.typelistbox .ul li .dropdown_menu a{height: 70px;line-height: 70px;}
+
+    .cartitle p{font-size: 2.73rem;line-height:43.75px;}
+    .caritem .caritemtile p{font-size: 2.19rem;line-height: 35px;}
+    .carinfoitem .carnamebox p{font-size: 1.64rem;line-height: 26px;}
+
+    .proname p{font-size: 4.375rem;}
+    .pronametype p{font-size: 3.28rem;line-height: 1;}
+    .prodes p,.profetinfodes p{font-size: 1.64rem;line-height: 39.3px;}
+    .profettitle p{font-size: 2.19rem;}
+    .profetinfotitle p{font-size: 2.73rem;}
+    .outsideparamitem,.insideparamitem,.profileitem{height: 70px;}
+    .paramnamebox p,.paramnumbox p,.profileitem p{font-size: 1.64rem;line-height: 70px;}
+}
+
+@media only screen and (min-width: 1900px) {
+    .typelistbox .ul li a{font-size: 1.875rem;}
+    .typelistbox .ul li .dropdown_menu a{padding: 0 40px;}
+    .typelistbox .ul li a,.typelistbox .ul li .dropdown_menu a{height: 80px;line-height: 80px;}
+
+    .cartitle p{font-size: 3.125rem;line-height:50px;}
+    .caritem .caritemtile p{font-size: 2.5rem;line-height: 40px;}
+    .carinfoitem .carnamebox p{font-size: 1.875rem;line-height: 30px;}
+
+    .proname p{font-size: 5rem;}
+    .pronametype p{font-size: 3.75rem;line-height: 1.36;}
+    .prodes p,.profetinfodes p{font-size: 1.875rem;line-height: 45px;}
+    .profettitle p{font-size: 2.5rem;}
+    .profetinfotitle p{font-size: 3.125rem;}
+    .outsideparamitem,.insideparamitem,.profileitem{height: 80px;}
+    .paramnamebox p,.paramnumbox p,.profileitem p{font-size: 1.875rem;line-height: 80px;}
+}
+
+@media only screen and (min-width: 2048px) {
+    .typelistbox .ul li a{font-size: 2rem;}
+    .typelistbox .ul li .dropdown_menu a{padding: 0 42.68px;}
+    .typelistbox .ul li a,.typelistbox .ul li .dropdown_menu a{height: 83.36px;line-height: 85.36px;}
+
+    .cartitle p{font-size: 3.33rem;line-height:53px;}
+    .caritem .caritemtile p{font-size: 2.67rem;line-height: 42px;}
+    .carinfoitem .carnamebox p{font-size: 2rem;line-height: 32px;}
+
+    .proname p{font-size: 5.335rem;}
+    .pronametype p{font-size: 4rem;line-height: 1.1;}
+    .prodes p,.profetinfodes p{font-size: 2rem;line-height: 48px;}
+    .profettitle p{font-size: 2.67rem;}
+    .profetinfotitle p{font-size: 3.33rem;}
+    .outsideparamitem,.insideparamitem,.profileitem{height: 85.36px;}
+    .paramnamebox p,.paramnumbox p,.profileitem p{font-size: 2rem;line-height: 85.36px;}
+}
+
+@media only screen and (min-width: 2160px) {
+    .typelistbox .ul li a{font-size: 2.1rem;}
+    .typelistbox .ul li .dropdown_menu a{padding: 0 45px;}
+    .typelistbox .ul li a,.typelistbox .ul li .dropdown_menu a{height: 90px;line-height: 90px;}
+
+    .cartitle p{font-size: 3.5rem;line-height:56px;}
+    .caritem .caritemtile p{font-size: 2.8rem;line-height: 45px;}
+    .carinfoitem .carnamebox p{font-size: 2.1rem;line-height: 33.75px;}
+
+    .proname p{font-size: 5.625rem;}
+    .pronametype p{font-size: 4.2rem;line-height: 1.125;}
+    .prodes p,.profetinfodes p{font-size: 2.1rem;line-height: 50.6px;}
+    .profettitle p{font-size: 2.8rem;}
+    .profetinfotitle p{font-size: 3.5rem;}
+    .outsideparamitem,.insideparamitem,.profileitem{height: 90px;}
+    .paramnamebox p,.paramnumbox p,.profileitem p{font-size: 2.1rem;line-height: 90px;}
+}

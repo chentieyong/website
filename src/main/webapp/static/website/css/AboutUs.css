@@ -1,0 +1,210 @@
+.newscontainer{position: relative;width: 100%;height: auto;margin: 5.25% auto;display: flex;flex-flow: column nowrap;justify-content: flex-start;align-items: flex-end;}
+p{margin-bottom: 0;}
+/*公司介绍*/
+.compDesbox,.compjsinfobox,.compfzinfobox,.compitem .compbot,.compcxcontainer,.compNewsitembox,.compNewsInfobox,.compHonorbox{display: flex;flex-flow: column nowrap;justify-content: flex-start;align-items: center;}
+.compDesbox,.compNewsbox,.compNewsInfobox,.compHonorbox{position: relative;width: 92.7%;height: auto;}
+.compjstitleimgbox,.compjsinfobox,.compjsinfowords,.compfztitleimg,.compfzinfobox,.compfztitle,.compfzlistbox,
+.compyear,.compfzdes,.compcxinfobox,.compcxtitleimg,.compcxtitle,.compcxdes,.compwhinfobox,.compwhtitleimg,
+.compwhdes{width: 100%;}
+.compjstitleimgbox img,.compfztitleimg img,.compcxtitleimg img,.compwhtitleimg img{width: 100%;}
+.compjstitle{margin-top: 5.6%;}
+.compjsinfobox p,.compfztitle p,.compcxtitle p,.compwhtitle p,.newstitle p{font-size: 4.375rem;}
+.compjsinfobox p,.compfztitle p,.compwhtitle p{color: #004098;}
+.compjsinfowords{margin-top: 2.4%;text-align: justify;}
+.compjsinfowords p{font-size: 1.875rem;color: #797979;line-height: 60px;}
+.compfzinfobox{margin-top: 9.5%;}
+.compfztitle,.compwhtitle{margin-top: 4.7%; text-align: center;}
+.compfzlistbox{margin-top: 5.84%;position: relative;display: flex;flex-flow: column nowrap;justify-content: flex-start;align-items: flex-start;}
+.compitem{width: calc(50% + 15px);height: 157px;display: flex;flex-flow: row nowrap;justify-content: space-between;align-items: flex-start;}
+.compitem .compfzcont{width: 79.9%;height: auto;}
+.compitem .compbot{width: 30px;}
+.compfzdes{text-align: justify;}
+.compyear p{font-size: 3.125rem;color: #797979;}
+.compfzdes p{font-size: 2.5rem;color: #797979;line-height: 60px;}
+.compfzcont .compfgline{width: 100%;height: 2px;margin:3.9% auto;background: #979797;}
+.compbot div{background: #004098;}
+.compbot .littleline{width: 4px;height: 10px;}
+.compbot .middlecircle{width: 30px;height: 30px;border-radius: 50px;}
+.compbot .footline{width: 4px;height: 117px;}
+.rightto{align-self: flex-end;}
+.compitem:last-child .compbot .footline{height: 210px;}
+
+.compcxcontainer{width: 85.4%;height: auto;margin: 0 auto;}
+.compcxinfobox{margin-top: 19%;background: #247CE3;}
+.compcxtitle{margin-top: 14%;text-align: center;}
+.compcxtitle p{color: #FFFFFF;}
+.compcxfgline{width: 100%;height: 2px;background: #FBFBFB;margin: 4.67% auto;}
+.compcxdes{margin-bottom: 14%;}
+.compcxdes p{font-size: 2.5rem;color: #FFFFFF;line-height: 60px;}
+.compwhdes{margin-top: 4.8%;margin-bottom: 7.74%;text-align: center;}
+.compwhdes p{font-size: 1.875rem;color: #797979;line-height: 60px;}
+
+/*公司新闻*/
+.compNewsitembox,.compnewstitletime,.compnewdesinfo,.compnewsmoreinfo,.newstitle,.newsdate,.newsdes,.newsimg,.newsnextprebox,.newspre,.newsnext{position: relative; width: 100%;height: auto;}
+.compnewsitem{width: 100%;height: 300px;margin-bottom: 5.6%;display: flex;flex-flow: row nowrap;justify-content: space-between;align-items: flex-start;}
+.compnewsimg,.compnewsdesbox{overflow: hidden;}
+.compnewsimg{width: 39.5%;height: 100%;}
+.compnewsimg img{width: 100%;}
+.compnewsdesbox{width: 58.3%;height: 100%;display: flex;flex-flow: column nowrap;justify-content: flex-start;align-items: flex-start;}
+.compnewstitletime{display: flex;flex-flow: row nowrap;justify-content: space-between;align-items: center;}
+.compnewstitletime .compnewstitle{width: 74.3%;overflow: hidden;}
+.compnewstitletime .compnewstime{width: 21.6%;}
+.compnewstitle p{font-size: 3.125rem;color: #004199;line-height: 1;}
+.compnewstime p,.compnewdesinfo p,.compnewsmoreinfo a{font-size: 1.875rem;color: #606060;}
+.compnewdesinfo{text-align: justify;margin-top: 4%;}
+.compnewdesinfo p,.newsdes p{line-height: 45px;}
+.compnewsmoreinfo{margin-top: 5.1%;text-align: right;}
+.compnewsmoreinfo a{color: #1853A2!important;line-height: 1;}
+.pagesbox{margin-top: 14%;}
+
+/*新闻详情*/
+.newstitle p{font-size: 4.375rem;color: #004199;line-height: 1;}
+.newsdate,.compNewsInfobox .newsdes,.compNewsInfobox .newsimg{margin-top: 2.4%;}
+.newsdate{margin-bottom: 1.6%;}
+.newsdate p{font-size: 2.5rem;color: #606060;line-height: 1;}
+.compNewsInfobox .newsdes{text-align: justify;}
+.newsdes p{font-size: 1.875rem;color: #606060;line-height: 45px;}
+.newsimg img{width: 100%;}
+.newsnextprebox{margin-top: 16%;margin-bottom: 8%;}
+.newspre{margin-bottom: 4.16%;}
+.newspre a,.newsnext a{font-size: 1.875rem;color: #1853A2!important;line-height: 1;}
+.newspre a:hover,.newsnext a:hover{text-decoration: none;}
+
+/*荣誉资质*/
+.compHonorbox{margin-bottom: 22.5%;}
+.comphonortitle,.comphonorlistbox,.comphonorname{width: 100%;}
+.comphonortitle p{font-size: 4.375rem;color: #004199;line-height: 1;}
+.compHonorbox hr{width: 100%;height: 2px;background: #979797;margin: 4% auto;}
+.comphonorlistbox{margin-top: 4%;display: flex;flex-flow: row wrap;justify-content: space-between;align-items: flex-start;}
+.comphonoritem{width: 31.5%;height: auto;margin-bottom: 5%;display: flex;flex-flow: column nowrap;justify-content: flex-start;align-items: center;}
+.comphonoritem img{width: 100%;}
+.comphonorname{margin-top: 7.5%;text-align: center;}
+.comphonorname p{font-size: 1.875rem;color: #686868;line-height: 1;}
+.sharebox{top: 1%;}
+.compBigPhoto{position: fixed;top: 0;left: 0;z-index: 8; width: 100%;height: 100%;background: rgba(0,0,0,0.5);display: flex;justify-content: center;align-items: center;}
+.compBigPhoto img{width: 40%;}
+@media only screen and (min-width: 980px) and (max-width: 1199px) {
+    .compfzdes p,.compcxdes p,.newsdate p{font-size: 1.275rem;}
+    .compjsinfobox p,.compfztitle p,.compcxtitle p,.compwhtitle p,.newstitle p,.comphonortitle p{font-size: 2.23rem;}
+    .compjsinfowords p,.compwhdes p,.compnewstime p,.compnewdesinfo p,.compnewsmoreinfo a,.newsdes p,.comphonorname p,.newspre a,.newsnext a{font-size: 0.956rem;}
+    .compitem{width: calc(50% + 7.65px);height: 80.07px;}   
+    .compyear p,.compnewstitle p{font-size: 1.59rem;}
+    .compfzdes p,.compcxdes p,.compjsinfowords p,.compwhdes p{line-height: 30.6px;}
+    .compbot .littleline,.compbot .footline{width: 2.04px;}
+    .compbot .littleline{height: 5.1px;}
+    .compitem .compbot,.compbot .middlecircle{width: 15.3px;}
+    .compbot .middlecircle{height: 15.3px;}
+    .compbot .footline{height: 59.7px;}
+    .compitem:last-child .compbot .footline{height: 107.1px;}
+    
+    .compnewsitem{height: 153px;}
+    .compnewdesinfo p,.newsdes p{line-height: 22.95px;}
+}
+
+@media only screen and (min-width: 1200px) {
+    .compfzdes p,.compcxdes p,.newsdate p{font-size: 1.56rem;}
+    .compjsinfobox p,.compfztitle p,.compcxtitle p,.compwhtitle p,.newstitle p,.comphonortitle p{font-size: 2.73rem;}
+    .compjsinfowords p,.compwhdes p,.compnewstime p,.compnewdesinfo p,.compnewsmoreinfo a,.newsdes p,.comphonorname p,.newspre a,.newsnext a{font-size: 1.17rem;}
+    .compitem{width: calc(50% + 9.375px);height: 98.1px;}   
+    .compyear p,.compnewstitle p{font-size: 1.95rem;}
+    .compfzdes p,.compcxdes p,.compjsinfowords p,.compwhdes p{line-height: 37.5px;}
+    .compbot .littleline,.compbot .footline{width: 2.5px;}
+    .compbot .littleline{height: 6.25px;}
+    .compitem .compbot,.compbot .middlecircle{width: 18.75px;}
+    .compbot .middlecircle{height: 18.75px;}
+    .compbot .footline{height: 73.1px;}
+    .compitem:last-child .compbot .footline{height: 131.25px;}
+    
+    .compnewsitem{height: 187.5px;}
+    .compnewdesinfo p,.newsdes p{line-height: 28.125px;}
+}
+
+@media only screen and (min-width: 1405px) {
+    .compfzdes p,.compcxdes p,.newsdate p{font-size: 1.875rem;}
+    .compjsinfobox p,.compfztitle p,.compcxtitle p,.compwhtitle p,.newstitle p,.comphonortitle p{font-size: 3.28rem;}
+    .compjsinfowords p,.compwhdes p,.compnewstime p,.compnewdesinfo p,.compnewsmoreinfo a,.newsdes p,.comphonorname p,.newspre a,.newsnext a{font-size: 1.41rem;}
+    .compitem{width: calc(50% + 11.25px);height: 117.75px;}   
+    .compyear p,.compnewstitle p{font-size: 2.34rem;}
+    .compfzdes p,.compcxdes p,.compjsinfowords p,.compwhdes p{line-height: 45px;}
+    .compbot .littleline,.compbot .footline{width: 3px;}
+    .compbot .littleline{height: 7.5px;}
+    .compitem .compbot,.compbot .middlecircle{width: 22.5px;}
+    .compbot .middlecircle{height: 22.5px;}
+    .compbot .footline{height: 87.75px;}
+    .compitem:last-child .compbot .footline{height: 157.5px;}
+    
+    .compnewsitem{height: 225px;}
+    .compnewdesinfo p,.newsdes p{line-height: 33.75px;}
+}
+
+@media only screen and (min-width: 1600px) {
+    .compfzdes p,.compcxdes p,.newsdate p{font-size: 2.19rem;}
+    .compjsinfobox p,.compfztitle p,.compcxtitle p,.compwhtitle p,.newstitle p,.comphonortitle p{font-size: 3.83rem;}
+    .compjsinfowords p,.compwhdes p,.compnewstime p,.compnewdesinfo p,.compnewsmoreinfo a,.newsdes p,.comphonorname p,.newspre a,.newsnext a{font-size: 1.64rem;}
+    .compitem{width: calc(50% + 13.125px);height: 137.375px;}   
+    .compyear p,.compnewstitle p{font-size: 2.73rem;}
+    .compfzdes p,.compcxdes p,.compjsinfowords p,.compwhdes p{line-height: 52.5px;}
+    .compbot .littleline,.compbot .footline{width: 3.5px;}
+    .compbot .littleline{height: 8.75px;}
+    .compitem .compbot,.compbot .middlecircle{width: 26.25px;}
+    .compbot .middlecircle{height: 26.25px;}
+    .compbot .footline{height: 102.375px;}
+    .compitem:last-child .compbot .footline{height: 183.75px;}
+    
+    .compnewsitem{height: 262.5px;}
+    .compnewdesinfo p,.newsdes p{line-height: 39.375px;}
+}
+
+@media only screen and (min-width: 1900px) {
+    .compfzdes p,.compcxdes p,.newsdate p{font-size: 2.5rem;}
+    .compjsinfobox p,.compfztitle p,.compcxtitle p,.compwhtitle p,.newstitle p,.comphonortitle p{font-size: 4.375rem;}
+    .compjsinfowords p,.compwhdes p,.compnewstime p,.compnewdesinfo p,.compnewsmoreinfo a,.newsdes p,.comphonorname p,.newspre a,.newsnext a{font-size: 1.875rem;}
+    .compitem{width: calc(50% + 15px);height: 157px;}   
+    .compyear p,.compnewstitle p{font-size: 3.125rem;}
+    .compfzdes p,.compcxdes p,.compjsinfowords p,.compwhdes p{line-height: 60px;}
+    .compbot .littleline,.compbot .footline{width: 4px;}
+    .compbot .littleline{height: 10px;}
+    .compitem .compbot,.compbot .middlecircle{width: 30px;}
+    .compbot .middlecircle{height: 30px;}
+    .compbot .footline{height: 117px;}
+    .compitem:last-child .compbot .footline{height: 210px;}
+    
+    .compnewsitem{height: 300px;}
+    .compnewdesinfo p,.newsdes p{line-height: 45px;}    
+}
+
+@media only screen and (min-width: 2048px) {
+    .compfzdes p,.compcxdes p,.newsdate p{font-size: 2.67rem;}
+    .compjsinfobox p,.compfztitle p,.compcxtitle p,.compwhtitle p,.newstitle p,.comphonortitle p{font-size: 4.67rem;}
+    .compjsinfowords p,.compwhdes p,.compnewstime p,.compnewdesinfo p,.compnewsmoreinfo a,.newsdes p,.comphonorname p,.newspre a,.newsnext a{font-size: 2rem;}
+    .compitem{width: calc(50% + 16px);height: 167.5px;}   
+    .compyear p,.compnewstitle p{font-size: 3.33rem;}
+    .compfzdes p,.compcxdes p,.compjsinfowords p,.compwhdes p{line-height: 64px;}
+    .compbot .littleline,.compbot .footline{width: 4.268px;}
+    .compbot .littleline{height: 10.67px;}
+    .compitem .compbot,.compbot .middlecircle{width: 32px;}
+    .compbot .middlecircle{height: 32px;}
+    .compbot .footline{height: 124.84px;}
+    .compitem:last-child .compbot .footline{height: 224.07px;}
+    
+    .compnewsitem{height: 320.1px;}
+    .compnewdesinfo p,.newsdes p{line-height: 48px;}
+}
+
+@media only screen and (min-width: 2160px) {
+	.compfzdes p,.compcxdes p,.newsdate p{font-size: 2.8rem;}
+    .compjsinfobox p,.compfztitle p,.compcxtitle p,.compwhtitle p,.newstitle p,.comphonortitle p{font-size: 4.92rem;}
+    .compjsinfowords p,.compwhdes p,.compnewstime p,.compnewdesinfo p,.compnewsmoreinfo a,.newsdes p,.comphonorname p,.newspre a,.newsnext a{font-size: 2.1rem;}
+    .compitem{width: calc(50% + 16.875px);height: 176.625px;}   
+    .compyear p,.compnewstitle p{font-size: 3.52rem;}
+    .compfzdes p,.compcxdes p,.compjsinfowords p,.compwhdes p{line-height: 67.5px;}
+    .compbot .littleline,.compbot .footline{width: 4.5px;}
+    .compbot .littleline{height: 11.25px;}
+    .compitem .compbot,.compbot .middlecircle{width: 33.75px;}
+    .compbot .middlecircle{height: 33.75px;}
+    .compbot .footline{height: 131.625px;}
+    .compitem:last-child .compbot .footline{height: 236.25px;}
+    
+    .compnewsitem{height: 337.5px;}
+    .compnewdesinfo p,.newsdes p{line-height: 50.625px;}
+}
