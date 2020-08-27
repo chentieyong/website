@@ -210,7 +210,7 @@
 <a href="tencent://message/?uin=2975463389&Site=&Menu=yes" class="contracticon"><img
         src="${basepath}/static/website/img/contracticon.png"/>
     <p>联系我们</p></a>
-<img src="${basepath}/static/website/img/backtotop.png" class="backtotop"/>
+<img src="${basepath}/static/website/img/backtotop.jpg" class="backtotop"/>
 <script type="text/javascript" src="${basepath}/static/website/js/swiper.min.js"></script>
 <script type="text/javascript" src="${basepath}/static/website/js/common.js"></script>
 <script type="text/javascript" src="${basepath}/static/website/js/feed.js"></script>

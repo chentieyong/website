@@ -1,6 +1,8 @@
 package com.shenzhou.entity.navigator;
 
 
+import com.shenzhou.entity.article.Article;
+
 import java.util.List;
 
 /**
@@ -15,8 +17,8 @@ public class ApiNavigatorInfo {
     private String parentID;
     private String samllIcon = "";
     private String functionUrl;
-    private List<ReleaseArticleListDto> articleList;
     private List<ReleaseGoodsShopListDto> goodsList;
+    private List<Article> articleList;
 
     public String getId() {
         return id;
@@ -74,14 +76,6 @@ public class ApiNavigatorInfo {
         this.functionUrl = functionUrl;
     }
 
-    public List<ReleaseArticleListDto> getArticleList() {
-        return articleList;
-    }
-
-    public void setArticleList(List<ReleaseArticleListDto> articleList) {
-        this.articleList = articleList;
-    }
-
     public String getDescription() {
         return description;
     }
@@ -96,5 +90,13 @@ public class ApiNavigatorInfo {
 
     public void setGoodsList(List<ReleaseGoodsShopListDto> goodsList) {
         this.goodsList = goodsList;
+    }
+
+    public List<Article> getArticleList() {
+        return articleList;
+    }
+
+    public void setArticleList(List<Article> articleList) {
+        this.articleList = articleList;
     }
 }

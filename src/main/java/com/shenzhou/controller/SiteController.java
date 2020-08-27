@@ -12,6 +12,7 @@ import com.shenzhou.entity.goodsShop.ApiGoodsShopListBodyInfo;
 import com.shenzhou.entity.goodsShop.GoodsShopDetailDto;
 import com.shenzhou.entity.goodsShopCase.GoodsShopCaseListBody;
 import com.shenzhou.entity.goodsShopParameter.GoodsShopParameterListBody;
+import com.shenzhou.entity.navigator.ApiNavigatorInfo;
 import com.shenzhou.entity.pageNode.PageNodeByViewUrlDto;
 import com.shenzhou.entity.releaseGoodsShop.ApiReleaseGoodsShopListBodyInfo;
 import org.apache.commons.lang3.StringUtils;
@@ -463,9 +464,16 @@ public class SiteController {
                         Map<String, String> nodeNavParam = new HashMap<>();
                         nodeNavParam.put("rootID", nodeData.getId());
                         nodeNavParam.put("pageNumber", "9999");
-                        nodeNavParam.put("depth", "2");
-                        nodeNavParam.put("objectDefineID", Config.ARTICLE_OBJECTDEFINEID);
-                        modelMap.put("nodeNavigatorList", apiNavigatorService.getNodeNavigatorList(nodeNavParam));
+                        nodeNavParam.put("depth", "1");
+                        List<ApiNavigatorInfo> navigatorInfoList = apiNavigatorService.getNodeNavigatorList(nodeNavParam);
+                        Map<String, String> articleParam = null;
+                        for (ApiNavigatorInfo navData : navigatorInfoList) {
+                            articleParam = new HashMap<>();
+                            articleParam.put("navigatorID", navData.getId());
+                            articleParam.put("pageNumber", "999");
+                            navData.setArticleList(apiArticleService.getArticleList(articleParam).getBody().getData().getRows());
+                        }
+                        modelMap.put("nodeNavigatorList", navigatorInfoList);
                         break;
                     }
                 }
