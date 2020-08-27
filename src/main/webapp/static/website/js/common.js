@@ -5,7 +5,7 @@ $(function() {
 	//返回顶部
 	$(window).scroll(function() {
 		var _top = $(window).scrollTop();
-		if(_top > 3000) {
+		if(_top > $('body').height()) {
 			$('.backtotop').css('display', 'block');
 		} else {
 			$('.backtotop').css('display', 'none');

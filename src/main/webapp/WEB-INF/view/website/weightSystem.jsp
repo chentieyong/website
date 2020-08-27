@@ -60,6 +60,11 @@
         <div class="Intrightbox">
             <div class="Intrightitem">
                 <div class="Intrightconainer">
+                    <div class="sharebox">
+                        <a><img src="${basepath}/static/website/img/shareicon.png"/>
+                            <p>一键分享</p>
+                        </a>
+                    </div>
                     <div class="Intrighttitle">
                         <p>${product.name}</p>
                     </div>

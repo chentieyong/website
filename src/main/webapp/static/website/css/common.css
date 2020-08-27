@@ -35,7 +35,7 @@ p {margin-top: 0;margin-bottom: 0!important;margin-block-start: 0;margin-block-e
 
 .nav-button{display: none;}
 /*banner*/
-.slidebox{position: relative;width: 100%;height: auto;max-height: 900px;}
+.slidebox{position: relative;width: 100%;height: auto;max-height: 620px;overflow: hidden;}
 .swiper-container{width: 100%;height: 100%;}
 .swiper-wrapper{position: relative;z-index: 3;}
 .swiper-slide{position: relative; width: 100%;height: 100%;display: flex;justify-content: center;align-items: center;}
@@ -79,13 +79,13 @@ p {margin-top: 0;margin-bottom: 0!important;margin-block-start: 0;margin-block-e
 .Intothbox .QQ,.Intothbox .phone{width: 100%;height: 72px;display: flex;flex-flow: row nowrap;justify-content: flex-start;align-items: center;}
 .Intothbox .QQ img{width: 12.8%;}
 .Intothbox .QQ p,.Intothbox .phone p{font-size: 3.125rem;line-height: 50px;margin-left: 13.6%;}
-.Intothbox .phone img{width: 14.5%;}
+.Intothbox .phone img{width: 12.8%;}
 .Intothbox .phone{margin-top: 12%;}
 .Intothbox .wxqrcode{width: 100%;text-align: right;margin-top: 25%;}
 .Intothbox .wxqrcode img{width: 45.5%;}
 .Intothbox .wxqrcode p{padding-top: 4%;padding-right: 5%; font-size: 1.25rem;line-height:30px;}
 /*返回顶部*/
-.backtotop{width: 5.625%;position: fixed;right: 2.3%;bottom: 10%;z-index: 99;/*border-radius: 50%;box-shadow:0px 2px 4px 0px rgba(134,134,134,0.5);*/}
+.backtotop{width: 4%;position: fixed;right: 2.3%;bottom: 10%;z-index: 99;display: none;/*border-radius: 50%;box-shadow:0px 2px 4px 0px rgba(134,134,134,0.5);*/}
 /*分页*/
 .pagesbox{width: 100%;height: auto;display: flex;flex-flow: row nowrap;justify-content: space-between;align-items: center;}
 .pagesbox button{border-style: none;width: 19.7%;height: 90px;border-radius: 10px;background: #317BD2;font-size: 2.5rem;color: #FFFFFF;text-align: center;}
@@ -115,11 +115,11 @@ p {margin-top: 0;margin-bottom: 0!important;margin-block-start: 0;margin-block-e
 .tab-box .box .item{width: 100%;height: auto;display: none;}
 .tab-box .box .item:nth-child(1){display: block;}
 @media only screen and (max-width: 980px) {
-	.languagebox{display: none!important;}
-	.nav-top-lg{margin-bottom: 1rem;}
-	button {background: none;border: none;}
-    button:focus {outline: none;}	
-	.nav-button {position: absolute;top: 0;right: 20px;width: 80px;height: 80px;display: flex;justify-content: center;align-items: center;flex-direction: column;cursor: pointer;z-index: 12;}
+    .languagebox{display: none!important;}
+    .nav-top-lg{margin-bottom: 1rem;}
+    button {background: none;border: none;}
+    button:focus {outline: none;}
+    .nav-button {position: absolute;top: 0;right: 20px;width: 80px;height: 80px;display: flex;justify-content: center;align-items: center;flex-direction: column;cursor: pointer;z-index: 12;}
     .nav-button.close{opacity: 1!important;}
     .nav-button.close .line__1 {transform: rotate(45deg) translate(8px, -5px);}
     .nav-button.close .line__2 {transform: rotate(-45deg);}
@@ -130,21 +130,21 @@ p {margin-top: 0;margin-bottom: 0!important;margin-block-start: 0;margin-block-e
     .nav-button .line__2 {width: 55px;transform-origin: center;}
     .nav-button .line__3 {width: 55px;transform-origin: right;}
     .navbox{display: none;position: fixed;top: 0;left: 0;width: 100%;min-height: 100%;margin: 0!important;z-index: 10;overflow: scroll;}
-	.navbox ul{width: 100%;margin-top: 100px;display: flex;flex-flow: column nowrap;justify-content: flex-start;align-items: flex-start;}
-	.navbox ul li{width: 100%;height:auto;display: flex;flex-flow: column nowrap;justify-content: flex-start;align-items: flex-start;padding: 0 5%!important;border-bottom: 4px solid #FFFFFF;}
-	.navbox ul li a{font-size: 2.5rem!important;line-height: 120px;}
-	.navbox ul li a img{width: 26px!important;}
-	.navbox ul li ul{display: none;width: 100%;position: relative;top: 0!important; z-index: 12;margin: 0;}			
-	.navbox ul li ul li{display: none;opacity: 1!important;height: auto!important;border: none;background: none;border-bottom: 2px solid #FFFFFF;}
-	.navbox ul li.on ul li{display: flex;}
-	.navbox ul li ul li:last-child{border: none;}
-	.navbox ul li ul li a{font-size: 2rem!important;}
-	.navbox ul li:hover {border-bottom: 4px solid #FFFFFF;box-sizing: border-box;}	
-	.indexfootlogo{margin: -0.6%;}
-    
+    .navbox ul{width: 100%;margin-top: 100px;display: flex;flex-flow: column nowrap;justify-content: flex-start;align-items: flex-start;}
+    .navbox ul li{width: 100%;height:auto;display: flex;flex-flow: column nowrap;justify-content: flex-start;align-items: flex-start;padding: 0 5%!important;border-bottom: 4px solid #FFFFFF;}
+    .navbox ul li a{font-size: 2.5rem!important;line-height: 120px;}
+    .navbox ul li a img{width: 26px!important;}
+    .navbox ul li ul{display: none;width: 100%;position: relative;top: 0!important; z-index: 12;margin: 0;}
+    .navbox ul li ul li{display: none;opacity: 1!important;height: auto!important;border: none;background: none;border-bottom: 2px solid #FFFFFF;}
+    .navbox ul li.on ul li{display: flex;}
+    .navbox ul li ul li:last-child{border: none;}
+    .navbox ul li ul li a{font-size: 2rem!important;}
+    .navbox ul li:hover {border-bottom: 4px solid #FFFFFF;box-sizing: border-box;}
+    .indexfootlogo{margin: -0.6%;}
+
 }
 @media only screen and (min-width: 980px){
-	.header-top{margin: 0.765rem auto;}    
+    .header-top{margin: 0.765rem auto;}
     .languagebox span,.navbox ul li a,.contracticon p,.sharebox a p{font-size: 0.956rem;}
     .languagebox{margin-top: 1.02rem;}
     .navsloganEn{font-size: 0.765rem;}
@@ -152,16 +152,16 @@ p {margin-top: 0;margin-bottom: 0!important;margin-block-start: 0;margin-block-e
     .navbox ul li{padding: 0 1.275rem;}
     .navbox ul li a img{width: 12.75px;padding-left: 5.1px;}
     .navbox ul li ul{top: 51px;}
-    .navbox ul li ul li{height: 40.8px;}  
+    .navbox ul li ul li{height: 40.8px;}
     .navbox ul li ul li a{font-size: 0.765rem;}
-	
-	.slidecont p:first-child{font-size: 2.87rem;}
+
+    .slidecont p:first-child{font-size: 2.87rem;}
     .bannerslideline{margin: 0.225rem 0 0.51rem 0;}
-    .slidecont p:last-child{font-size: 1.43rem;}	
-	.footitem ul li a,.copyrightbox p{line-height:21.42px;font-size:0.956rem;}
+    .slidecont p:last-child{font-size: 1.43rem;}
+    .footitem ul li a,.copyrightbox p{line-height:21.42px;font-size:0.956rem;}
     .copyrightbox div p{padding-left: 1.53rem;padding-top: 3.06px;}
-	
-	.fgline{height: 382.5px;}
+
+    .fgline{height: 382.5px;}
     .Intfrmbox .lxtxt{font-size: 2.23rem;line-height:49.47px;}
     .Intfrmbox form .lxfrmitem,.contract_submit{height: 30.6px;}
     .Intfrmbox form .lxfrmitem input,.usermessage{font-size: 0.6375rem;border-radius: 5px;}
@@ -179,7 +179,7 @@ p {margin-top: 0;margin-bottom: 0!important;margin-block-start: 0;margin-block-e
 }
 
 @media only screen and (min-width: 1200px) {
-	.header-top{margin: 0.94rem auto;}
+    .header-top{margin: 0.94rem auto;}
     .languagebox span,.navbox ul li a,.contracticon p,.sharebox a p{font-size: 1.17rem;}
     .languagebox{margin-top: 1.25rem;}
     .navsloganEn{font-size: 0.9375rem;}
@@ -189,15 +189,15 @@ p {margin-top: 0;margin-bottom: 0!important;margin-block-start: 0;margin-block-e
     .navbox ul li ul{top: 62.5px;}
     .navbox ul li ul li{height: 50px;}
     .navbox ul li ul li a{font-size: 0.94rem;}
-	
-	.slidecont p:first-child{font-size: 3.5rem;}
+
+    .slidecont p:first-child{font-size: 3.5rem;}
     .bannerslideline{margin: 0.3rem 0 0.625rem 0;}
     .slidecont p:last-child{font-size: 1.76rem;}
-	
-	.footitem ul li a,.copyrightbox p{line-height:26.25px;font-size:1.17rem;}
+
+    .footitem ul li a,.copyrightbox p{line-height:26.25px;font-size:1.17rem;}
     .copyrightbox div p{padding-left: 1.875rem;padding-top: 3.75px;}
-	
-	.fgline{height: 468.75px;}
+
+    .fgline{height: 468.75px;}
     .Intfrmbox .lxtxt{font-size: 2.73rem;line-height:61px;}
     .Intfrmbox form .lxfrmitem,.contract_submit{height: 37.5px;}
     .Intfrmbox form .lxfrmitem input,.usermessage{font-size: 0.78rem;border-radius: 6.25px;}
@@ -207,8 +207,8 @@ p {margin-top: 0;margin-bottom: 0!important;margin-block-start: 0;margin-block-e
     .contract_submit{border-radius:18.75px;line-height: 26px;}
     .Intothbox .QQ,.Intothbox .phone{height: 45px;}
     .Intothbox .QQ p,.Intothbox .phone p{font-size: 1.95rem;line-height: 31.25px;}
-    .Intothbox .wxqrcode p{line-height:18.75px;font-size: 0.78rem;}	
-    
+    .Intothbox .wxqrcode p{line-height:18.75px;font-size: 0.78rem;}
+
     .pagesbox p{font-size: 1.95rem;}.navslogan,.pagesbox button,.tab-box .tab ul li a{font-size: 1.56rem;}.pagesbox button{height: 56.25px;}
     .contracticon{top: calc(50% - 93.75px);width:125px;height:93.75px;}
     .tab-box .tab ul li{height: 62.5px;}
@@ -216,7 +216,7 @@ p {margin-top: 0;margin-bottom: 0!important;margin-block-start: 0;margin-block-e
 }
 
 @media only screen and (min-width: 1405px){
-	.header-top{margin: 1.125rem auto;}
+    .header-top{margin: 1.125rem auto;}
     .languagebox span,.navbox ul li a,.contracticon p,.sharebox a p{font-size: 1.41rem;}
     .languagebox{margin-top: 1.5rem;}
     .navsloganEn{font-size: 1.125rem;}
@@ -226,15 +226,15 @@ p {margin-top: 0;margin-bottom: 0!important;margin-block-start: 0;margin-block-e
     .navbox ul li ul{top: 75px;}
     .navbox ul li ul li{height: 60px;}
     .navbox ul li ul li a{font-size: 1.125rem;}
-	
-	.slidecont p:first-child{font-size: 4.2rem;}
+
+    .slidecont p:first-child{font-size: 4.2rem;}
     .bannerslideline{margin: 0.375rem 0 0.75rem 0;}
-    .slidecont p:last-child{font-size: 2.1rem;} 
-	
-	.footitem ul li a,.copyrightbox p{line-height:31.5px;font-size:1.41rem;}
+    .slidecont p:last-child{font-size: 2.1rem;}
+
+    .footitem ul li a,.copyrightbox p{line-height:31.5px;font-size:1.41rem;}
     .copyrightbox div p{padding-left: 2.25rem;padding-top: 4.5px;}
-	
-	.fgline{height: 562.5px;}
+
+    .fgline{height: 562.5px;}
     .Intfrmbox .lxtxt{font-size: 3.28rem;line-height:72.75px;}
     .Intfrmbox form .lxfrmitem,.contract_submit{height: 45px;}
     .Intfrmbox form .lxfrmitem input,.usermessage{font-size: 0.94rem;border-radius: 7.5px;}
@@ -245,7 +245,7 @@ p {margin-top: 0;margin-bottom: 0!important;margin-block-start: 0;margin-block-e
     .Intothbox .QQ,.Intothbox .phone{height: 54px;}
     .Intothbox .QQ p,.Intothbox .phone p{font-size: 2.34rem;line-height: 37.5px;}
     .Intothbox .wxqrcode p{line-height:22.5px;font-size: 0.94rem;}
-    
+
     .pagesbox p{font-size: 2.34rem;}.navslogan,.pagesbox button,.tab-box .tab ul li a{font-size: 1.875rem;}.pagesbox button{height: 67.5px;}
     .contracticon{top: calc(50% - 112.5px);width:150px;height:112.5px;}
     .tab-box .tab ul li{height: 75px;}
@@ -253,7 +253,7 @@ p {margin-top: 0;margin-bottom: 0!important;margin-block-start: 0;margin-block-e
 }
 
 @media only screen and (min-width: 1600px) {
-	.header-top{margin: 1.31rem auto;}
+    .header-top{margin: 1.31rem auto;}
     .languagebox span,.navbox ul li a,.contracticon p,.sharebox a p{font-size: 1.64rem;}
     .languagebox{margin-top: 1.75rem;}
     .navsloganEn{font-size: 1.3125rem;}
@@ -263,15 +263,15 @@ p {margin-top: 0;margin-bottom: 0!important;margin-block-start: 0;margin-block-e
     .navbox ul li ul{top: 87.5px;}
     .navbox ul li ul li{height: 70px;}
     .navbox ul li ul li a{font-size: 1.31rem;}
-	
-	.slidecont p:first-child{font-size: 4.92rem;}
+
+    .slidecont p:first-child{font-size: 4.92rem;}
     .bannerslideline{margin: 0.44rem 0 0.875rem 0;}
     .slidecont p:last-child{font-size: 2.46rem;}
-	
-	.footitem ul li a,.copyrightbox p{line-height:36.75px;font-size:1.64rem;}
+
+    .footitem ul li a,.copyrightbox p{line-height:36.75px;font-size:1.64rem;}
     .copyrightbox div p{padding-left: 2.625rem;padding-top: 5.25px;}
-	
-	.fgline{height: 656px;}
+
+    .fgline{height: 656px;}
     .Intfrmbox .lxtxt{font-size: 3.83rem;line-height:85px;}
     .Intfrmbox form .lxfrmitem,.contract_submit{height: 52.5px;}
     .Intfrmbox form .lxfrmitem input,.usermessage{font-size: 1.1rem;border-radius: 8.85px;}
@@ -282,14 +282,14 @@ p {margin-top: 0;margin-bottom: 0!important;margin-block-start: 0;margin-block-e
     .Intothbox .QQ,.Intothbox .phone{height: 63px;}
     .Intothbox .QQ p,.Intothbox .phone p{font-size: 2.73rem;line-height: 43.75px;}
     .Intothbox .wxqrcode p{line-height:26.25px;font-size: 1.1rem;}
-    
+
     .pagesbox p{font-size: 2.73rem;}.navslogan,.pagesbox button,.tab-box .tab ul li a{font-size: 2.19rem;}.pagesbox button{height: 78.75px;}
     .contracticon{top: calc(50% - 131.25px);width:150px;height:131.25px;}
     .tab-box .tab ul li{height: 87.5px;}
     .tab-box .tab ul li a{line-height: 87.5px;}
 }
 @media only screen and (min-width: 1900px) {
-	.header-top{margin: 1.5rem auto;}
+    .header-top{margin: 1.5rem auto;}
     .languagebox span,.navbox ul li a,.contracticon p,.sharebox a p{font-size: 1.875rem;}
     .languagebox{margin-top: 2rem;}
     .navsloganEn{font-size: 1.5rem;}
@@ -299,15 +299,15 @@ p {margin-top: 0;margin-bottom: 0!important;margin-block-start: 0;margin-block-e
     .navbox ul li ul{top: 100px;}
     .navbox ul li ul li{height: 80px;}
     .navbox ul li ul li a{font-size: 1.5rem;}
-    
+
     .slidecont p:first-child{font-size: 5.625rem;}
     .bannerslideline{margin: 0.5rem 0 1rem 0;}
     .slidecont p:last-child{font-size: 2.8125rem;}
-		
+
     .footitem ul li a,.copyrightbox p{line-height:42px;font-size:1.875rem;}
-    .copyrightbox div p{padding-left: 3rem;padding-top: 6px;}	
-	
-	.fgline{height: 750px;}
+    .copyrightbox div p{padding-left: 3rem;padding-top: 6px;}
+
+    .fgline{height: 750px;}
     .Intfrmbox .lxtxt{font-size: 4.375rem;line-height:97px;}
     .Intfrmbox form .lxfrmitem,.contract_submit{height: 60px;}
     .Intfrmbox form .lxfrmitem input,.usermessage{font-size: 1.25rem;border-radius: 10px;}
@@ -318,14 +318,14 @@ p {margin-top: 0;margin-bottom: 0!important;margin-block-start: 0;margin-block-e
     .Intothbox .QQ,.Intothbox .phone{height: 72px;}
     .Intothbox .QQ p,.Intothbox .phone p{font-size: 3.125rem;line-height: 50px;}
     .Intothbox .wxqrcode p{line-height:30px;font-size: 1.25rem;}
-    
-    .pagesbox p{font-size: 3.125rem;}.navslogan,.pagesbox button,.tab-box .tab ul li a{font-size: 2.5rem;}.pagesbox button{height: 90px;} 
-	.contracticon{top: calc(50% - 150px);width:200px;height:150px;}
-	.tab-box .tab ul li{height: 100px;}
+
+    .pagesbox p{font-size: 3.125rem;}.navslogan,.pagesbox button,.tab-box .tab ul li a{font-size: 2.5rem;}.pagesbox button{height: 90px;}
+    .contracticon{top: calc(50% - 150px);width:200px;height:150px;}
+    .tab-box .tab ul li{height: 100px;}
     .tab-box .tab ul li a{line-height: 100px;}
 }
-@media only screen and (min-width: 2048px) {	
-	.header-top{margin: 1.6rem auto;}
+@media only screen and (min-width: 2048px) {
+    .header-top{margin: 1.6rem auto;}
     .languagebox span,.navbox ul li a,.contracticon p,.sharebox a p{font-size: 2rem;}
     .languagebox{margin-top: 2.13rem;}
     .navsloganEn{font-size: 1.6rem;}
@@ -335,14 +335,14 @@ p {margin-top: 0;margin-bottom: 0!important;margin-block-start: 0;margin-block-e
     .navbox ul li ul{top: 106.7px;}
     .navbox ul li ul li{height: 85.36px;}
     .navbox ul li ul li a{font-size: 1.6rem;}
-    
+
     .slidecont p:first-child{font-size: 6rem;}
     .bannerslideline{margin: 0.53rem 0 1.067rem 0;}
     .slidecont p:last-child{font-size: 3rem;}
-    
+
     .footitem ul li a,.copyrightbox p{line-height:44.8px;font-size:2rem;}
     .copyrightbox div p{padding-left: 3.2rem;padding-top: 6.4px;}
-       
+
     .fgline{height: 800px;}
     .Intfrmbox .lxtxt{font-size: 4.67rem;line-height:103px;}
     .Intfrmbox form .lxfrmitem,.contract_submit{height: 64px;}
@@ -354,14 +354,14 @@ p {margin-top: 0;margin-bottom: 0!important;margin-block-start: 0;margin-block-e
     .Intothbox .QQ,.Intothbox .phone{height: 76.8px;}
     .Intothbox .QQ p,.Intothbox .phone p{font-size: 3.33rem;line-height: 53.35px;}
     .Intothbox .wxqrcode p{line-height:32px;font-size: 1.33rem;}
-    
+
     .pagesbox p{font-size: 3.33rem;}.navslogan,.pagesbox button,.tab-box .tab ul li a{font-size: 2.67rem;}.pagesbox button{height: 96px;}
     .contracticon{top: calc(50% - 160.05px);width:213.4px;height:160.05px;}
     .tab-box .tab ul li{height: 106.7px;}
     .tab-box .tab ul li a{line-height: 106.7px;}
 }
 @media only screen and (min-width: 2160px) {
-	.header-top{margin: 1.69rem auto;}
+    .header-top{margin: 1.69rem auto;}
     .languagebox span,.navbox ul li a,.contracticon p,.sharebox a p{font-size: 2.1rem;}
     .languagebox{margin-top: 2.25rem;}
     .navsloganEn{font-size: 1.6875rem;}
@@ -371,14 +371,14 @@ p {margin-top: 0;margin-bottom: 0!important;margin-block-start: 0;margin-block-e
     .navbox ul li ul{top: 112.5px;}
     .navbox ul li ul li{height: 90px;}
     .navbox ul li ul li a{font-size: 1.69rem;}
-    
+
     .slidecont p:first-child{font-size: 6.33rem;}
     .bannerslideline{margin: 0.56rem 0 1.125rem 0;}
     .slidecont p:last-child{font-size: 3.16rem;}
-    
+
     .footitem ul li a,.copyrightbox p{line-height:47.25px;font-size:2.1rem;}
     .copyrightbox div p{padding-left: 3.375rem;padding-top: 6.75px;}
-    
+
     .fgline{height: 843.75px;}
     .Intfrmbox .lxtxt{font-size: 4.92rem;line-height:109px;}
     .Intfrmbox form .lxfrmitem,.contract_submit{height: 67.5px;}
@@ -390,7 +390,7 @@ p {margin-top: 0;margin-bottom: 0!important;margin-block-start: 0;margin-block-e
     .Intothbox .QQ,.Intothbox .phone{height: 81px;}
     .Intothbox .QQ p,.Intothbox .phone p{font-size: 3.5rem;line-height: 56.25px;}
     .Intothbox .wxqrcode p{line-height:33.75px;font-size: 1.4rem;}
-    
+
     .pagesbox p{font-size: 3.5rem;}.navslogan,.pagesbox button,.tab-box .tab ul li a{font-size: 2.8rem;}.pagesbox button{height: 101.25px;}
     .contracticon{top: calc(50% - 168.75px);width:225px;height:168.75px;}
     .tab-box .tab ul li{height: 112.5px;}

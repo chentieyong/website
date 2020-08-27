@@ -101,7 +101,9 @@
                     <p>${innovateArticle.description}</p>
                 </div>
                 <div class="compmoreinfobox">
-                    <button type="button" onclick="toHref('${basepath}/brandInfo.html?artId=${innovateArticle.id}')">查看详情 >></button>
+                    <button type="button" onclick="toHref('${basepath}/brandInfo.html?artId=${innovateArticle.id}')">
+                        查看详情 >>
+                    </button>
                 </div>
             </div>
         </div>
@@ -117,7 +119,9 @@
                     <p>${brandStoryArticle.description}</p>
                 </div>
                 <div class="compmoreinfobox">
-                    <button type="button" onclick="toHref('${basepath}/brandInfo.html?artId=${brandStoryArticle.id}')">查看详情 >></button>
+                    <button type="button" onclick="toHref('${basepath}/brandInfo.html?artId=${brandStoryArticle.id}')">
+                        查看详情 >>
+                    </button>
                 </div>
             </div>
         </div>
@@ -181,9 +185,17 @@
             </form>
         </div>
         <div class="contractotherbox">
-            <div class="servicetelbox">
-                <img src="${basepath}/static/website/img/contect-phone.png" class="phoneicon"/>
-                <p>服务热线 <br/>4006-081-080</p>
+            <%--            <div class="servicetelbox">--%>
+            <%--                <img src="${basepath}/static/website/img/contect-phone.png" class="phoneicon"/>--%>
+            <%--                <p>服务热线 <br/>4006-081-080</p>--%>
+            <%--            </div>--%>
+            <div class="QQ">
+                <img src="${basepath}/static/website/img/qq.png"/>
+                <p class="qqnum">2975 463 389</p>
+            </div>
+            <div class="phone">
+                <img src="${basepath}/static/website/img/contect-phone.png"/>
+                <p class="telnum">4006-081-080</p>
             </div>
             <img src="${basepath}/static/website/img/QRcode.png" class="qrcodeimg"/>
             <p class="kfname">添加微信客服：小舟</p>

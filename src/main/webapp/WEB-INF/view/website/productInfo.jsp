@@ -150,19 +150,9 @@
                             <p>+ 客户案例</p>
                         </div>
                         <div class="caseswiperbox">
-                            <div class="swiper-container" id="caseswiper">
-                                <div class="swiper-wrapper">
-                                    <c:forEach items="${productCaseList}" var="item">
-                                        <div class="swiper-slide">
-                                            <a><img src="${item.faceImage}"/></a>
-                                        </div>
-                                    </c:forEach>
-                                </div>
-                            </div>
-                            <div class="swipercontrolbox">
-                                <img src="${basepath}/static/website/img/toleft.png" class="swipertoleft"/>
-                                <img src="${basepath}/static/website/img/toright.png" class="swipertoright"/>
-                            </div>
+                            <c:forEach items="${productCaseList}" var="item">
+                                <a><img src="${item.faceImage}"/></a>
+                            </c:forEach>
                         </div>
                     </div>
 

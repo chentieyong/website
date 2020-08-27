@@ -70,13 +70,16 @@ a:hover{text-decoration: none;}
 .profileitem a:hover{cursor: pointer;}
 .profileitem a img{width: 100%;}
 
-.caseswiperbox{position: relative;}
+.caseswiperbox{position: relative;display: flex;flex-flow: row wrap; justify-content: space-between;align-items: center;}
 .caseswiperbox .swiper-container,.swiper-wrapper,.swiper-slide a{position: relative;width: 100%;height: auto;}
 .swiper-slide img{width: 100%;}
 .swipercontrolbox{width: 100%;margin-top: 4%; display: flex;flex-flow: row nowrap;justify-content: center;align-items: center;}
 .swipercontrolbox img{width: 3.9%;}
 .swipertoright{margin-left: 26.8%;}
 .Intcontract{margin-top: 5.6%;margin-bottom: 7.5%;}
+
+.caseswiperbox a{width: 31.5%;margin-bottom: 2.5%;}
+.caseswiperbox a img{width: 100%;}
 
 @media only screen and (min-width: 980px) and (max-width: 1199px) {
     .typelistbox .ul li a{font-size: 0.96rem;}
