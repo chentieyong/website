@@ -14,7 +14,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**
- * Created by Administrator on 2017/7/6.
+ * 文章接口
  */
 @Service
 public class ApiArticleService {
