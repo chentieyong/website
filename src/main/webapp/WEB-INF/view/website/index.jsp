@@ -195,7 +195,7 @@
             </div>
             <div class="phone">
                 <img src="${basepath}/static/website/img/contect-phone.png"/>
-                <p class="telnum">4006-081-080</p>
+                <p class="telnum">4006 081 080</p>
             </div>
             <img src="${basepath}/static/website/img/QRcode.png" class="qrcodeimg"/>
             <p class="kfname">添加微信客服：小舟</p>

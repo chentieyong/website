@@ -163,7 +163,7 @@
                         </div>
                         <div class="phone">
                             <img src="${basepath}/static/website/img/contect-phone.png"/>
-                            <p class="telnum">4006-081-080</p>
+                            <p class="telnum">4006 081 080</p>
                         </div>
                         <div class="wxqrcode">
                             <img src="${basepath}/static/website/img/QRcode.png"/>

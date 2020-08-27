@@ -23,7 +23,18 @@
             <ul class="ul">
                 <c:forEach items="${headNavigatorList}" var="item">
                     <li>
-                        <a href="${item.functionUrl}">${item.name}</a>
+                        <a href="${item.functionUrl}">${item.name}
+                            <c:if test="${!empty item.nodes}">
+                                <img src="${basepath}/static/website/img/selecticon.png"/>
+                            </c:if>
+                        </a>
+                        <ul class="nav_droplist">
+                            <c:forEach items="${item.nodes}" var="nodeItem">
+                                <li>
+                                    <a href="${nodeItem.functionUrl}">${nodeItem.name}</a>
+                                </li>
+                            </c:forEach>
+                        </ul>
                     </li>
                 </c:forEach>
             </ul>
