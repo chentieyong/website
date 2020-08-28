@@ -1,15 +1,15 @@
 .brandstory{background: #F8F8F8;}
-.brandcontainer{width: 100%;height: auto;align-self: flex-start;margin: 5% 0;display: flex;flex-flow: row nowrap;justify-content: flex-start;align-items: flex-start;}
+.brandcontainer,.brandinfocontainer{width: 100%;height: auto;align-self: flex-start;margin: 5% 0;display: flex;flex-flow: row nowrap;justify-content: flex-start;align-items: flex-start;}
 .daoyanbox{width: 26%;height: auto;background: #FFFFFF;}
 .daoyaninfobox{width: 70%;height:auto;margin:20% auto 20% 20%;display: flex;flex-flow: column nowrap;justify-content: center;align-items: center;}
-.brandstoryinfobox{width: 66%;margin-left: 2.6%;}
+.brandstoryinfobox,.brandinfo{width: 66%;margin-left: 2.6%;}
 .daoyantitile{width: 100%;text-align: left;}
 .daoyantitile p{font-size: 4.375rem;color: #004098;line-height: 70px;}
 .daoyanbox hr{width: 100%;height: 2px;background: #DCDCDC;border: none;margin-top: 8.5%;margin-bottom: 6%;}
 .daoyaninfo{width: 100%;height: auto;text-align: justify;}
 .daoyaninfo p{font-size: 1.875rem;color: #4D4D4D;line-height: 45px;}
-.storylistbox{width: 100%;height: auto;}
-.brandinfocontainer,.branditem{display: flex;flex-flow: column nowrap;justify-content: flex-start;align-items: center;}
+.storylistbox,.brandinfobox{position: relative;width: 100%;height: auto;}
+.branditem{display: flex;flex-flow: column nowrap;justify-content: flex-start;align-items: center;}
 .branditem{width: 100%;height: auto;margin-bottom: 4%;background: #FFFFFF;}
 .branditem img{width: 100%;}
 .brandtitle,.branddes,.brandmoreinfo{width: 92%;}
@@ -22,17 +22,17 @@
 .pagesbox{margin-top: 12%;}
 
 .brandinfocontainer,.brandinfotitle,.brandinfodes,.brandinfodes img{width: 100%;height: auto;}
-.brandinfobox,.brandnextprebox{position: relative;width: 89.6%;height: auto;}
+.brandnextprebox{position: relative;width: 89.6%;height: auto;}
 .brandinfobox{margin: 5.25% auto;}
 .brandinfotitle{margin-bottom: 1.65%;}
 .brandinfotitle p{font-size: 4.375rem;color: #004199;line-height: 1;}
 .brandinfodes,.brandpre{margin-bottom: 3.05%;}
-.brandinfodes p{font-size: 2.5rem;color: #606060;line-height: 80px;}
+.brandinfodes p{font-size: 2.5rem;color: #606060;line-height: 80px;text-align: justify;}
 .brandnextprebox{margin-top: 5.8%;margin-bottom: 9.8%;}
 .brandpre a,.brandnext a{font-size: 2.5rem;color: #1853A2!important;line-height: 1;}
 .brandpre a:hover,.brandnext a:hover{text-decoration: none;}
 
-.sharebox{width: 9.5%;top: 1%;}
+.sharebox{top: 1%;}
 .sharebox a img{width: 18%;}
 
 @media only screen and (min-width: 980px) and (max-width: 1199px) {
@@ -41,7 +41,7 @@
 	.daoyaninfo p,.branddes p{font-size: 0.96rem;line-height: 23px;}
 	.brandtitle p{font-size: 1.59rem;}
 	.brandmoreinfo a,.brandinfodes p,.brandpre a,.brandnext a{font-size: 1.275rem;}
-	.brandmoreinfo a{line-height: 28.05px;}	
+	.brandmoreinfo a{line-height: 28.05px;}
 	.brandinfodes p{line-height: 40.8px;}
 }
 
@@ -82,8 +82,8 @@
 	.brandtitle p{font-size: 3.125rem;}
 	.brandmoreinfo a,.brandinfodes p,.brandpre a,.brandnext a{font-size: 2.5rem;}
 	.brandmoreinfo a{line-height: 55px;}
-	
-    .brandinfodes p{line-height: 80px;}
+
+	.brandinfodes p{line-height: 80px;}
 }
 
 @media only screen and (min-width: 2048px) {
