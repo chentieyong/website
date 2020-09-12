@@ -13,3 +13,12 @@
     var basepath = '${basepath}';
     var pasepath = '${pasepath}';
 </script>
+<script>
+    var _hmt = _hmt || [];
+    (function() {
+        var hm = document.createElement("script");
+        hm.src = "https://hm.baidu.com/hm.js?522f3257e6f4664dede0474a7c1e8328";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(hm, s);
+    })();
+</script>

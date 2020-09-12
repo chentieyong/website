@@ -25,24 +25,24 @@ public class PermissionInterceptor extends HandlerInterceptorAdapter {
 
     @Override
     public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler) {
-        String requestURI = request.getRequestURI();
-        try {
-            if (requestURI.equals("/")
-                    || requestURI.equals("index")
-                    || requestURI.contains("html")) {
-                UserAgent userAgent = UserAgent.parseUserAgentString(request.getHeader("User-Agent"));
-                Map<String, String> siteViewParam = new HashMap<>();
-                siteViewParam.put("applicationID", Config.SHENZHOU_APPLICATION_ID);
-                siteViewParam.put("ip", WebUtil.getRemortIP(request));
-                siteViewParam.put("url", request.getRequestURI());
-                siteViewParam.put("operatingSystem", userAgent.getOperatingSystem().toString());
-                siteViewParam.put("browserType", userAgent.getBrowser().toString());
-                siteViewParam.put("address", "");
-                apiSiteViewService.submitOneSiteView(siteViewParam);
-            }
-        } catch (Exception ex) {
-            ex.printStackTrace();
-        }
+//        String requestURI = request.getRequestURI();
+//        try {
+//            if (requestURI.equals("/")
+//                    || requestURI.equals("index")
+//                    || requestURI.contains("html")) {
+//                UserAgent userAgent = UserAgent.parseUserAgentString(request.getHeader("User-Agent"));
+//                Map<String, String> siteViewParam = new HashMap<>();
+//                siteViewParam.put("applicationID", Config.SHENZHOU_APPLICATION_ID);
+//                siteViewParam.put("ip", WebUtil.getRemortIP(request));
+//                siteViewParam.put("url", request.getRequestURI());
+//                siteViewParam.put("operatingSystem", userAgent.getOperatingSystem().toString());
+//                siteViewParam.put("browserType", userAgent.getBrowser().toString());
+//                siteViewParam.put("address", "");
+//                apiSiteViewService.submitOneSiteView(siteViewParam);
+//            }
+//        } catch (Exception ex) {
+//            ex.printStackTrace();
+//        }
 
         return true;
     }
