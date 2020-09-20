@@ -21,24 +21,25 @@
     <div class="container-fluid carlistcontainer">
         <div class="cartypebox">
             <div class="typelistbox open">
-
                 <c:forEach items="${categoryList}" var="item">
-                    <ul class="ul">
-                        <li>
-                            <a>${item.name}</a>
-                        </li>
-                        <c:forEach items="${item.nodes}" var="nodeItem">
-                            <li class="dropdown">
-                                <a href="javascript:void(0)"><img
-                                        src="${basepath}/static/website/img/carlist/right.png"/>${nodeItem.name}</a>
-                                <div class="dropdown_menu">
-                                    <c:forEach items="${nodeItem.goodsList}" var="product">
-                                        <a href="productInfo.html?pid=${product.id}">${product.name}</a>
-                                    </c:forEach>
-                                </div>
+                    <c:if test="${item.name!='智能化系统'}">
+                        <ul class="ul">
+                            <li>
+                                <a>${item.name}</a>
                             </li>
-                        </c:forEach>
-                    </ul>
+                            <c:forEach items="${item.nodes}" var="nodeItem">
+                                <li class="dropdown">
+                                    <a href="javascript:void(0)"><img
+                                            src="${basepath}/static/website/img/carlist/right.png"/>${nodeItem.name}</a>
+                                    <div class="dropdown_menu">
+                                        <c:forEach items="${nodeItem.goodsList}" var="product">
+                                            <a href="productInfo.html?pid=${product.id}">${product.name}</a>
+                                        </c:forEach>
+                                    </div>
+                                </li>
+                            </c:forEach>
+                        </ul>
+                    </c:if>
                 </c:forEach>
             </div>
             <div class="containbox">
