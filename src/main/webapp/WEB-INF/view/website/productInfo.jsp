@@ -63,98 +63,107 @@
                             <p>${product.description}</p>
                         </div>
                         <div class="provideo">
-                            <video src="${product.videoURL}" controls
+                            <video src="${product.videoURL}" controls poster="${product.videoImage}"
                                    x-webkit-airplay="true" webkit-playsinline="true" playsinline="true"
                                    x5-video-player-type="h5"></video>
                         </div>
                     </div>
-                    <div class="profeaturesbox">
-                        <div class="profettitle">
-                            <p>+ 产品特色</p>
+                    <c:if test="${!empty productItemList}">
+                        <div class="profeaturesbox">
+                            <div class="profettitle">
+                                <p>+ 产品特色</p>
+                            </div>
+                            <div class="profetinfobox">
+                                <c:forEach items="${productItemList}" var="item">
+                                    <div class="profetitem">
+                                        <div class="profetimg"><img
+                                                src="${item.url}"/></div>
+                                        <div class="profetdes">
+                                            <div class="profetinfotitle">
+                                                <p>${item.name}</p>
+                                            </div>
+                                            <div class="profetinfodes">
+                                                <p>${item.description}</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </c:forEach>
+
+                            </div>
                         </div>
-                        <div class="profetinfobox">
-                            <c:forEach items="${productItemList}" var="item">
-                                <div class="profetitem">
-                                    <div class="profetimg"><img
-                                            src="${item.url}"/></div>
-                                    <div class="profetdes">
-                                        <div class="profetinfotitle">
+                    </c:if>
+
+                    <c:if test="${!empty productParameterList1}">
+                        <div class="profeaturesbox">
+                            <div class="profettitle">
+                                <p>+ 产品参数</p>
+                            </div>
+                            <div class="outsideparameterbox">
+                                <c:forEach items="${productParameterList1}" var="item" varStatus="count">
+
+
+                                    <div class="outsideparamitem ${count.index%2==0?'actbg':''}">
+                                        <div class="paramnamebox">
                                             <p>${item.name}</p>
                                         </div>
-                                        <div class="profetinfodes">
-                                            <p>${item.description}</p>
+                                        <div class="paramnumbox">
+                                            <p>${item.value}</p>
                                         </div>
                                     </div>
-                                </div>
-                            </c:forEach>
+                                </c:forEach>
+                            </div>
+                        </div>
+                    </c:if>
+
+                    <c:if test="${!empty productParameterList2}">
+                        <div class="profeaturesbox">
+                            <div class="profettitle">
+                                <p>+ 底盘参数</p>
+                            </div>
+                            <div class="outsideparameterbox">
+                                <c:forEach items="${productParameterList2}" var="item" varStatus="count">
+                                    <div class="outsideparamitem ${count.index%2==0?'actbg':''}">
+                                        <div class="paramnamebox">
+                                            <p>${item.name}</p>
+                                        </div>
+                                        <div class="paramnumbox">
+                                            <p>${item.value}</p>
+                                        </div>
+                                    </div>
+                                </c:forEach>
+                            </div>
 
                         </div>
-                    </div>
+                    </c:if>
 
-                    <div class="profeaturesbox">
-                        <div class="profettitle">
-                            <p>+ 产品参数</p>
-                        </div>
-                        <div class="outsideparameterbox">
-                            <c:forEach items="${productParameterList1}" var="item" varStatus="count">
-
-
-                                <div class="outsideparamitem ${count.index%2==0?'actbg':''}">
-                                    <div class="paramnamebox">
+                    <c:if test="${!empty productFileList}">
+                        <div class="profiledownloadbox">
+                            <div class="profettitle">
+                                <p>+ 文档下载</p>
+                            </div>
+                            <div class="filetablebox">
+                                <c:forEach items="${productFileList}" var="item" varStatus="count">
+                                    <div class="profileitem ${count.index%2==0?'actbg':''}">
                                         <p>${item.name}</p>
+                                        <a href="${item.url}" download="${item.name}" target="_blank"><img
+                                                src="${basepath}/static/website/img/downloadicon.png"/> </a>
                                     </div>
-                                    <div class="paramnumbox">
-                                        <p>${item.value}</p>
-                                    </div>
-                                </div>
-                            </c:forEach>
+                                </c:forEach>
+                            </div>
                         </div>
-                    </div>
-
-                    <div class="profeaturesbox">
-                        <div class="profettitle">
-                            <p>+ 底盘参数</p>
+                    </c:if>
+                    <c:if test="${!empty productCaseList}">
+                        <div class="usercasebox">
+                            <div class="profettitle">
+                                <p>+ 客户案例</p>
+                            </div>
+                            <div class="caseswiperbox">
+                                <c:forEach items="${productCaseList}" var="item">
+                                    <a><img src="${item.faceImage}"/></a>
+                                </c:forEach>
+                            </div>
                         </div>
-                        <div class="outsideparameterbox">
-                            <c:forEach items="${productParameterList2}" var="item" varStatus="count">
-                                <div class="outsideparamitem ${count.index%2==0?'actbg':''}">
-                                    <div class="paramnamebox">
-                                        <p>${item.name}</p>
-                                    </div>
-                                    <div class="paramnumbox">
-                                        <p>${item.value}</p>
-                                    </div>
-                                </div>
-                            </c:forEach>
-                        </div>
-
-                    </div>
-
-                    <div class="profiledownloadbox">
-                        <div class="profettitle">
-                            <p>+ 文档下载</p>
-                        </div>
-                        <div class="filetablebox">
-                            <c:forEach items="${productFileList}" var="item" varStatus="count">
-                                <div class="profileitem ${count.index%2==0?'actbg':''}">
-                                    <p>${item.name}</p>
-                                    <a href="${item.url}" download="${item.name}" target="_blank"><img
-                                            src="${basepath}/static/website/img/downloadicon.png"/> </a>
-                                </div>
-                            </c:forEach>
-                        </div>
-                    </div>
-
-                    <div class="usercasebox">
-                        <div class="profettitle">
-                            <p>+ 客户案例</p>
-                        </div>
-                        <div class="caseswiperbox">
-                            <c:forEach items="${productCaseList}" var="item">
-                                <a><img src="${item.faceImage}"/></a>
-                            </c:forEach>
-                        </div>
-                    </div>
+                    </c:if>
 
                     <div class="Intcontract">
                         <div class="Intfrmbox">

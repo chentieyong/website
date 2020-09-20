@@ -22,27 +22,18 @@
     <section class="slidebox">
         <div class="swiper-container" id="bannerswiper">
             <div class="swiper-wrapper">
-
                 <c:forEach items="${focusList}" var="item" varStatus="xh">
-                    <c:if test="${xh.index==0}">
-                        <div class="swiper-slide">
-                            <img src="${item.picturePath}"/>
-                            <div class="bannerslidebox">
-                                <div class="slidecont">
-                                    <p>智能化系统</p>
-                                    <div class="bannerslideline"></div>
-                                    <p>用节能环保的汽车技术服务社会</p>
-                                </div>
+                    <div class="swiper-slide">
+                        <img src="${item.picturePath}"/>
+                        <div class="bannerslidebox">
+                            <div class="slidecont">
+                                <p>${item.name}</p>
+                                <div class="bannerslideline"></div>
+                                <p>${item.description}</p>
                             </div>
                         </div>
-                    </c:if>
-                    <c:if test="${xh.index!=0}">
-                        <div class="swiper-slide">
-                            <img src="${item.picturePath}"/>
-                        </div>
-                    </c:if>
+                    </div>
                 </c:forEach>
-
             </div>
             <div class="swiper-pagination"></div>
         </div>
@@ -105,18 +96,15 @@
                         <p>+</p>
                         <p>应用案例</p>
                     </div>
-                    <%--                    <div class="Intcasedes">--%>
-                    <%--                        <p>开启互联网+专用车时代选，用车载式智能传感器，结合远程信息监控管理系统，可实现车辆作业质量在线监控及运营调度，大幅提升路面清扫作业的质量和效率。</p>--%>
-                    <%--                    </div>--%>
                     <div class="Intcaseitembox">
 
                         <c:forEach items="${productCaseList}" var="item">
                             <div class="Intcaseitem">
                                 <img src="${item.faceImage}"/>
-                                <div class="Intcasedesbox">
-                                    <p>${item.name}</p>
-                                    <p>${item.description}</p>
-                                </div>
+<%--                                <div class="Intcasedesbox">--%>
+<%--                                    <p>${item.name}</p>--%>
+<%--                                    <p>${item.description}</p>--%>
+<%--                                </div>--%>
                             </div>
                         </c:forEach>
                     </div>

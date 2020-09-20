@@ -23,23 +23,16 @@
         <div class="swiper-container" id="bannerswiper">
             <div class="swiper-wrapper">
                 <c:forEach items="${focusList}" var="item" varStatus="xh">
-                    <c:if test="${xh.index==0}">
-                        <div class="swiper-slide">
-                            <img src="${item.picturePath}"/>
-                            <div class="bannerslidebox">
-                                <div class="slidecont">
-                                    <p>新闻中心</p>
-                                    <div class="bannerslideline"></div>
-                                    <p>用节能环保的汽车技术服务社会</p>
-                                </div>
+                    <div class="swiper-slide">
+                        <img src="${item.picturePath}"/>
+                        <div class="bannerslidebox">
+                            <div class="slidecont">
+                                <p>${item.name}</p>
+                                <div class="bannerslideline"></div>
+                                <p>${item.description}</p>
                             </div>
                         </div>
-                    </c:if>
-                    <c:if test="${xh.index!=0}">
-                        <div class="swiper-slide">
-                            <img src="${item.picturePath}"/>
-                        </div>
-                    </c:if>
+                    </div>
                 </c:forEach>
 
             </div>

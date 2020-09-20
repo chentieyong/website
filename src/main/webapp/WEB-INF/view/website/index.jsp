@@ -26,23 +26,16 @@
             <div class="swiper-wrapper">
 
                 <c:forEach items="${focusList}" var="item" varStatus="xh">
-                    <c:if test="${xh.index==0}">
-                        <div class="swiper-slide">
-                            <img src="${item.picturePath}"/>
-                            <div class="bannerslidebox">
-                                <div class="slidecont">
-                                    <p>交大神舟</p>
-                                    <div class="bannerslideline"></div>
-                                    <p>用节能环保的汽车技术服务社会</p>
-                                </div>
+                    <div class="swiper-slide">
+                        <img src="${item.picturePath}"/>
+                        <div class="bannerslidebox">
+                            <div class="slidecont">
+                                <p>${item.name}</p>
+                                <div class="bannerslideline"></div>
+                                <p>${item.description}</p>
                             </div>
                         </div>
-                    </c:if>
-                    <c:if test="${xh.index!=0}">
-                        <div class="swiper-slide">
-                            <img src="${item.picturePath}"/>
-                        </div>
-                    </c:if>
+                    </div>
                 </c:forEach>
             </div>
             <div class="swiper-pagination"></div>
@@ -67,7 +60,7 @@
     </section>
     <section class="casetotalbox">
         <div class="casetotalvideobox">
-            <video class="casetotalvideo" src="${workArticle.videoURL}" controls
+            <video class="casetotalvideo" src="${workArticle.videoURL}" controls poster="${workArticle.videoImage}"
                    x-webkit-airplay="true" webkit-playsinline="true" playsinline="true"
                    x5-video-player-type="h5"></video>
         </div>
@@ -85,7 +78,7 @@
                         ${workArticle.description}</p>
                 </div>
                 <div class="totalmoreinfobox">
-                    <a>了解更多</a>
+                    <a href="${basepath}/brandInfo.html?artId=${workArticle.id}">了解更多</a>
                 </div>
             </div>
         </div>

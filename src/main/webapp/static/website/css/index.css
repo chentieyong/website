@@ -3,7 +3,7 @@
 .searchtitlebox{width: 100%;text-align: center;margin: 5rem 0 8rem 0;}
 .searchtitlebox p{color: #004199;font-size: 4.375rem;font-weight: bold;}
 .searchprobox,.news{width: 100%;display: flex;justify-content: center;align-items: center;}
-.searchprocont,.newsinfobox{display: flex;flex-flow: row nowrap;justify-content: space-between;align-items: center;}
+.searchprocont,.newsinfobox{display: flex;flex-flow: row nowrap;justify-content: space-between;align-items: flex-start;}
 .searchprocont{width: 90%;}
 .searchprobox .searchproitem,.newsinfobox .newsproitem{width: 23%;display: flex;flex-flow: column nowrap;justify-content: flex-start;align-items: center;}
 .searchproitem img,.newsproitem img{width: 100%;}

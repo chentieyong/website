@@ -11,6 +11,7 @@ public class ArticleDetail {
     private String listImage;//列表图
     private String faceImage;//压题图
     private String videoURL;//视频
+    private String videoImage;//视频
     private String createdTimeStr;//创建时间
 
     public String getId() {
@@ -91,5 +92,13 @@ public class ArticleDetail {
 
     public void setVideoURL(String videoURL) {
         this.videoURL = videoURL;
+    }
+
+    public String getVideoImage() {
+        return videoImage;
+    }
+
+    public void setVideoImage(String videoImage) {
+        this.videoImage = videoImage;
     }
 }

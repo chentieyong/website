@@ -35,8 +35,8 @@
 .Intcasetitle p{color: #004199;font-size: 2.5rem;font-weight:500;line-height: 50px;}
 .Intcasedes{/*width: 78.1%;*/width:100%;margin-top: 70px;}
 .Intcasedes p{color: #606060;font-size: 1.875rem;line-height:45px;text-align: justify;}
-.Intcaseitembox{width: 100%;margin-top: 40px;margin-bottom: 200px;display: flex;flex-flow: row wrap;justify-content: space-between;align-items: flex-start;}
-.Intcaseitembox .Intcaseitem{width: 31.5%;margin-bottom: 2.5%; overflow: hidden;display: flex;flex-flow: column nowrap;justify-content: flex-start;align-items: center;}
+.Intcaseitembox{width: 100%;margin-top: 40px;margin-bottom: 200px;display: flex;flex-flow: row wrap;justify-content: flex-start;align-items: flex-start;}
+.Intcaseitembox .Intcaseitem{width: 31.5%;margin-bottom: 2.5%;margin-left: 0.9%;margin-right: 0.9%;overflow: hidden;display: flex;flex-flow: column nowrap;justify-content: flex-start;align-items: center;}
 .Intcaseitem img{width: 100%;}
 .Intcasedesbox{width: 100%;margin-top: 30px;}
 .Intcasedesbox p{color: #606060;font-size: 1.875rem;line-height:45px;text-align: center;}
