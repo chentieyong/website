@@ -44,35 +44,38 @@
             </div>
             <div class="containbox">
                 <div class="containinfobox">
-                    <c:forEach items="${categoryList}" var="item">
-                        <div class="shizhengbox">
-                            <div class="cartitle">
-                                <p>${item.name}</p>
-                            </div>
-                            <div class="carinfobox">
-                                <c:forEach items="${item.nodes}" var="nodeItem">
-                                    <div class="caritem">
-                                        <div class="caritemtile">
-                                            <p>${nodeItem.name}</p>
-                                        </div>
-                                        <div class="caritembox">
-                                            <c:forEach items="${nodeItem.goodsList}" var="product">
-                                                <a href="productInfo.html?pid=${product.id}" class="carinfop">
-                                                    <div class="carinfoitem">
-                                                        <img src="${product.littleImage}"/>
-                                                        <div class="carnamebox">
-                                                            <p>${product.name}</p>
-                                                        </div>
-                                                    </div>
-                                                </a>
-                                            </c:forEach>
 
+                    <c:forEach items="${categoryList}" var="item">
+                        <c:if test="${item.name!='智能化系统'}">
+                            <div class="shizhengbox">
+                                <div class="cartitle">
+                                    <p>${item.name}</p>
+                                </div>
+                                <div class="carinfobox">
+                                    <c:forEach items="${item.nodes}" var="nodeItem">
+                                        <div class="caritem">
+                                            <div class="caritemtile">
+                                                <p>${nodeItem.name}</p>
+                                            </div>
+                                            <div class="caritembox">
+                                                <c:forEach items="${nodeItem.goodsList}" var="product">
+                                                    <a href="productInfo.html?pid=${product.id}" class="carinfop">
+                                                        <div class="carinfoitem">
+                                                            <img src="${product.littleImage}"/>
+                                                            <div class="carnamebox">
+                                                                <p>${product.name}</p>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </c:forEach>
+
+                                            </div>
+                                            <div class="carfgline"></div>
                                         </div>
-                                        <div class="carfgline"></div>
-                                    </div>
-                                </c:forEach>
+                                    </c:forEach>
+                                </div>
                             </div>
-                        </div>
+                        </c:if>
                     </c:forEach>
                 </div>
             </div>
