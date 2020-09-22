@@ -40,6 +40,8 @@
 .Intcaseitem img{width: 100%;}
 .Intcasedesbox{width: 100%;margin-top: 30px;}
 .Intcasedesbox p{color: #606060;font-size: 1.875rem;line-height:45px;text-align: center;}
+.masstitlebox{display: flex;justify-content: center;align-items: flex-start;min-height: auto!important;}
+.masstitlebox img{width: 100%;}
 
 .Intfiledownload{margin-top: 140px;}
 .Intdownloadtitle{width: 100%;}

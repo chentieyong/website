@@ -19,26 +19,8 @@
 <div class="wrapper index">
     <jsp:include page="head.jsp"/>
 
-    <section class="slidebox">
-        <div class="swiper-container" id="bannerswiper">
-            <div class="swiper-wrapper">
-
-                <c:forEach items="${focusList}" var="item" varStatus="xh">
-                    <div class="swiper-slide">
-                        <img src="${item.picturePath}"/>
-                        <div class="bannerslidebox">
-                            <div class="slidecont">
-                                <p>${item.name}</p>
-                                <div class="bannerslideline"></div>
-                                <p>${item.description}</p>
-                            </div>
-                        </div>
-                    </div>
-                </c:forEach>
-
-            </div>
-            <div class="swiper-pagination"></div>
-        </div>
+    <section class="slidebox masstitlebox">
+        <img src="${product.largerImage}"/>
     </section>
     <section class="Intcontainer">
         <div class="Intleftbox">
@@ -64,65 +46,71 @@
                                x-webkit-airplay="true" webkit-playsinline="true" playsinline="true"
                                x5-video-player-type="h5"></video>
                     </div>
-                    <div class="Intrightspecial">
+
+                    <c:if test="${!empty productItemList}">
+                        <div class="Intrightspecial">
+                            <div class="Intrightspecialtitle">
+                                <p>+</p>
+                                <p>产品特色</p>
+                            </div>
+                            <div class="Intrightspecialinfobox">
+                                <c:forEach items="${productItemList}" var="item">
+                                    <div class="specialinfoitem">
+                                        <div class="itemleft">
+                                            <img src="${item.url}"/>
+                                        </div>
+                                        <div class="itemright">
+                                            <div class="itemtitle">
+                                                <p>${item.name}</p>
+                                            </div>
+                                            <div class="itemdes">
+                                                <p>${item.description}</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </c:forEach>
+                            </div>
+                        </div>
+                    </c:if>
+                </div>
+
+                <c:if test="${!empty productCaseList}">
+                    <div class="Intcasebox">
                         <div class="Intrightspecialtitle">
                             <p>+</p>
-                            <p>产品特色</p>
+                            <p>应用案例</p>
                         </div>
-                        <div class="Intrightspecialinfobox">
-                            <c:forEach items="${productItemList}" var="item">
-                                <div class="specialinfoitem">
-                                    <div class="itemleft">
-                                        <img src="${item.url}"/>
-                                    </div>
-                                    <div class="itemright">
-                                        <div class="itemtitle">
-                                            <p>${item.name}</p>
-                                        </div>
-                                        <div class="itemdes">
-                                            <p>${item.description}</p>
-                                        </div>
+                        <div class="Intcaseitembox">
+
+                            <c:forEach items="${productCaseList}" var="item">
+                                <div class="Intcaseitem">
+                                    <img src="${item.faceImage}"/>
+                                    <div class="Intcasedesbox">
+                                        <p>${item.name}</p>
+                                        <p>${item.description}</p>
                                     </div>
                                 </div>
                             </c:forEach>
                         </div>
                     </div>
-                </div>
-                <div class="Intcasebox">
-                    <div class="Intrightspecialtitle">
-                        <p>+</p>
-                        <p>应用案例</p>
-                    </div>
-                    <%--                    <div class="Intcasedes">--%>
-                    <%--                        <p>开启互联网+专用车时代选，用车载式智能传感器，结合远程信息监控管理系统，可实现车辆作业质量在线监控及运营调度，大幅提升路面清扫作业的质量和效率。</p>--%>
-                    <%--                    </div>--%>
-                    <div class="Intcaseitembox">
+                </c:if>
 
-                        <c:forEach items="${productCaseList}" var="item">
-                            <div class="Intcaseitem">
-                                <img src="${item.faceImage}"/>
-                                <div class="Intcasedesbox">
-                                    <p>${item.name}</p>
-                                    <p>${item.description}</p>
+                <c:if test="${!empty productFileList}">
+                    <div class="Intfiledownload">
+                        <div class="Intdownloadtitle">
+                            <p>+ 文档下载</p>
+                        </div>
+                        <div class="Intdownloadtable">
+                            <c:forEach items="${productFileList}" var="item" varStatus="count">
+                                <div class="Intdownitem ${count.index%2==0?'activebg':''}">
+                                    <p class="filename">${item.name}</p>
+                                    <a href="${item.url}" download="${item.name}" target="_blank"><img
+                                            src="${basepath}/static/website/img/downloadicon.png"/> </a>
                                 </div>
-                            </div>
-                        </c:forEach>
+                            </c:forEach>
+                        </div>
                     </div>
-                </div>
-                <div class="Intfiledownload">
-                    <div class="Intdownloadtitle">
-                        <p>+ 文档下载</p>
-                    </div>
-                    <div class="Intdownloadtable">
-                        <c:forEach items="${productFileList}" var="item" varStatus="count">
-                            <div class="Intdownitem ${count.index%2==0?'activebg':''}">
-                                <p class="filename">${item.name}</p>
-                                <a href="${item.url}" download="${item.name}" target="_blank"><img
-                                        src="${basepath}/static/website/img/downloadicon.png"/> </a>
-                            </div>
-                        </c:forEach>
-                    </div>
-                </div>
+                </c:if>
 
                 <div class="Intcontract">
                     <div class="Intfrmbox">
