@@ -25,7 +25,7 @@
                     <c:if test="${item.name!='智能化系统'}">
                         <ul class="ul">
                             <li>
-                                <a>${item.name}</a>
+                                <a href="#${item.id}">${item.name}</a>
                             </li>
                             <c:forEach items="${item.nodes}" var="nodeItem">
                                 <li class="dropdown">
@@ -47,7 +47,7 @@
 
                     <c:forEach items="${categoryList}" var="item">
                         <c:if test="${item.name!='智能化系统'}">
-                            <div class="shizhengbox">
+                            <div class="shizhengbox" id="${item.id}">
                                 <div class="cartitle">
                                     <p>${item.name}</p>
                                 </div>
