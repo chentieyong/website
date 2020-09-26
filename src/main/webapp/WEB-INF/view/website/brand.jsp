@@ -42,13 +42,16 @@
         <div class="daoyanbox">
             <div class="daoyaninfobox">
                 <div class="daoyantitile">
-                    <p>导言</p>
+                    <p>成长故事</p>
                 </div>
                 <hr/>
                 <div class="daoyaninfo">
-                    <p>
-                        ${description}
-                    </p>
+                    <c:forEach items="${allBrandArticleList}" var="item">
+                        <div class="storylistitem" onclick="toHref('${basepath}/brandInfo.html?artId=${item.id}')">
+                            <p>${item.title}</p>
+                        </div>
+                        <hr/>
+                    </c:forEach>
                 </div>
             </div>
         </div>
@@ -108,6 +111,10 @@
 
     function pageBrand(s) {
         location.href = basepath + '/brand.html?s=' + s
+    }
+
+    function toHref(url) {
+        location.href = url
     }
 </script>
 </body>

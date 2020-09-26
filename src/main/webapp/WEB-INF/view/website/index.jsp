@@ -47,11 +47,11 @@
         </div>
         <div class="searchprobox">
             <div class="searchprocont">
-                <c:forEach items="${productNavGoodsList}" var="item">
-                    <div class="searchproitem" onclick="toHref('${basepath}/productInfo.html?pid=${item.objectID}')">
-                        <img src="${item.listImage}"/>
+                <c:forEach items="${categoryList}" var="item">
+                    <div class="searchproitem" onclick="toHref('${basepath}/product.html')">
+                        <img src="${item.smallIcon}"/>
                         <div class="searchpronamebox">
-                            <p>${item.objectName}</p>
+                            <p>${item.name}</p>
                         </div>
                     </div>
                 </c:forEach>

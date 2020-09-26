@@ -1,6 +1,6 @@
-.carlistcontainer{width: 100%;height: auto;}
-.cartypebox{width: 95%;height: auto;margin-left: 5%; margin-top: 5%; display: flex;flex-flow: row nowrap;justify-content: space-between;align-items: flex-start;}
-.typelistbox{width: 19.23%;}
+.carlistcontainer{position: relative;width: 100%;height: auto;}
+.cartypebox{position: relative; width: 95%;height: auto;margin-left: 5%; margin-top: 5%; display: flex;flex-flow: row nowrap;justify-content: space-between;align-items: flex-start;}
+.typelistbox{position: absolute;top: 0;width: 19.23%;}
 .typelistbox .ul li{border-bottom: 2px solid #DADADA;transform: translateY(0);-webkit-transform: translateY(100%);transform: translateY(100%);-webkit-transition: all .6s cubic-bezier(.77, 0, .175, 1) 0ms;transition: all .6s cubic-bezier(.77, 0, .175, 1) 0ms;opacity: 0;}
 .typelistbox.open .ul li{opacity: 1;-webkit-transform: translateY(0);transform: translateY(0);}
 .typelistbox .ul li:nth-child(1) a{color: #4D4D4D;}
@@ -18,7 +18,7 @@
 .typelistbox .ul li .dropdown_menu a:last-child{border: none;}
 .rotate90deg{transform: rotate(90deg);transition: all 0.5s ease;-webkit-transition:all 0.5s ease;}
 .rotate0deg{transform: rotate(0deg);transition: all 0.5s ease;-webkit-transition:all 0.5s ease;}
-.containbox{position: relative;width: 78.02%;height: auto;display: flex;flex-flow: column nowrap;justify-content: flex-start;align-items: flex-end;}
+.containbox{position: relative;left: 19.23%;width: 78.02%;height: auto;display: flex;flex-flow: column nowrap;justify-content: flex-start;align-items: flex-end;}
 .containinfobox{width: 89.4%;height:auto;margin-right: 7%;margin-left: 3.6%;}
 .shizhengbox,.tezhongbox,.xinengyuanbox,.cartitle,.carinfobox,.caritem,.caritem .caritemtile,.caritembox{width: 100%;}
 .cartitle p{font-size: 3.125rem;color: #004098;line-height:50px;}

@@ -52,7 +52,7 @@
 /*联系我们*/
 .contractbox{position: relative;width: 100%;height: auto;margin-top: 1rem;background: #2972C8;display: flex;flex-flow: row nowrap;justify-content: center;align-items: flex-start;}
 .contractfrmbox,.contractotherbox{margin-top: 5rem;position: relative;z-index: 3;}
-.contractfrmbox{width: 43.75%;margin-bottom: 18rem;}
+.contractfrmbox{width: 36%;margin-bottom: 18rem;}
 .contractotherbox{width: 35.2%;margin-left: 8.2%;display: flex;flex-flow: column nowrap;justify-content: center;align-items: flex-start;}
 .contracttitle{font-weight: bold;font-size: 4.375rem;}
 .contractfrm{position: relative; width: 100%;margin-top: 5rem;display: flex;flex-flow: column nowrap;justify-content: flex-start;align-items: flex-start;}
@@ -70,13 +70,14 @@
 .servicetelbox{width: 100%; display: flex;flex-flow: row nowrap;justify-content: flex-start;align-items: flex-start;}
 .cottelinfobox{text-align: left;}
 .servicetelbox p{font-weight:500;line-height:70px;font-size: 4.375rem;color: #FFFFFF;margin-left: 8.8%;}
+.contractotherbox .qrcodeimg,.contractotherbox .kfname{margin-right: 14%;}
 .qrcodeimg{width: 37%;margin-top: 28%;align-self: flex-end;}
 .contractotherbox .kfname{align-self: flex-end;font-size: 1.875rem;color: #FFFFFF;padding-top: 20px;}
 .indexbotimg{position: absolute;bottom: 0;left: 0;width: 100%;}
 
 .contractotherbox .QQ,.contractotherbox .phone{width: 100%;height: 72px;display: flex;flex-flow: row nowrap;justify-content: flex-start;align-items: center;}
 .contractotherbox .QQ img{width: 12.8%;}
-.contractotherbox .QQ p,.contractotherbox .phone p{font-size: 4.375rem;line-height: 50px;margin-left: 13.6%;}
+.contractotherbox .QQ p,.contractotherbox .phone p{font-size: 4.375rem;line-height: 50px;margin-left: 7%;}
 .contractotherbox .phone img{width: 12.8%;}
 .contractotherbox .phone{margin-top: 10%;}
 
@@ -171,7 +172,7 @@
     .servicetelbox p{line-height:43.75px;}
     .usermessage,.contractotherbox .kfname{padding-top: 12.5px;}
     .contractotherbox .phone{margin-top: 6.25%;}
-    .qrcodeimg{margin-top: 28%;}
+    .qrcodeimg{margin-top: 16%;}
 }
 @media only screen and (min-width: 1300px) {
     .cominfo{width: 75%;}
@@ -295,17 +296,24 @@
     .newsmoreinfobox{margin-top: 1rem;}
     .newsmoreinfobox a{font-size: 1.625rem;}
 
-    .contractfrmbox,.contractotherbox{margin-top: 5rem;}
+    .contractfrmbox,.contractotherbox{margin-top: 3rem;}
     .contractfrmbox{margin-bottom: 18rem;}
     .contracttitle,.servicetelbox p,.contractotherbox .QQ p,.contractotherbox .phone p{font-size: 4.375rem;}
-    .contractfrm{margin-top: 5rem;}
-    .contract_item{margin-bottom: 40px;}
+    .contractfrm{margin-top: 2rem;}
+    .contract_item{margin-bottom: 30px;}
     .ctipt,.usermessage,.contract_submit,.contractotherbox .kfname{font-size: 1.875rem;}
     .ctipt,.usermessage{text-indent: 1rem;}
-    .ctipt,.contract_submit{height: 80px;}
+    .ctipt,.contract_submit{height: 72px;}
     .usermessage{height: 200px;}
-    .contract_submit{margin-top: 40px;border-radius:40px;line-height: 42px;}
+    .contract_submit{margin-top: 30px;border-radius:40px;line-height: 32px;}
     .servicetelbox p{line-height:70px;}
     .usermessage,.contractotherbox .kfname{padding-top: 20px;}
-    .contractotherbox .phone{margin-top: 10%;}
+    .contractotherbox .phone{margin-top: 8%;}
+}
+
+@media only screen and (min-width: 2048px) {
+    .qrcodeimg {margin-top: 10%;}
+}
+@media only screen and (min-width: 2100px) {
+    .contractfrmbox {margin-bottom: 22rem;}
 }

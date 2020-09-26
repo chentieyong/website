@@ -7,8 +7,10 @@ $(function() {
 		var _top = $(window).scrollTop();
 		if(_top > $('body').height()) {
 			$('.backtotop').css('display', 'block');
+			$('.contracticon').css('top','0');
 		} else {
 			$('.backtotop').css('display', 'none');
+			$('.contracticon').css('top','calc(50% + 50px)');
 		}
 	});
 	$('.backtotop').click(function() {

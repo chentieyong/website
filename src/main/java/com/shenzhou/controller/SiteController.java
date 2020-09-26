@@ -102,15 +102,12 @@ public class SiteController {
         //加载导航轮播基础类信息
         load(modelMap, request);
         //探索我们的产品
-        Map<String, String> productParam = new HashMap<>();
-        productParam.put("navigatorID", PRODUCT_RECOMMEND_NAVIGATOR_ID);
-        productParam.put("objectDefineID", Config.GOODSSHOP_OBJECTDEFINEID);
-        productParam.put("pageNumber", "4");
-        ApiBaseResponseInfo<ApiReleaseGoodsShopListBodyInfo> releaseGoodsShopBody = apiReleaseService.getNavigatorReleaseGoodsShopList(productParam);
-        if (releaseGoodsShopBody != null && releaseGoodsShopBody.getBody() != null
-                && releaseGoodsShopBody.getBody().getData() != null && releaseGoodsShopBody.getBody().getData().getRows() != null) {
-            modelMap.put("productNavGoodsList", releaseGoodsShopBody.getBody().getData().getRows());
-        }
+        Map<String, String> categoryParam = new HashMap<>();
+        categoryParam.put("rootID", PRODUCT_ROOT_ID);
+        categoryParam.put("depth", "2");
+        List<ApiDepthCategoryInfo> categoryList = apiCategoryService.getCategoryList(categoryParam, false);
+        modelMap.put("categoryList", categoryList);
+
         //吸尘车作业锦集
         modelMap.put("workArticle", apiArticleService.getArticleDetail(WORK_ARTICLE_ID));
         //自主创新
@@ -165,6 +162,22 @@ public class SiteController {
                 modelMap.put("currentPage", brandArticleBody.getBody().getData().getCurrentPage());
                 modelMap.put("totalPage", brandArticleBody.getBody().getData().getTotalPage());
                 modelMap.put("brandArticleList", brandArticleBody.getBody().getData().getRows());
+            }
+        }
+
+        //左侧导航
+        if (StringUtils.isNotBlank(navId)) {
+            Map<String, String> newsParam = new HashMap<>();
+            newsParam.put("navigatorID", navId);
+            newsParam.put("pageNumber", "999");
+            if (StringUtils.isNotBlank(s)) {
+                newsParam.put("currentPage", s);
+            }
+            ApiBaseResponseInfo<ApiArticleListBodyInfo> brandArticleBody = apiArticleService.getArticleList(newsParam);
+            if (brandArticleBody != null && brandArticleBody.getBody() != null
+                    && brandArticleBody.getBody().getData() != null
+                    && brandArticleBody.getBody().getData().getRows() != null) {
+                modelMap.put("allBrandArticleList", brandArticleBody.getBody().getData().getRows());
             }
         }
         return "/website/brand";

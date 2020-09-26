@@ -16,6 +16,7 @@ input:focus,button:focus{outline: 0;}
 .servtabletitel,.servfileitem{display: flex;flex-flow: row nowrap;justify-content: center;align-items: flex-start;}
 .servtabletitel{width: 100%;height: 190px;}
 .servtypebox,.servmodelbox,.servfilename,.downloadicon{width: 50%;height: 100%;display: flex;justify-content: center;align-items: center;}
+.servfilename{width: 60%;justify-content: flex-start;}.downloadicon{width: 40%;}
 .servtypebox,.servmodelbox{border-bottom: 2px solid #979797;}
 /*.servtypebox p,.servmodelbox p{font-size: 3.125rem;color: #333334;}*/
 .servtypebox select,.servmodelbox select{border-style: none;}
@@ -25,7 +26,7 @@ input:focus,button:focus{outline: 0;}
 .servfilebox{width: 100%;margin-top: 6.9%;margin-bottom: 11.3%;}
 .servfileitem{width: 100%;height: 150px;}
 .filebg{background: #E9E9E9;}
-.servfilename p{font-size: 2.5rem;color: #4D4D4D;}
+.servfilename p{font-size: 2.5rem;color: #4D4D4D;margin: 0 5%;}
 .downloadicon a{width: 7.87%;}
 .downloadicon a img{width: 100%;}
 

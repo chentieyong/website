@@ -92,6 +92,21 @@
 <script type="text/javascript" src="${basepath}/static/website/js/common.js"></script>
 <script>
     $(function () {
+        //固定左边导航栏
+        $(window).scroll(function () {
+            var _top = $(window).scrollTop();
+            if (_top > $('.header').height()) {
+                $('.typelistbox').css({
+                    'position': 'fixed',
+                    'top': '20px'
+                });
+            } else {
+                $('.typelistbox').css({
+                    'position': 'absolute',
+                    'top': '0'
+                });
+            }
+        });
         //二级菜单
         $(".typelistbox .ul li").click(function () {
             $(".typelistbox .ul li a img").addClass('rotate0deg').removeClass('rotate90deg');
