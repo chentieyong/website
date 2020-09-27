@@ -97,6 +97,34 @@
 <script type="text/javascript" src="${basepath}/static/website/js/swiper.min.js"></script>
 <script type="text/javascript" src="${basepath}/static/website/js/common.js"></script>
 <script>
+    //固定左边导航栏
+    $(window).scroll(function() {
+        var _top = $(window).scrollTop();
+        if(_top > ($('.header').height() + $('.slidebox').height())) {
+            $('.daoyanbox').css({
+                'position': 'fixed',
+                'top': '20px'
+            });
+        } else {
+            $('.daoyanbox').css({
+                'position': 'absolute',
+                'top': '0'
+            });
+        }
+
+        if(_top > $('.brandstoryinfobox').height()) {
+            $('.daoyanbox').css({
+                'position': 'absolute',
+                'top': '0'
+            });
+        }
+        if($('.daoyanbox').height() > $('body').height()) {
+            $('.daoyanbox').css({
+                'height': $('body').height(),
+                'overflow': 'scroll'
+            });
+        }
+    });
     var bannerswiper = new Swiper('#bannerswiper', {
         speed: 1500,
         loop: true,

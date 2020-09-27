@@ -2,28 +2,29 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="UTF-8">
     <title>${pageNode.name}</title>
-    <meta name="keywords" content="${pageNode.metaName}"/>
-    <meta name="description" content="${pageNode.metaDescription}"/>
-    <link rel="stylesheet" type="text/css" href="${basepath}/static/website/css/bootstrap.min.css"/>
-    <link rel="stylesheet" type="text/css" href="${basepath}/static/website/css/swiper.min.css"/>
-    <link rel="stylesheet" type="text/css" href="${basepath}/static/website/css/fonts.css"/>
-    <link rel="stylesheet" type="text/css" href="${basepath}/static/website/css/common.css"/>
-    <link rel="stylesheet" type="text/css" href="${basepath}/static/website/css/Service.css"/>
+    <meta name="keywords" content="${pageNode.metaName}" />
+    <meta name="description" content="${pageNode.metaDescription}" />
+    <link rel="stylesheet" type="text/css" href="${basepath}/static/website/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="${basepath}/static/website/css/swiper.min.css" />
+    <link rel="stylesheet" type="text/css" href="${basepath}/static/website/css/fonts.css" />
+    <link rel="stylesheet" type="text/css" href="${basepath}/static/website/css/common.css" />
+    <link rel="stylesheet" type="text/css" href="${basepath}/static/website/css/Service.css" />
 </head>
 
 <body>
 <div class="wrapper service">
-    <jsp:include page="head.jsp"/>
+    <jsp:include page="head.jsp" />
 
     <section class="slidebox">
         <div class="swiper-container" id="bannerswiper">
             <div class="swiper-wrapper">
                 <c:forEach items="${focusList}" var="item" varStatus="xh">
                     <div class="swiper-slide">
-                        <img src="${item.picturePath}"/>
+                        <img src="${item.picturePath}" />
                         <div class="bannerslidebox">
                             <div class="slidecont">
                                 <p>${item.name}</p>
@@ -55,18 +56,42 @@
         </div>
     </section>
 
-    <jsp:include page="foot.jsp"/>
+    <jsp:include page="foot.jsp" />
 
 </div>
-<a href="tencent://message/?uin=2975463389&Site=&Menu=yes" class="contracticon"><img
-        src="${basepath}/static/website/img/contracticon.png"/>
-    <p>联系我们</p></a>
-<img src="${basepath}/static/website/img/backtotop.jpg" class="backtotop"/>
+<a href="tencent://message/?uin=2975463389&Site=&Menu=yes" class="contracticon"><img src="${basepath}/static/website/img/contracticon.png" />
+    <p>联系我们</p>
+</a>
+<img src="${basepath}/static/website/img/backtotop.jpg" class="backtotop" />
 <script type="text/javascript" src="${basepath}/static/website/js/jquery-3.4.1.min.js"></script>
 <script type="text/javascript" src="${basepath}/static/website/js/bootstrap.min.js"></script>
 <script type="text/javascript" src="${basepath}/static/website/js/swiper.min.js"></script>
 <script type="text/javascript" src="${basepath}/static/website/js/common.js"></script>
 <script>
+    $(window).scroll(function() {
+        var _top = $(window).scrollTop();
+        if(_top > ($('.header').height() + $('.slidebox').height())) {
+            $('.tab').css({
+                'position': 'fixed',
+                'top': '20px',
+                'left': '5.2%'
+            });
+        } else {
+            $('.tab').css({
+                'position': 'absolute',
+                'top': '0',
+                'left': '0'
+            });
+        }
+
+        if(_top > ($('.box').height() + $('.tab').height())) {
+            $('.tab').css({
+                'position': 'absolute',
+                'top': '0',
+                'left': '0'
+            });
+        }
+    });
     var bannerswiper = new Swiper('#bannerswiper', {
         speed: 1500,
         loop: true,

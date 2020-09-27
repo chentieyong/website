@@ -6,17 +6,18 @@
 <head>
     <meta charset="UTF-8">
     <title>${pageNode.name}</title>
-    <meta name="keywords" content="${pageNode.metaName}"/>
-    <meta name="description" content="${pageNode.metaDescription}"/>
-    <link rel="stylesheet" type="text/css" href="${basepath}/static/website/css/bootstrap.min.css"/>
-    <link rel="stylesheet" type="text/css" href="${basepath}/static/website/css/swiper.min.css"/>
-    <link rel="stylesheet" type="text/css" href="${basepath}/static/website/css/fonts.css"/>
-    <link rel="stylesheet" type="text/css" href="${basepath}/static/website/css/common.css"/>
-    <link rel="stylesheet" type="text/css" href="${basepath}/static/website/css/carlist.css"/>
+    <meta name="keywords" content="${pageNode.metaName}" />
+    <meta name="description" content="${pageNode.metaDescription}" />
+    <link rel="stylesheet" type="text/css" href="${basepath}/static/website/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="${basepath}/static/website/css/swiper.min.css" />
+    <link rel="stylesheet" type="text/css" href="${basepath}/static/website/css/fonts.css" />
+    <link rel="stylesheet" type="text/css" href="${basepath}/static/website/css/common.css" />
+    <link rel="stylesheet" type="text/css" href="${basepath}/static/website/css/carlist.css" />
 </head>
+
 <body>
 <div class="wrapper carlist">
-    <jsp:include page="head.jsp"/>
+    <jsp:include page="head.jsp" />
 
     <div class="container-fluid carlistcontainer">
         <div class="cartypebox">
@@ -29,11 +30,10 @@
                             </li>
                             <c:forEach items="${item.nodes}" var="nodeItem">
                                 <li class="dropdown">
-                                    <a href="javascript:void(0)"><img
-                                            src="${basepath}/static/website/img/carlist/right.png"/>${nodeItem.name}</a>
+                                    <a href="javascript:void(0)"><img src="${basepath}/static/website/img/carlist/right.png" />${nodeItem.name}</a>
                                     <div class="dropdown_menu">
                                         <c:forEach items="${nodeItem.goodsList}" var="product">
-                                            <a href="productInfo.html?pid=${product.id}">${product.name}</a>
+                                            <a href="productInfo.html?pid=${product.id}&ccid=${nodeItem.id}">${product.name}</a>
                                         </c:forEach>
                                     </div>
                                 </li>
@@ -61,7 +61,7 @@
                                                 <c:forEach items="${nodeItem.goodsList}" var="product">
                                                     <a href="productInfo.html?pid=${product.id}" class="carinfop">
                                                         <div class="carinfoitem">
-                                                            <img src="${product.littleImage}"/>
+                                                            <img src="${product.littleImage}" />
                                                             <div class="carnamebox">
                                                                 <p>${product.name}</p>
                                                             </div>
@@ -81,21 +81,21 @@
             </div>
         </div>
     </div>
-    <jsp:include page="foot.jsp"/>
+    <jsp:include page="foot.jsp" />
 </div>
-<a href="tencent://message/?uin=2975463389&Site=&Menu=yes" class="contracticon"><img
-        src="${basepath}/static/website/img/contracticon.png"/>
-    <p>联系我们</p></a>
-<img src="${basepath}/static/website/img/backtotop.jpg" class="backtotop"/>
+<a href="tencent://message/?uin=2975463389&Site=&Menu=yes" class="contracticon"><img src="${basepath}/static/website/img/contracticon.png" />
+    <p>联系我们</p>
+</a>
+<img src="${basepath}/static/website/img/backtotop.jpg" class="backtotop" />
 <script type="text/javascript" src="${basepath}/static/website/js/jquery-3.4.1.min.js"></script>
 <script type="text/javascript" src="${basepath}/static/website/js/swiper.min.js"></script>
 <script type="text/javascript" src="${basepath}/static/website/js/common.js"></script>
 <script>
-    $(function () {
+    $(function() {
         //固定左边导航栏
-        $(window).scroll(function () {
+        $(window).scroll(function() {
             var _top = $(window).scrollTop();
-            if (_top > $('.header').height()) {
+            if(_top > $('.header').height()) {
                 $('.typelistbox').css({
                     'position': 'fixed',
                     'top': '20px'
@@ -106,16 +106,30 @@
                     'top': '0'
                 });
             }
+
+            if(_top > ($('.containbox').height() - ($('.typelistbox').height() / 2))) {
+                $('.typelistbox').css({
+                    'position': 'absolute',
+                    'top': '0'
+                });
+            }
+
+            if($('.typelistbox').height() > $('body').height()) {
+                $('.typelistbox').css({
+                    'height': $('body').height(),
+                    'overflow': 'scroll'
+                });
+            }
         });
         //二级菜单
-        $(".typelistbox .ul li").click(function () {
+        $(".typelistbox .ul li").click(function() {
             $(".typelistbox .ul li a img").addClass('rotate0deg').removeClass('rotate90deg');
             $(".typelistbox .ul li").children('.dropdown_menu').slideUp();
             $(".typelistbox .ul li").removeClass('in');
             $(this).addClass('in');
-            if ($(this).attr('class') == 'dropdown in') {
+            if($(this).attr('class') == 'dropdown in') {
                 $(".typelistbox .ul li a img").addClass('rotate0deg').removeClass('rotate90deg');
-                if ($(this).children("div.dropdown_menu").css('display') != 'block') {
+                if($(this).children("div.dropdown_menu").css('display') != 'block') {
                     $(this).children('a').children('img').removeClass('rotate0deg').addClass('rotate90deg');
                     $(this).children("div.dropdown_menu").slideDown();
                 }

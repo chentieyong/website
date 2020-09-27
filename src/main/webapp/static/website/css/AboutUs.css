@@ -29,6 +29,9 @@ p{margin-bottom: 0;}
 .rightto{align-self: flex-end;}
 .compitem:last-child .compbot .footline{height: 210px;}
 
+.newscontainer .tab-box .tab{position: absolute;top: 0;left: 0;}
+.newscontainer .tab-box .box{position: relative;top: 0;left: calc(100% - 75.27%);}
+
 .compcxcontainer{width: 85.4%;height: auto;margin: 0 auto;}
 .compcxinfobox{margin-top: 19%;background: #247CE3;}
 .compcxtitle{margin-top: 14%;text-align: center;}

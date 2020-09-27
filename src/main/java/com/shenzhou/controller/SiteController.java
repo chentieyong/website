@@ -237,6 +237,10 @@ public class SiteController {
     public String productInfo(HttpServletRequest request, ModelMap modelMap) {
         load(modelMap, request);
         String pid = request.getParameter("pid");
+        String ccid = request.getParameter("ccid");
+        if (StringUtils.isNotBlank(ccid)) {
+            modelMap.put("ccid", ccid);
+        }
         if (StringUtils.isNotBlank(pid)) {
             GoodsShopDetailDto product = apiGoodsShopService.getGoodsShopDetail(pid);
             modelMap.put("product", product);

@@ -1,8 +1,8 @@
 .brandstory{background: #F8F8F8;}
-.brandcontainer,.brandinfocontainer{width: 100%;height: auto;align-self: flex-start;margin: 5% 0;display: flex;flex-flow: row nowrap;justify-content: flex-start;align-items: flex-start;}
-.daoyanbox{width: 26%;height: auto;background: #FFFFFF;}
+.brandcontainer,.brandinfocontainer{position: relative;width: 100%;height: auto;align-self: flex-start;margin: 5% 0;display: flex;flex-flow: row nowrap;justify-content: flex-start;align-items: flex-start;}
+.daoyanbox{position: absolute;top: 0;width: 26%;height: auto;background: #FFFFFF;}
 .daoyaninfobox{width: 70%;height:auto;margin:13% auto 20% 15%;display: flex;flex-flow: column nowrap;justify-content: center;align-items: center;}
-.brandstoryinfobox,.brandinfo{width: 66%;margin-left: 2.6%;}
+.brandstoryinfobox,.brandinfo{position: relative;top: 0;left: 26%;width: 66%;margin-left: 2.6%;}
 .daoyantitile{width: 100%;text-align: left;}
 .daoyantitile p{font-size: 4.375rem;color: #004098;line-height: 70px;}
 .daoyanbox hr{width: 100%;height: 2px;background: #DCDCDC;border: none;margin-top: 5%;margin-bottom: 5%;}

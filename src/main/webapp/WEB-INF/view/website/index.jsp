@@ -47,13 +47,16 @@
         </div>
         <div class="searchprobox">
             <div class="searchprocont">
+
                 <c:forEach items="${categoryList}" var="item">
-                    <div class="searchproitem" onclick="toHref('${basepath}/product.html')">
-                        <img src="${item.smallIcon}"/>
-                        <div class="searchpronamebox">
-                            <p>${item.name}</p>
+                    <c:if test="${item.name!='智能化系统'}">
+                        <div class="searchproitem" onclick="toHref('${basepath}/product.html')">
+                            <img src="${item.smallIcon}"/>
+                            <div class="searchpronamebox">
+                                <p>${item.name}</p>
+                            </div>
                         </div>
-                    </div>
+                    </c:if>
                 </c:forEach>
             </div>
         </div>

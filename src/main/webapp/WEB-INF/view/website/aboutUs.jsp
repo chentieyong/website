@@ -66,6 +66,30 @@
 <script type="text/javascript" src="${basepath}/static/website/js/swiper.min.js"></script>
 <script type="text/javascript" src="${basepath}/static/website/js/common.js"></script>
 <script>
+    $(window).scroll(function() {
+        var _top = $(window).scrollTop();
+        if(_top > ($('.header').height() + $('.slidebox').height())) {
+            $('.tab').css({
+                'position': 'fixed',
+                'top': '20px',
+                'left': '5.2%'
+            });
+        } else {
+            $('.tab').css({
+                'position': 'absolute',
+                'top': '0',
+                'left': '0'
+            });
+        }
+
+        if(_top > ($('.box').height() + $('.tab').height())) {
+            $('.tab').css({
+                'position': 'absolute',
+                'top': '0',
+                'left': '0'
+            });
+        }
+    });
     var bannerswiper = new Swiper('#bannerswiper', {
         speed: 1500,
         loop: true,
