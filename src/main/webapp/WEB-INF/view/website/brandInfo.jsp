@@ -42,13 +42,16 @@
         <div class="daoyanbox">
             <div class="daoyaninfobox">
                 <div class="daoyantitile">
-                    <p>导言</p>
+                    <p>成长故事</p>
                 </div>
                 <hr/>
                 <div class="daoyaninfo">
-                    <p>
-                        ${article.description}
-                    </p>
+                    <c:forEach items="${allBrandArticleList}" var="item">
+                        <div class="storylistitem" onclick="toHref('${basepath}/brandInfo.html?artId=${item.id}')">
+                            <p>${item.title}</p>
+                        </div>
+                        <hr/>
+                    </c:forEach>
                 </div>
             </div>
         </div>
@@ -68,10 +71,6 @@
                 </div>
             </div>
         </div>
-        <%--<div class="brandnextprebox">
-            <div class="brandpre"><a>上一篇故事：交大神舟荣获梅陇品牌之星最具影响力奖！</a></div>
-            <div class="brandnext"><a>下一篇故事：交大神舟荣获梅陇品牌之星最具影响力奖！</a></div>
-        </div>--%>
     </section>
 
     <jsp:include page="foot.jsp"/>
@@ -86,6 +85,34 @@
 <script type="text/javascript" src="${basepath}/static/website/js/swiper.min.js"></script>
 <script type="text/javascript" src="${basepath}/static/website/js/common.js"></script>
 <script>
+    //固定左边导航栏
+    $(window).scroll(function() {
+        var _top = $(window).scrollTop();
+        if(_top > ($('.header').height() + $('.slidebox').height())) {
+            $('.daoyanbox').css({
+                'position': 'fixed',
+                'top': '20px'
+            });
+        } else {
+            $('.daoyanbox').css({
+                'position': 'absolute',
+                'top': '0'
+            });
+        }
+
+        if(_top > $('.brandstoryinfobox').height()) {
+            $('.daoyanbox').css({
+                'position': 'absolute',
+                'top': '0'
+            });
+        }
+        if($('.daoyanbox').height() > $('body').height()) {
+            $('.daoyanbox').css({
+                'height': $('body').height(),
+                'overflow': 'scroll'
+            });
+        }
+    });
     var bannerswiper = new Swiper('#bannerswiper', {
         speed: 1500,
         loop: true,

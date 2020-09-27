@@ -81,7 +81,7 @@
                         ${workArticle.description}</p>
                 </div>
                 <div class="totalmoreinfobox">
-                    <a href="${basepath}/brandInfo.html?artId=${workArticle.id}">了解更多</a>
+<%--                    <a href="${basepath}/brandInfo.html?artId=${workArticle.id}">了解更多</a>--%>
                 </div>
             </div>
         </div>
@@ -181,10 +181,6 @@
             </form>
         </div>
         <div class="contractotherbox">
-            <%--            <div class="servicetelbox">--%>
-            <%--                <img src="${basepath}/static/website/img/contect-phone.png" class="phoneicon"/>--%>
-            <%--                <p>服务热线 <br/>4006-081-080</p>--%>
-            <%--            </div>--%>
             <div class="QQ">
                 <img src="${basepath}/static/website/img/qq.png"/>
                 <p class="qqnum">2975 463 389</p>

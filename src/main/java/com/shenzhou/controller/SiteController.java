@@ -170,9 +170,6 @@ public class SiteController {
             Map<String, String> newsParam = new HashMap<>();
             newsParam.put("navigatorID", navId);
             newsParam.put("pageNumber", "999");
-            if (StringUtils.isNotBlank(s)) {
-                newsParam.put("currentPage", s);
-            }
             ApiBaseResponseInfo<ApiArticleListBodyInfo> brandArticleBody = apiArticleService.getArticleList(newsParam);
             if (brandArticleBody != null && brandArticleBody.getBody() != null
                     && brandArticleBody.getBody().getData() != null
@@ -195,6 +192,28 @@ public class SiteController {
         load(modelMap, request);
         ArticleDetail articleDetail = apiArticleService.getArticleDetail(artId);
         modelMap.put("article", articleDetail);
+
+        List<ApiDepthNavigatorInfo> headNavigatorList = (List<ApiDepthNavigatorInfo>) modelMap.get("headNavigatorList");
+        String navId = null;
+        for (ApiDepthNavigatorInfo data : headNavigatorList) {
+            if (data.getFunctionUrl().contains("brand")) {
+                modelMap.put("description", data.getDescription());
+                navId = data.getId();
+                break;
+            }
+        }
+        //左侧导航
+        if (StringUtils.isNotBlank(navId)) {
+            Map<String, String> newsParam = new HashMap<>();
+            newsParam.put("navigatorID", navId);
+            newsParam.put("pageNumber", "999");
+            ApiBaseResponseInfo<ApiArticleListBodyInfo> brandArticleBody = apiArticleService.getArticleList(newsParam);
+            if (brandArticleBody != null && brandArticleBody.getBody() != null
+                    && brandArticleBody.getBody().getData() != null
+                    && brandArticleBody.getBody().getData().getRows() != null) {
+                modelMap.put("allBrandArticleList", brandArticleBody.getBody().getData().getRows());
+            }
+        }
         return "/website/brandInfo";
     }
 
@@ -475,7 +494,7 @@ public class SiteController {
         load(modelMap, request);
         List<ApiDepthNavigatorInfo> headNavigatorList = (List<ApiDepthNavigatorInfo>) modelMap.get("headNavigatorList");
         for (ApiDepthNavigatorInfo data : headNavigatorList) {
-            if (data.getFunctionUrl().contains("aboutUs")) {
+            if (data.getFunctionUrl().contains("brand")) {
                 for (ApiDepthNavigatorInfo nodeData : data.getNodes()) {
                     if (nodeData.getFunctionUrl().contains("industry")) {
                         Map<String, String> nodeNavParam = new HashMap<>();
