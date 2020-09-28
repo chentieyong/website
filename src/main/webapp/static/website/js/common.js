@@ -43,8 +43,9 @@ $(function() {
 	});
 	
 	//点击固定栏联系我们按钮
-	$('.contracticon').click(function(){		
-		$('body').append('<div class="contracttckbox fadeIn"><img src="img/lxkuang.png"/></div>')
+	$('.contracticon').click(function(){
+		var img = basepath+'/static/website/img/lxkuang.png'
+		$('body').append("<div class='contracttckbox fadeIn'><img src='"+img+"'></div>")
 	});
 	$(document).on('click','.contracttckbox',function (){
         $(this).remove();
