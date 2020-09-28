@@ -7,7 +7,7 @@
 .daoyantitile p{font-size: 4.375rem;color: #004098;line-height: 70px;}
 .daoyanbox hr{width: 100%;height: 2px;background: #DCDCDC;border: none;margin-top: 5%;margin-bottom: 5%;}
 .daoyaninfo{width: 100%;height: auto;text-align: justify;}
-.daoyaninfo p{font-size: 1.875rem;color: #4D4D4D;line-height: 45px;}
+/*.daoyaninfo p{font-size: 1.875rem;color: #4D4D4D;line-height: 45px;}*/
 .storylistbox,.brandinfobox{position: relative;width: 100%;height: auto;}
 .branditem{display: flex;flex-flow: column nowrap;justify-content: flex-start;align-items: center;}
 .branditem{width: 100%;height: auto;margin-bottom: 4%;background: #FFFFFF;}
@@ -36,75 +36,81 @@
 .sharebox a img{width: 18%;}
 
 .storylistitem{width: 100%;height: auto;margin-top: 2%;}
-.storylistitem p{font-size: 1.875rem;color: #464646;margin-bottom: 0.5em;}
+.storylistitem p{font-size: 1.35rem;color: #464646;margin-bottom: 0.5em;letter-spacing: -1px;}
 
 @media only screen and (min-width: 980px) and (max-width: 1199px) {
 	.daoyantitile p,.brandtitle p{line-height: 35.7px;}
 	.daoyantitile p,.brandinfotitle p{font-size: 2.23rem;}
-	.daoyaninfo p,.branddes p,.storylistitem p{font-size: 0.96rem;line-height: 23px;}
+	.branddes p{font-size: 0.96rem;line-height: 23px;}
 	.brandtitle p{font-size: 1.59rem;}
 	.brandmoreinfo a,.brandinfodes p,.brandpre a,.brandnext a{font-size: 1.275rem;}
 	.brandmoreinfo a{line-height: 28.05px;}
 	.brandinfodes p{line-height: 40.8px;}
+	.storylistitem p{font-size: 0.6885rem;}
 }
 
 @media only screen and (min-width: 1200px) {
 	.daoyantitile p,.brandtitle p{line-height: 43.75px;}
 	.daoyantitile p,.brandinfotitle p{font-size: 2.73rem;}
-	.daoyaninfo p,.branddes p,.storylistitem p{font-size: 1.17rem;line-height: 28px;}
+	.branddes p{font-size: 1.17rem;line-height: 28px;}
 	.brandtitle p{font-size: 1.95rem;}
 	.brandmoreinfo a,.brandinfodes p,.brandpre a,.brandnext a{font-size: 1.56rem;}
 	.brandmoreinfo a{line-height: 34.3px;}
 	.brandinfodes p{line-height: 50px;}
+	.storylistitem p{font-size: 0.844rem;}
 }
 
 @media only screen and (min-width: 1400px) {
 	.daoyantitile p,.brandtitle p{line-height: 52.5px;}
 	.daoyantitile p,.brandinfotitle p{font-size: 3.28rem;}
-	.daoyaninfo p,.branddes p,.storylistitem p{font-size: 1.4rem;line-height: 33.75px;}
+	.branddes p{font-size: 1.4rem;line-height: 33.75px;}
 	.brandtitle p{font-size: 2.34rem;}
 	.brandmoreinfo a,.brandinfodes p,.brandpre a,.brandnext a{font-size: 1.875rem;}
 	.brandmoreinfo a{line-height: 41.25px;}
 	.brandinfodes p{line-height: 60px;}
+	.storylistitem p{font-size: 1.0125rem;}
 }
 
 @media only screen and (min-width: 1600px) {
 	.daoyantitile p,.brandtitle p{line-height: 61.25px;}
 	.daoyantitile p,.brandinfotitle p{font-size: 3.83rem;}
-	.daoyaninfo p,.branddes p,.storylistitem p{font-size: 1.64rem;line-height: 39.4px;}
+	.branddes p{font-size: 1.64rem;line-height: 39.4px;}
 	.brandtitle p{font-size: 2.73rem;}
 	.brandmoreinfo a,.brandinfodes p,.brandpre a,.brandnext a{font-size: 2.19rem;}
 	.brandmoreinfo a{line-height: 48px;}
 	.brandinfodes p{line-height: 70px;}
+	.storylistitem p{font-size: 1.18rem;}
 }
 
 @media only screen and (min-width: 1900px) {
 	.daoyantitile p,.brandtitle p{line-height: 70px;}
 	.daoyantitile p,.brandinfotitle p{font-size: 4.375rem;}
-	.daoyaninfo p,.branddes p,.storylistitem p{font-size: 1.875rem;line-height: 45px;}
+	.branddes p{font-size: 1.875rem;line-height: 45px;}
 	.brandtitle p{font-size: 3.125rem;}
 	.brandmoreinfo a,.brandinfodes p,.brandpre a,.brandnext a{font-size: 2.5rem;}
 	.brandmoreinfo a{line-height: 55px;}
-
 	.brandinfodes p{line-height: 80px;}
+	.storylistitem p{font-size: 1.35rem;}
 }
 
 @media only screen and (min-width: 2048px) {
 	.daoyantitile p,.brandtitle p{line-height: 74.7px;}
 	.daoyantitile p,.brandinfotitle p{font-size: 4.7rem;}
-	.daoyaninfo p,.branddes p,.storylistitem p{font-size: 2rem;line-height: 48px;}
+	.branddes p{font-size: 2rem;line-height: 48px;}
 	.brandtitle p{font-size: 3.33rem;}
 	.brandmoreinfo a,.brandinfodes p,.brandpre a,.brandnext a{font-size: 2.67rem;}
 	.brandmoreinfo a{line-height: 58.7px;}
 	.brandinfodes p{line-height: 85.36px;}
+	.storylistitem p{font-size: 1.44rem;}
 }
 
 @media only screen and (min-width: 2160px) {
 	.daoyantitile p,.brandtitle p{line-height: 78.75px;}
 	.daoyantitile p,.brandinfotitle p{font-size: 4.9rem;}
-	.daoyaninfo p,.branddes p,.storylistitem p{font-size: 2.1rem;line-height: 50.625px;}
+	.branddes p{font-size: 2.1rem;line-height: 50.625px;}
 	.brandtitle p{font-size: 3.5rem;}
 	.brandmoreinfo a,.brandinfodes p,.brandpre a,.brandnext a{font-size: 2.8rem;}
 	.brandmoreinfo a{line-height: 61.875px;}
 	.brandinfodes p{line-height: 90px;}
+	.storylistitem p{font-size: 1.52rem;}
 }

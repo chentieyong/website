@@ -115,6 +115,10 @@ p {margin-top: 0;margin-bottom: 0!important;margin-block-start: 0;margin-block-e
 .tab-box .box .item{width: 100%;height: auto;display: none;}
 .tab-box .box .item:nth-child(1){display: block;}
 
+
+.contracttckbox{position: fixed;top: 0;left: 0;z-index: 999;width: 100%;height: 100%;background: rgba(0,0,0,.5);display: flex;justify-content: center;align-items: center;}
+.contracttckbox img{width: 40%;}
+
 @media only screen and (max-width: 980px) {
     .languagebox{display: none!important;}
     .nav-top-lg{margin-bottom: 1rem;}
@@ -154,7 +158,7 @@ p {margin-top: 0;margin-bottom: 0!important;margin-block-start: 0;margin-block-e
     .navbox ul li a img{width: 12.75px;padding-left: 5.1px;}
     .navbox ul li ul{top: 51px;}
     .navbox ul li ul li{height: 40.8px;}
-    /*    .navbox ul li ul li a{font-size: 0.765rem;}*/
+/*    .navbox ul li ul li a{font-size: 0.765rem;}*/
 
     .slidecont p:first-child{font-size: 2.87rem;}
     .bannerslideline{margin: 0.225rem 0 0.51rem 0;}

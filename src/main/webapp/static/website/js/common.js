@@ -41,5 +41,13 @@ $(function() {
 		$(this).children("ul.nav_droplist").slideToggle();
 		$(this).siblings('li').children('.nav_droplist').slideUp();
 	});
+	
+	//点击固定栏联系我们按钮
+	$('.contracticon').click(function(){		
+		$('body').append('<div class="contracttckbox fadeIn"><img src="img/lxkuang.png"/></div>')
+	});
+	$(document).on('click','.contracttckbox',function (){
+        $(this).remove();
+    })
 
 });

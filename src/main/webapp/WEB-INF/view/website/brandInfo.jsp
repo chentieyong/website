@@ -76,7 +76,7 @@
     <jsp:include page="foot.jsp"/>
 </div>
 
-<a href="tencent://message/?uin=2975463389&Site=&Menu=yes" class="contracticon"><img
+<a class="contracticon"><img
         src="${basepath}/static/website/img/contracticon.png"/>
     <p>联系我们</p></a>
 <img src="${basepath}/static/website/img/backtotop.png" class="backtotop"/>
@@ -85,6 +85,11 @@
 <script type="text/javascript" src="${basepath}/static/website/js/swiper.min.js"></script>
 <script type="text/javascript" src="${basepath}/static/website/js/common.js"></script>
 <script>
+	$('.storylistitem').each(function() {
+		if($(this).children('p').text().length > 16) {
+			$(this).children('p').text($(this).children('p').text().substring(0, 16) + '...');
+		}
+	})
     //固定左边导航栏
     $(window).scroll(function() {
         var _top = $(window).scrollTop();

@@ -57,7 +57,7 @@
     <jsp:include page="foot.jsp"/>
 
 </div>
-<a href="tencent://message/?uin=2975463389&Site=&Menu=yes" class="contracticon"><img
+<a class="contracticon"><img
         src="${basepath}/static/website/img/contracticon.png"/>
     <p>联系我们</p></a>
 <img src="${basepath}/static/website/img/backtotop.jpg" class="backtotop"/>
