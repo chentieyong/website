@@ -97,7 +97,7 @@
                     <p>${innovateArticle.description}</p>
                 </div>
                 <div class="compmoreinfobox">
-                    <button type="button" onclick="toHref('${basepath}/brandInfo.html?artId=${innovateArticle.id}')">
+                    <button type="button" onclick="toHref('${basepath}/newsInfo.html?artId=${innovateArticle.id}')">
                         查看详情 >>
                     </button>
                 </div>
@@ -115,7 +115,7 @@
                     <p>${brandStoryArticle.description}</p>
                 </div>
                 <div class="compmoreinfobox">
-                    <button type="button" onclick="toHref('${basepath}/brandInfo.html?artId=${brandStoryArticle.id}')">
+                    <button type="button" onclick="toHref('${basepath}/newsInfo.html?artId=${brandStoryArticle.id}')">
                         查看详情 >>
                     </button>
                 </div>
@@ -150,7 +150,7 @@
                         <p>${item.description}</p>
                     </div>
                     <div class="newsmoreinfobox">
-                        <a>了解详情 ></a>
+                        <a href="${basepath}/newsInfo.html?artId=${item.id}">了解详情 ></a>
                     </div>
                 </div>
             </c:forEach>

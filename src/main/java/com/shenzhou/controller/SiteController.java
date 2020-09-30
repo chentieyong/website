@@ -198,10 +198,12 @@ public class SiteController {
         List<ApiDepthNavigatorInfo> headNavigatorList = (List<ApiDepthNavigatorInfo>) modelMap.get("headNavigatorList");
         String navId = null;
         for (ApiDepthNavigatorInfo data : headNavigatorList) {
-            if (data.getFunctionUrl().contains("brand")) {
-                modelMap.put("description", data.getDescription());
-                navId = data.getId();
-                break;
+            for (ApiDepthNavigatorInfo nodeData : data.getNodes()) {
+                if (nodeData.getFunctionUrl().contains("brand")) {
+                    modelMap.put("description", nodeData.getDescription());
+                    navId = nodeData.getId();
+                    break;
+                }
             }
         }
         //左侧导航
@@ -496,7 +498,7 @@ public class SiteController {
         load(modelMap, request);
         List<ApiDepthNavigatorInfo> headNavigatorList = (List<ApiDepthNavigatorInfo>) modelMap.get("headNavigatorList");
         for (ApiDepthNavigatorInfo data : headNavigatorList) {
-            if (data.getFunctionUrl().contains("#")) {
+            if (data.getFunctionUrl().contains("brand")) {
                 for (ApiDepthNavigatorInfo nodeData : data.getNodes()) {
                     if (nodeData.getFunctionUrl().contains("industry")) {
                         Map<String, String> nodeNavParam = new HashMap<>();

@@ -47,8 +47,8 @@
                 <hr/>
                 <div class="daoyaninfo">
                     <c:forEach items="${allBrandArticleList}" var="item">
-                        <div class="storylistitem" onclick="toHref('${basepath}/brandInfo.html?artId=${item.id}')">
-                            <p>${item.title}</p>
+                        <div class="storylistitem">
+                            <p><a href="${basepath}/brandInfo.html?artId=${item.id}">${item.title}</a></p>
                         </div>
                         <hr/>
                     </c:forEach>
