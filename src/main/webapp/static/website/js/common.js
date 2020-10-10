@@ -42,13 +42,14 @@ $(function() {
 		$(this).children("ul.nav_droplist").slideToggle();
 		$(this).siblings('li').children('.nav_droplist').slideUp();
 	});
-	
+
 	//点击固定栏联系我们按钮
 	var consclick = 0;
 	$('.contracticon').click(function(event) {
 		event.stopPropagation();
-		if(consclick == 0) {			
-			$(this).append('<div class="contracttckbox animated slideInRight"><img src="img/lxkuang.png"/></div>');
+		if(consclick == 0) {
+			var imgStr = basepath+"/static/website/img/lxkuang.png"
+			$(this).append("<div class=\"contracttckbox animated slideInRight\"><img src='"+imgStr+"'/></div>");
 			if($('.contracticon').attr('style')=='top: 0px;'){
 				$('.contracttckbox').css('top','0');
 			}
