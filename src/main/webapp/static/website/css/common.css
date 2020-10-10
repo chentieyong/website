@@ -116,8 +116,23 @@ p {margin-top: 0;margin-bottom: 0!important;margin-block-start: 0;margin-block-e
 .tab-box .box .item:nth-child(1){display: block;}
 
 
-.contracttckbox{position: fixed;top: 0;left: 0;z-index: 999;width: 100%;height: 100%;background: rgba(0,0,0,.5);display: flex;justify-content: center;align-items: center;}
-.contracttckbox img{width: 40%;}
+/*联系我们  弹出框  样式*/
+.contracttckbox{position: absolute;top: -80%;right: 0;transition: all 0.5s; width: 400%;z-index: 999;display: flex;justify-content: flex-end;align-items: center;}
+.contracttckbox img{width: 100%;}
+@-webkit-keyframes slideInRight {
+    from {-webkit-transform: translate3d(100%, 0, 0);transform: translate3d(100%, 0, 0);visibility: visible;}
+    to {-webkit-transform: translate3d(0, 0, 0);transform: translate3d(0, 0, 0);}}
+@keyframes slideInRight {
+    from {-webkit-transform: translate3d(100%, 0, 0);transform: translate3d(100%, 0, 0);visibility: visible;}
+    to {-webkit-transform: translate3d(0, 0, 0);transform: translate3d(0, 0, 0);}}
+.slideInRight {-webkit-animation-name: slideInRight;animation-name: slideInRight;animation-duration: 0.5s;}
+@-webkit-keyframes slideOutRight {
+    from {-webkit-transform: translate3d(0, 0, 0);transform: translate3d(0, 0, 0);}
+    to {visibility: hidden;-webkit-transform: translate3d(100%, 0, 0);transform: translate3d(100%, 0, 0);}}
+@keyframes slideOutRight {
+    from {-webkit-transform: translate3d(0, 0, 0);transform: translate3d(0, 0, 0);}
+    to {visibility: hidden;-webkit-transform: translate3d(100%, 0, 0);transform: translate3d(100%, 0, 0);}}
+.slideOutRight {-webkit-animation-name: slideOutRight;animation-name: slideOutRight;animation-duration: 0.5s;}
 
 @media only screen and (max-width: 980px) {
     .languagebox{display: none!important;}

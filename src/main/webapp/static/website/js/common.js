@@ -7,10 +7,11 @@ $(function() {
 		var _top = $(window).scrollTop();
 		if(_top > $('body').height()) {
 			$('.backtotop').css('display', 'block');
-			$('.contracticon').css('top','0');
+			$('.contracticon,.contracttckbox').css('top', '0');
 		} else {
 			$('.backtotop').css('display', 'none');
-			$('.contracticon').css('top','calc(50% + 50px)');
+			$('.contracticon').css('top', 'calc(50% + 50px)');
+			$('.contracttckbox').css('top', '-80%');
 		}
 	});
 	$('.backtotop').click(function() {
@@ -43,12 +44,26 @@ $(function() {
 	});
 	
 	//点击固定栏联系我们按钮
-	$('.contracticon').click(function(){
-		var img = basepath+'/static/website/img/lxkuang.png'
-		$('body').append("<div class='contracttckbox fadeIn'><img src='"+img+"'></div>")
+	var consclick = 0;
+	$('.contracticon').click(function(event) {
+		event.stopPropagation();
+		if(consclick == 0) {			
+			$(this).append('<div class="contracttckbox animated slideInRight"><img src="img/lxkuang.png"/></div>');
+			if($('.contracticon').attr('style')=='top: 0px;'){
+				$('.contracttckbox').css('top','0');
+			}
+			consclick = 1;
+		}
 	});
-	$(document).on('click','.contracttckbox',function (){
-        $(this).remove();
-    })
+	$(document).on('click', 'body', function() {
+		console.log(consclick);
+		if(consclick == 1) {
+			$('.contracttckbox').addClass('slideOutRight');
+			setTimeout(() => {
+				$('.contracttckbox').remove();
+				consclick = 0;
+			}, 500)
+		}
+	})
 
 });
