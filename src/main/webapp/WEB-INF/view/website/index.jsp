@@ -64,8 +64,9 @@
     <section class="casetotalbox">
         <div class="casetotalvideobox">
             <video class="casetotalvideo" src="${workArticle.videoURL}" controls poster="${workArticle.videoImage}"
-                   x-webkit-airplay="true" webkit-playsinline="true" playsinline="true"
-                   x5-video-player-type="h5"></video>
+                   webkit-playsinline="true" x-webkit-airplay="true"
+                   playsinline="true"x5-video-player-type="h5"x5-video-player-fullscreen="true"width="100%" height="100%"
+                   preload="auto" style="object-fit: cover"></video>
         </div>
         <div class="casetotaldesbox">
             <div class="totalbox">
