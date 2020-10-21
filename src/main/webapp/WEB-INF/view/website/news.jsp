@@ -63,7 +63,9 @@
                                     <div class="compnewsdesbox">
                                         <div class="compnewstitletime">
                                             <div class="compnewstitle">
-                                                <p>${item.title}</p>
+                                                <p>
+                                                    <a href="newsInfo.html?artId=${item.id}"> ${item.title}</a>
+                                                </p>
                                             </div>
                                             <div class="compnewstime">
                                                 <p>${item.createdTimeStr}</p>
@@ -108,9 +110,9 @@
 <script type="text/javascript" src="${basepath}/static/website/js/swiper.min.js"></script>
 <script type="text/javascript" src="${basepath}/static/website/js/common.js"></script>
 <script>
-    $(window).scroll(function() {
+    $(window).scroll(function () {
         var _top = $(window).scrollTop();
-        if(_top > ($('.header').height() + $('.slidebox').height())) {
+        if (_top > ($('.header').height() + $('.slidebox').height())) {
             $('.tab').css({
                 'position': 'fixed',
                 'top': '20px',
@@ -124,7 +126,7 @@
             });
         }
 
-        if(_top > ($('.box').height() + $('.tab').height())) {
+        if (_top > ($('.box').height() + $('.tab').height())) {
             $('.tab').css({
                 'position': 'absolute',
                 'top': '0',
