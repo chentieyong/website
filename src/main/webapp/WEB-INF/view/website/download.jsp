@@ -24,13 +24,15 @@
                 <c:forEach items="${focusList}" var="item" varStatus="xh">
                     <div class="swiper-slide">
                         <img src="${item.picturePath}"/>
-                        <div class="bannerslidebox">
-                            <div class="slidecont">
-                                <p>${item.name}</p>
-                                <div class="bannerslideline"></div>
-                                <p>${item.description}</p>
+                        <c:if test="${!empty item.name}">
+                            <div class="bannerslidebox">
+                                <div class="slidecont">
+                                    <p>${item.name}</p>
+                                    <div class="bannerslideline"></div>
+                                    <p>${item.description}</p>
+                                </div>
                             </div>
-                        </div>
+                        </c:if>
                     </div>
                 </c:forEach>
             </div>
