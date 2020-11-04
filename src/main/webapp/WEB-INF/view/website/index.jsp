@@ -67,7 +67,8 @@
         <div class="casetotalvideobox">
             <video class="casetotalvideo" src="${workArticle.videoURL}" controls poster="${workArticle.videoImage}"
                    webkit-playsinline="true" x-webkit-airplay="true"
-                   playsinline="true"x5-video-player-type="h5"x5-video-player-fullscreen="true"width="100%" height="100%"
+                   playsinline="true" x5-video-player-type="h5" x5-video-player-fullscreen="true" width="100%"
+                   height="100%"
                    preload="auto" style="object-fit: cover"></video>
         </div>
         <div class="casetotaldesbox">
@@ -84,7 +85,7 @@
                         ${workArticle.description}</p>
                 </div>
                 <div class="totalmoreinfobox">
-<%--                    <a href="${basepath}/brandInfo.html?artId=${workArticle.id}">了解更多</a>--%>
+                    <%--                    <a href="${basepath}/brandInfo.html?artId=${workArticle.id}">了解更多</a>--%>
                 </div>
             </div>
         </div>

@@ -65,12 +65,15 @@
                         <div class="prodes">
                             <p>${product.description}</p>
                         </div>
-                        <div class="provideo">
-                            <video src="${product.videoURL}" controls poster="${product.videoImage}"
-                                   webkit-playsinline="true" x-webkit-airplay="true"
-                                   playsinline="true"x5-video-player-type="h5"x5-video-player-fullscreen="true"width="100%" height="100%"
-                                   preload="auto" style="object-fit: cover"></video>
-                        </div>
+                        <c:if test="${!empty product.videoURL}">
+                            <div class="provideo">
+                                <video src="${product.videoURL}" controls poster="${product.videoImage}"
+                                       webkit-playsinline="true" x-webkit-airplay="true"
+                                       playsinline="true" x5-video-player-type="h5" x5-video-player-fullscreen="true"
+                                       width="100%" height="100%"
+                                       preload="auto" style="object-fit: cover"></video>
+                            </div>
+                        </c:if>
                     </div>
                     <c:if test="${!empty productItemList}">
                         <div class="profeaturesbox">
