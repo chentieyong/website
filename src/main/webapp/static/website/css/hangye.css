@@ -12,8 +12,8 @@ p{margin-bottom: 0;}
 .hangyetab .Hangyebox .hyitembox{width: 92.7%;height: auto;margin-bottom: 5.25%;}
 .hytitle,.hyinfocontainer,.hyinfoimg,.hyinfoimg img,.hyproname{width: 100%;}
 .hytitle p{font-size: 4.375rem;color: #004098;line-height: 1;}
-.hyinfocontainer{display: flex;flex-flow: row wrap;justify-content: space-between;align-items: center;}
-.hyinfoitem{width: 31.5%;height: auto;margin-top: 3.98%;}
+.hyinfocontainer{display: flex;flex-flow: row wrap;justify-content: flex-start;align-items: center;}
+.hyinfoitem{width: 31.5%;height: auto;margin-top: 3.98%;margin-left: 0.9%;margin-right: 0.9%;}
 .hyproname{margin-top: 7.85%;}
 .hyproname p{font-size: 1.875rem;color: #4D4D4D;line-height: 1;}
 .hyitembox hr{width: 100%;height: 4px;background: #CDCDCD;border: none;margin: 12% auto;}

@@ -35,7 +35,7 @@ p {margin-top: 0;margin-bottom: 0!important;margin-block-start: 0;margin-block-e
 
 .nav-button{display: none;}
 /*banner*/
-.slidebox{position: relative;width: 100%;height: auto;max-height: 620px;overflow: hidden;}
+.slidebox{position: relative;width: 100%;height: auto;/**max-height: 620px**/;overflow: hidden;}
 .swiper-container{width: 100%;height: 100%;}
 .swiper-wrapper{position: relative;z-index: 3;}
 .swiper-slide{position: relative; width: 100%;height: 100%;display: flex;justify-content: center;align-items: center;}

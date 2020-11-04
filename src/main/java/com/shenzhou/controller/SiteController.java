@@ -548,7 +548,7 @@ public class SiteController {
             if (data.getFunctionUrl().contains("news")) {
                 Map<String, String> newsParam = new HashMap<>();
                 newsParam.put("navigatorID", data.getId());
-                newsParam.put("pageNumber", "2");
+                newsParam.put("pageNumber", "5");
                 if (StringUtils.isNotBlank(s)) {
                     newsParam.put("currentPage", s);
                 }

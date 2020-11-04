@@ -52,7 +52,7 @@
 
                 <c:forEach items="${categoryList}" var="item">
                     <c:if test="${item.name!='智能化系统'}">
-                        <div class="searchproitem" onclick="toHref('${basepath}/product.html')">
+                        <div class="searchproitem" onclick="toHref('${basepath}/product.html#${item.id}')">
                             <img src="${item.smallIcon}"/>
                             <div class="searchpronamebox">
                                 <p>${item.name}</p>
@@ -100,7 +100,7 @@
                     <p>${innovateArticle.description}</p>
                 </div>
                 <div class="compmoreinfobox">
-                    <button type="button" onclick="toHref('${basepath}/newsInfo.html?artId=${innovateArticle.id}')">
+                    <button type="button" onclick="toHref('${basepath}/aboutUs.html')">
                         查看详情 >>
                     </button>
                 </div>
@@ -118,7 +118,7 @@
                     <p>${brandStoryArticle.description}</p>
                 </div>
                 <div class="compmoreinfobox">
-                    <button type="button" onclick="toHref('${basepath}/newsInfo.html?artId=${brandStoryArticle.id}')">
+                    <button type="button" onclick="toHref('${basepath}/brand.html')">
                         查看详情 >>
                     </button>
                 </div>
