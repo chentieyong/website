@@ -49,8 +49,8 @@ p {margin-top: 0;margin-bottom: 0!important;margin-block-start: 0;margin-block-e
 .bannerslideline{width: 40%;height: 3px;background: #FFFFFF; margin: 0.5rem 0 1rem 0;}
 .slidecont p:last-child{font-size: 2.8125rem;}
 /*底部*/
-.footer{width: 100%;height: auto;background: url(../img/botbg.png) no-repeat;background-size: 100% 100%;display: flex;justify-content: flex-start;align-items: center;}
-.footcontainer{width: 82.7%;margin-top: 7%; margin-bottom: 4%;margin-left: 6.5%; display: flex;flex-flow: column nowrap;justify-content: flex-start;align-items: flex-start;}
+.footer{width: 100%;height: auto;background: url(../img/botbg.png) no-repeat;background-size: 100% 100%;display: flex;flex-flow: column nowrap;justify-content: flex-start;align-items: center;}
+.footcontainer{width: 82.7%;margin-top: 7%;display: flex;flex-flow: column nowrap;justify-content: flex-start;align-items: flex-start;}
 .indexfootlogo{width: 10.3%;margin-left: -1%;}
 .footitembox{width: 100%;margin-top: 5.3%;display: flex;flex-flow: row nowrap;justify-content: space-between;align-items: flex-start;}
 .footitem ul{width: 100%;margin-block-start: 0;margin-block-end: 0;padding-inline-start: 0;}
@@ -61,7 +61,7 @@ p {margin-top: 0;margin-bottom: 0!important;margin-block-start: 0;margin-block-e
 .footitem ul li a,.copyrightbox p{color: #FFFFFF;line-height:42px;font-size:1.875rem;margin: 0;}
 .footitem ul li a:hover{color: #FFFFFF;text-decoration: none;cursor: pointer;}
 .copyrightbox,.contracticon{display: flex;flex-flow: column nowrap;justify-content: center;align-items: center;}
-.copyrightbox{width: 100%;margin-top: 10.2%;}
+.copyrightbox{width: 100%;margin-top: 10.2%;margin-bottom: 4%;}
 .copyrightbox div{width: 100%;display: flex;flex-flow: row nowrap;justify-content: center;align-items: center;}
 .copyrightbox div p{padding-left: 3rem;padding-top: 6px;}
 /*联系我们*/
@@ -108,7 +108,7 @@ p {margin-top: 0;margin-bottom: 0!important;margin-block-start: 0;margin-block-e
 .tab-box .tab{width: 20.3%;height: auto;}
 .tab-box .tab ul{width: 100%;height: auto; display: flex;flex-flow: column nowrap;justify-content: flex-start;align-items: center;}
 .tab-box .tab ul li{width: 100%;height: 100px;border-bottom: 2px solid #DCDCDC;}
-.tab-box .tab ul li a{color: #4D4D4D;font-size: 2.5rem;line-height: 100px;}
+.tab-box .tab ul li a{color: #4D4D4D;font-size: 1.875rem;line-height: 100px;}
 .tab-box .tab ul li.action a{color: #004098;}
 .tab-box .tab ul li a:hover{color: #004098;}
 .tab-box .box{width: 75.27%;height: auto;}
@@ -165,7 +165,7 @@ p {margin-top: 0;margin-bottom: 0!important;margin-block-start: 0;margin-block-e
 }
 @media only screen and (min-width: 980px){
     .header-top{margin: 0.765rem auto;}
-    .languagebox span,.navbox ul li a,.contracticon p,.sharebox a p{font-size: 0.956rem;}
+    .languagebox span,.navbox ul li a,.contracticon p,.sharebox a p,.tab-box .tab ul li a{font-size: 0.956rem;}
     .languagebox{margin-top: 1.02rem;}
     .navsloganEn{font-size: 0.765rem;}
     .navbox{height: 51px;}
@@ -192,7 +192,7 @@ p {margin-top: 0;margin-bottom: 0!important;margin-block-start: 0;margin-block-e
     .Intothbox .QQ,.Intothbox .phone{height: 36.7px;}
     .Intothbox .QQ p,.Intothbox .phone p{font-size: 1.59rem;line-height: 25.5px;}
     .Intothbox .wxqrcode p{line-height:15.3px;font-size: 0.6375rem;}
-    .pagesbox p{font-size: 1.59rem;}.navslogan,.pagesbox button,.tab-box .tab ul li a{font-size: 1.275rem;}.pagesbox button{height: 45.9px;}
+    .pagesbox p{font-size: 1.59rem;}.navslogan,.pagesbox button{font-size: 1.275rem;}.pagesbox button{height: 45.9px;}
     .contracticon{width:102px;height:76.5px;}
     .tab-box .tab ul li{height: 51px;}
     .tab-box .tab ul li a{line-height: 51px;}
@@ -200,7 +200,7 @@ p {margin-top: 0;margin-bottom: 0!important;margin-block-start: 0;margin-block-e
 
 @media only screen and (min-width: 1200px) {
     .header-top{margin: 0.94rem auto;}
-    .languagebox span,.navbox ul li a,.contracticon p,.sharebox a p{font-size: 1.17rem;}
+    .languagebox span,.navbox ul li a,.contracticon p,.sharebox a p,.tab-box .tab ul li a{font-size: 1.17rem;}
     .languagebox{margin-top: 1.25rem;}
     .navsloganEn{font-size: 0.9375rem;}
     .navbox{height: 62.5px;}
@@ -229,7 +229,7 @@ p {margin-top: 0;margin-bottom: 0!important;margin-block-start: 0;margin-block-e
     .Intothbox .QQ p,.Intothbox .phone p{font-size: 1.95rem;line-height: 31.25px;}
     .Intothbox .wxqrcode p{line-height:18.75px;font-size: 0.78rem;}
 
-    .pagesbox p{font-size: 1.95rem;}.navslogan,.pagesbox button,.tab-box .tab ul li a{font-size: 1.56rem;}.pagesbox button{height: 56.25px;}
+    .pagesbox p{font-size: 1.95rem;}.navslogan,.pagesbox button{font-size: 1.56rem;}.pagesbox button{height: 56.25px;}
     .contracticon{width:125px;height:93.75px;}
     .tab-box .tab ul li{height: 62.5px;}
     .tab-box .tab ul li a{line-height: 62.5px;}
@@ -237,7 +237,7 @@ p {margin-top: 0;margin-bottom: 0!important;margin-block-start: 0;margin-block-e
 
 @media only screen and (min-width: 1405px){
     .header-top{margin: 1.125rem auto;}
-    .languagebox span,.navbox ul li a,.contracticon p,.sharebox a p{font-size: 1.41rem;}
+    .languagebox span,.navbox ul li a,.contracticon p,.sharebox a p,.tab-box .tab ul li a{font-size: 1.41rem;}
     .languagebox{margin-top: 1.5rem;}
     .navsloganEn{font-size: 1.125rem;}
     .navbox{height: 75px;}
@@ -266,7 +266,7 @@ p {margin-top: 0;margin-bottom: 0!important;margin-block-start: 0;margin-block-e
     .Intothbox .QQ p,.Intothbox .phone p{font-size: 2.34rem;line-height: 37.5px;}
     .Intothbox .wxqrcode p{line-height:22.5px;font-size: 0.94rem;}
 
-    .pagesbox p{font-size: 2.34rem;}.navslogan,.pagesbox button,.tab-box .tab ul li a{font-size: 1.875rem;}.pagesbox button{height: 67.5px;}
+    .pagesbox p{font-size: 2.34rem;}.navslogan,.pagesbox button{font-size: 1.875rem;}.pagesbox button{height: 67.5px;}
     .contracticon{width:150px;height:112.5px;}
     .tab-box .tab ul li{height: 75px;}
     .tab-box .tab ul li a{line-height: 75px;}
@@ -274,7 +274,7 @@ p {margin-top: 0;margin-bottom: 0!important;margin-block-start: 0;margin-block-e
 
 @media only screen and (min-width: 1600px) {
     .header-top{margin: 1.31rem auto;}
-    .languagebox span,.navbox ul li a,.contracticon p,.sharebox a p{font-size: 1.64rem;}
+    .languagebox span,.navbox ul li a,.contracticon p,.sharebox a p,.tab-box .tab ul li a{font-size: 1.64rem;}
     .languagebox{margin-top: 1.75rem;}
     .navsloganEn{font-size: 1.3125rem;}
     .navbox{height: 87.5px;}
@@ -303,14 +303,14 @@ p {margin-top: 0;margin-bottom: 0!important;margin-block-start: 0;margin-block-e
     .Intothbox .QQ p,.Intothbox .phone p{font-size: 2.73rem;line-height: 43.75px;}
     .Intothbox .wxqrcode p{line-height:26.25px;font-size: 1.1rem;}
 
-    .pagesbox p{font-size: 2.73rem;}.navslogan,.pagesbox button,.tab-box .tab ul li a{font-size: 2.19rem;}.pagesbox button{height: 78.75px;}
+    .pagesbox p{font-size: 2.73rem;}.navslogan,.pagesbox button{font-size: 2.19rem;}.pagesbox button{height: 78.75px;}
     .contracticon{top: calc(50% + 120px);width:150px;height:131.25px;}
     .tab-box .tab ul li{height: 87.5px;}
     .tab-box .tab ul li a{line-height: 87.5px;}
 }
 @media only screen and (min-width: 1900px) {
     .header-top{margin: 1.5rem auto;}
-    .languagebox span,.navbox ul li a,.contracticon p,.sharebox a p{font-size: 1.875rem;}
+    .languagebox span,.navbox ul li a,.contracticon p,.sharebox a p,.tab-box .tab ul li a{font-size: 1.875rem;}
     .languagebox{margin-top: 2rem;}
     .navsloganEn{font-size: 1.5rem;}
     .navbox{height: 100px;}
@@ -339,14 +339,14 @@ p {margin-top: 0;margin-bottom: 0!important;margin-block-start: 0;margin-block-e
     .Intothbox .QQ p,.Intothbox .phone p{font-size: 3.125rem;line-height: 50px;}
     .Intothbox .wxqrcode p{line-height:30px;font-size: 1.25rem;}
 
-    .pagesbox p{font-size: 3.125rem;}.navslogan,.pagesbox button,.tab-box .tab ul li a{font-size: 2.5rem;}.pagesbox button{height: 90px;}
+    .pagesbox p{font-size: 3.125rem;}.navslogan,.pagesbox button{font-size: 2.5rem;}.pagesbox button{height: 90px;}
     .contracticon{width:200px;height:150px;}
     .tab-box .tab ul li{height: 100px;}
     .tab-box .tab ul li a{line-height: 100px;}
 }
 @media only screen and (min-width: 2048px) {
     .header-top{margin: 1.6rem auto;}
-    .languagebox span,.navbox ul li a,.contracticon p,.sharebox a p{font-size: 2rem;}
+    .languagebox span,.navbox ul li a,.contracticon p,.sharebox a p,.tab-box .tab ul li a{font-size: 2rem;}
     .languagebox{margin-top: 2.13rem;}
     .navsloganEn{font-size: 1.6rem;}
     .navbox{height: 106.7px;}
@@ -375,14 +375,14 @@ p {margin-top: 0;margin-bottom: 0!important;margin-block-start: 0;margin-block-e
     .Intothbox .QQ p,.Intothbox .phone p{font-size: 3.33rem;line-height: 53.35px;}
     .Intothbox .wxqrcode p{line-height:32px;font-size: 1.33rem;}
 
-    .pagesbox p{font-size: 3.33rem;}.navslogan,.pagesbox button,.tab-box .tab ul li a{font-size: 2.67rem;}.pagesbox button{height: 96px;}
+    .pagesbox p{font-size: 3.33rem;}.navslogan,.pagesbox button{font-size: 2.67rem;}.pagesbox button{height: 96px;}
     .contracticon{top: calc(50% + 80px);width:213.4px;height:160.05px;}
     .tab-box .tab ul li{height: 106.7px;}
     .tab-box .tab ul li a{line-height: 106.7px;}
 }
 @media only screen and (min-width: 2160px) {
     .header-top{margin: 1.69rem auto;}
-    .languagebox span,.navbox ul li a,.contracticon p,.sharebox a p{font-size: 2.1rem;}
+    .languagebox span,.navbox ul li a,.contracticon p,.sharebox a p,.tab-box .tab ul li a{font-size: 2.1rem;}
     .languagebox{margin-top: 2.25rem;}
     .navsloganEn{font-size: 1.6875rem;}
     .navbox{height: 112.5px;}
@@ -411,7 +411,7 @@ p {margin-top: 0;margin-bottom: 0!important;margin-block-start: 0;margin-block-e
     .Intothbox .QQ p,.Intothbox .phone p{font-size: 3.5rem;line-height: 56.25px;}
     .Intothbox .wxqrcode p{line-height:33.75px;font-size: 1.4rem;}
 
-    .pagesbox p{font-size: 3.5rem;}.navslogan,.pagesbox button,.tab-box .tab ul li a{font-size: 2.8rem;}.pagesbox button{height: 101.25px;}
+    .pagesbox p{font-size: 3.5rem;}.navslogan,.pagesbox button{font-size: 2.8rem;}.pagesbox button{height: 101.25px;}
     .contracticon{top: calc(50% + 50px);width:225px;height:168.75px;}
     .tab-box .tab ul li{height: 112.5px;}
     .tab-box .tab ul li a{line-height: 112.5px;}

@@ -46,7 +46,7 @@ a:hover{text-decoration: none;}
 .prodes{margin-top: 1.5%;text-align: justify;}
 .prodes p{font-size: 1.875rem;color: #6F6F6F;line-height: 45px;}
 .provideo{margin-top: 2.4%;}
-.provideo video{object-fit: contain;}
+.provideo video{max-width:100%;object-fit: contain;}
 
 .profeaturesbox,.profiledownloadbox,.usercasebox{margin-top: 9.6%;}
 .profettitle p{font-size: 2.5rem;color: #004199;line-height: 1;}

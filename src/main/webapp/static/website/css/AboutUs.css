@@ -53,6 +53,7 @@ p{margin-bottom: 0;}
 .compnewstitletime .compnewstitle{width: 74.3%;overflow: hidden;}
 .compnewstitletime .compnewstime{width: 21.6%;}
 .compnewstitle p{font-size: 3.125rem;color: #004199;line-height: 1;}
+.compnewstitle p:active,.compnewstitle p:hover{cursor: pointer;color: #004199;}
 .compnewstime p,.compnewdesinfo p,.compnewsmoreinfo a{font-size: 1.875rem;color: #606060;}
 .compnewdesinfo{text-align: justify;margin-top: 4%;}
 .compnewdesinfo p,.newsdes p{line-height: 45px;}
@@ -83,7 +84,7 @@ p{margin-bottom: 0;}
 .comphonoritem img{width: 100%;}
 .comphonorname{margin-top: 7.5%;text-align: center;}
 .comphonorname p{font-size: 1.875rem;color: #686868;line-height: 1;}
-.sharebox{top: 1%;}
+.sharebox{top: -1%;}
 .compBigPhoto{position: fixed;top: 0;left: 0;z-index: 8; width: 100%;height: 100%;background: rgba(0,0,0,0.5);display: flex;justify-content: center;align-items: center;}
 .compBigPhoto img{width: 40%;}
 @media only screen and (min-width: 980px) and (max-width: 1199px) {
