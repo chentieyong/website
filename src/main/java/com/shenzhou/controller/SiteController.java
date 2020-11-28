@@ -61,25 +61,24 @@ public class SiteController {
     private static final String FOOT_NAVIGATOR_ROOT_ID = "0a5766eb153f4576999cae72f7589185";
     //吸尘车作业锦集文章id
     private static final String WORK_ARTICLE_ID = "2c93fcff73dc20cb0173dd34e8d8005e";
-
     //自主创新文章id
-    private static final String INNOVATE_ARTICLE_ID = "2c93fcff73dc20cb0173dd354b220060";
+    private static final String INNOVATE_ARTICLE_ID = "2c93251975ee4ca001760c79a3e100c2";
     //品牌故事文章id
-    private static final String BRAND_STORY_ARTICLE_ID = "2c93fcff73dc20cb0173dd35cc590063";
+    private static final String BRAND_STORY_ARTICLE_ID = "2c93251975ee4ca001760c7a276800c4";
     //售后服务文章id
-    private static final String AFTER_SERVICE_ARTICLE_ID = "2c93fcff73dc20cb0173dd360c3e0065";
+    private static final String AFTER_SERVICE_ARTICLE_ID = "2c93251975ee4ca001760c7a962700c6";
     //金融支持文章id
-    private static final String SUPPORT_ARTICLE_ID = "2c93fcff73dc20cb0173dd5c58c7007c";
-    //首页文章推荐
-    private static final String INDEX_ARTICLE_RECOMMEND_NAVIGATOR_ID = "6486591901cd4d02abe7ccb100f4eb5a";
-    //产品分类ROOT_ID
-    private static final String PRODUCT_ROOT_ID = "36cc8014-758b-4156-99cb-a4608287bacf";
+    private static final String SUPPORT_ARTICLE_ID = "2c93251975ee4ca001760c7c000700c8";
     //公司介绍文章id
-    private static final String COMPANY_ARTICLE_ID = "2c93fcff73dc20cb0173dd5e55d90082";
+    private static final String COMPANY_ARTICLE_ID = "2c93251975ee4ca001760c7d037400ca";
+    //首页文章推荐
+    private static final String INDEX_ARTICLE_RECOMMEND_NAVIGATOR_ID = "c6d95e0f447d4780a5a345a0ae9158e4";
+    //产品分类ROOT_ID
+    private static final String PRODUCT_ROOT_ID = "1ac5bc05-49a8-4b7e-8f8b-fa87295ebc39";
     //车载称重系统产品id
-    private static final String WEIGHTSYSTEM_PRODUCT_ID = "ff80808173f268c80173f26b1b1d0006";
+    private static final String WEIGHTSYSTEM_PRODUCT_ID = "2c93251975ee4ca001760c77ef5900bd";
     //作业质量管理产品id
-    private static final String MASSSYSTEM_PRODUCT_ID = "ff80808173f268c80173f26ac57b0004";
+    private static final String MASSSYSTEM_PRODUCT_ID = "2c93251975ee4ca001760c77b0bd00bb";
     //产品底盘参数
     private static final String GOODSSHOP_DIPAN_PARAMETER_ID = "ff80808173f14fc30173f15525810014";
     //产品参数
