@@ -54,15 +54,14 @@ public class SiteController {
     private ApiReleaseService apiReleaseService;
 
     //首页轮播
-    private static final String FOCUS_ID = "ff8080816dfbff6d016dfc4a06ea004e";
+    private static final String FOCUS_ID = "2c93251975ee4ca0017608811ae4004a";
     //导航头部ROOT_ID
-    private static final String HEAD_NAVIGATOR_ROOT_ID = "620883176dd440b7bee6c12eb55021ec";
+    private static final String HEAD_NAVIGATOR_ROOT_ID = "08620dc1d42a4ef6aec7387bc6602982";
     //导航底部ROOT_ID
-    private static final String FOOT_NAVIGATOR_ROOT_ID = "caa14727e3b04e08a4ac166f309f7bde";
-    //探索我们的产品导航id
-    private static final String PRODUCT_RECOMMEND_NAVIGATOR_ID = "ef5192837aa24322986bb6831eeec1fb";
+    private static final String FOOT_NAVIGATOR_ROOT_ID = "0a5766eb153f4576999cae72f7589185";
     //吸尘车作业锦集文章id
     private static final String WORK_ARTICLE_ID = "2c93fcff73dc20cb0173dd34e8d8005e";
+
     //自主创新文章id
     private static final String INNOVATE_ARTICLE_ID = "2c93fcff73dc20cb0173dd354b220060";
     //品牌故事文章id
@@ -82,9 +81,9 @@ public class SiteController {
     //作业质量管理产品id
     private static final String MASSSYSTEM_PRODUCT_ID = "ff80808173f268c80173f26ac57b0004";
     //产品底盘参数
-    private static final String GOODSSHOP_DIPAN_PARAMETER_ID = "ff80808173f14fc30173f15525810012";
+    private static final String GOODSSHOP_DIPAN_PARAMETER_ID = "ff80808173f14fc30173f15525810014";
     //产品参数
-    private static final String GOODSSHOP_PARAMETER_ID = "ff80808173f14fc30173f15525810011";
+    private static final String GOODSSHOP_PARAMETER_ID = "ff80808173f14fc30173f15525810013";
 
     @RequestMapping("")
     public String base(ModelMap modelMap, HttpServletRequest request) {
