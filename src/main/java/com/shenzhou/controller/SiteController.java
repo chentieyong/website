@@ -60,7 +60,7 @@ public class SiteController {
     //导航底部ROOT_ID
     private static final String FOOT_NAVIGATOR_ROOT_ID = "0a5766eb153f4576999cae72f7589185";
     //吸尘车作业锦集文章id
-    private static final String WORK_ARTICLE_ID = "2c93fcff73dc20cb0173dd34e8d8005e";
+    private static final String WORK_ARTICLE_ID = "2c93251975ee4ca0017613ef733f00fc";
     //自主创新文章id
     private static final String INNOVATE_ARTICLE_ID = "2c93251975ee4ca001760c79a3e100c2";
     //品牌故事文章id
