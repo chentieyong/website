@@ -76,9 +76,9 @@ public class SiteController {
     //产品分类ROOT_ID
     private static final String PRODUCT_ROOT_ID = "1ac5bc05-49a8-4b7e-8f8b-fa87295ebc39";
     //车载称重系统产品id
-    private static final String WEIGHTSYSTEM_PRODUCT_ID = "2c93251975ee4ca001760c77ef5900bd";
+    private static final String WEIGHTSYSTEM_PRODUCT_ID = "ff808081768ed99201768eeaf9f80145";
     //作业质量管理产品id
-    private static final String MASSSYSTEM_PRODUCT_ID = "2c93251975ee4ca001760c77b0bd00bb";
+    private static final String MASSSYSTEM_PRODUCT_ID = "ff808081768ed99201768eeac96a0140";
     //产品底盘参数
     private static final String GOODSSHOP_DIPAN_PARAMETER_ID = "ff80808173f14fc30173f15525810014";
     //产品参数

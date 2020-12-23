@@ -23,7 +23,7 @@
         <div class="cartypebox">
             <div class="typelistbox open">
                 <c:forEach items="${categoryList}" var="item">
-                    <c:if test="${item.name!='智能化系统'}">
+                    <c:if test="${item.name!='Systems'}">
                         <ul class="ul">
                             <li>
                                 <a href="#${item.id}">${item.name}</a>
@@ -46,7 +46,7 @@
                 <div class="containinfobox">
 
                     <c:forEach items="${categoryList}" var="item">
-                        <c:if test="${item.name!='智能化系统'}">
+                        <c:if test="${item.name!='Systems'}">
                             <div class="shizhengbox" id="${item.id}">
                                 <div class="cartitle">
                                     <p>${item.name}</p>

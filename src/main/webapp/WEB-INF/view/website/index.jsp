@@ -51,7 +51,7 @@
             <div class="searchprocont">
 
                 <c:forEach items="${categoryList}" var="item">
-                    <c:if test="${item.name!='智能化系统'}">
+                    <c:if test="${item.name!='Systems'}">
                         <div class="searchproitem" onclick="toHref('${basepath}/product.html#${item.id}')">
                             <img src="${item.smallIcon}"/>
                             <div class="searchpronamebox">
