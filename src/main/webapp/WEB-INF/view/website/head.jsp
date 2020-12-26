@@ -11,7 +11,7 @@
             </div>
             <div class="languagebox">
                 <img src="${basepath}/static/website/img/languageicon.png"/>
-                <span><a class="lgeactive">中</a>/<a>En</a></span>
+                <span><a href="${basepath}/index">中</a>/<a class="lgeactive" href="#">En</a></span>
             </div>
             <button class="nav-button" id="navbtn">
                 <div class="line line__1"></div>
