@@ -131,6 +131,23 @@
             clickable: true,
         },
     })
+
+    $('.sharebox').on('click', function () {
+        var url = window.location.href;
+        copyUrl(url);
+        alert("复制成功！");
+    });
+
+    function copyUrl(id) {
+        $("body").after("<input id='copyVal'></input>");
+        var text = id;
+        var input = document.getElementById("copyVal");
+        input.value = text;
+        input.select();
+        input.setSelectionRange(0, input.value.length);
+        document.execCommand("copy");
+        $("#copyVal").remove();
+    }
 </script>
 </body>
 
