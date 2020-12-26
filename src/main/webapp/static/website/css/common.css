@@ -1,4 +1,4 @@
-html,body {position: relative;width: 100%;height: 100%;margin: 0;padding: 0;color: #FFFFFF;background: #FFFFFF;font-size:16px;}
+html,body {position: relative;width: 100%;height: 100%;margin: 0;padding: 0;color: #FFFFFF;background: #FFFFFF;font-size:13px;}
 a:hover{cursor: pointer;text-decoration: none;}
 ul{margin-block-start: 0;margin-block-end: 0;padding-inline-start: 0;}
 ul li{list-style: none;}
