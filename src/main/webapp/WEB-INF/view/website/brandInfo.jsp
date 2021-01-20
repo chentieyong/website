@@ -135,7 +135,7 @@
     $('.sharebox').on('click', function () {
         var url = window.location.href;
         copyUrl(url);
-        alert("复制成功！");
+        alert("页面链接复制完成");
     });
 
     function copyUrl(id) {

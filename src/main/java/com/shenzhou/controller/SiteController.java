@@ -153,7 +153,7 @@ public class SiteController {
         if (StringUtils.isNotBlank(navId)) {
             Map<String, String> newsParam = new HashMap<>();
             newsParam.put("navigatorID", navId);
-            newsParam.put("pageNumber", "2");
+            newsParam.put("pageNumber", "5");
             if (StringUtils.isNotBlank(s)) {
                 newsParam.put("currentPage", s);
             }
