@@ -115,26 +115,26 @@
 
                 <div class="Intcontract">
                     <div class="Intfrmbox">
-                        <div class="lxtxt">联系我们</div>
+                        <div class="lxtxt">Feedback</div>
                         <form class="lxfrm" id="feed_form">
                             <div class="lxfrmitem">
-                                <input type="text" class="username" name="contact" placeholder="姓名"/>
-                                <input type="text" class="usersex" name="sex" placeholder="性别"/>
+                                <input type="text" class="username" name="contact" placeholder="Name"/>
+                                <input type="text" class="usersex" name="sex" placeholder="Title"/>
                             </div>
                             <div class="lxfrmitem">
-                                <input type="text" class="usercompname" name="companyName" placeholder="公司名称"/>
-                                <input type="text" class="userhy" name="industryName" placeholder="所属行业"/>
+                                <input type="text" class="usercompname" name="companyName" placeholder="Company name"/>
+                                <input type="text" class="userhy" name="industryName" placeholder="Industry"/>
                             </div>
                             <div class="lxfrmitem">
-                                <input type="text" class="userdept" name="departmentName" placeholder="所属部门"/>
-                                <input type="text" class="userpost" name="jobName" placeholder="职务"/>
+                                <input type="text" class="userdept" name="departmentName" placeholder="Department"/>
+                                <input type="text" class="userpost" name="jobName" placeholder="Position"/>
                             </div>
                             <div class="lxfrmitem">
-                                <input type="text" class="useremail" name="email" placeholder="电子邮件"/>
-                                <input type="text" class="usertel" name="contacts" placeholder="电话号码"/>
+                                <input type="text" class="useremail" name="email" placeholder="E-mail"/>
+                                <input type="text" class="usertel" name="contacts" placeholder="Phone"/>
                             </div>
-                            <textarea class="usermessage" name="contant" placeholder="如果你想添加任何说明，请在此处留言"></textarea>
-                            <input type="button" class="contract_submit" value="提交" onclick="submitOneFeed()"/>
+                            <textarea class="usermessage" name="contant" placeholder="Your question"></textarea>
+                            <input type="button" class="contract_submit" value="Submit" onclick="submitOneFeed()"/>
                         </form>
                     </div>
                     <div class="fgline"></div>
@@ -149,7 +149,7 @@
                         </div>
                         <div class="wxqrcode">
                             <img src="${basepath}/static/website/img/QRcode.png"/>
-                            <p>添加微信客服：小舟</p>
+                            <p>WeChat</p>
                         </div>
                     </div>
                 </div>
@@ -169,7 +169,7 @@
 
 <a class="contracticon"><img
         src="${basepath}/static/website/img/contracticon.png"/>
-    <p>联系我们</p></a>
+    <p>Feedback</p></a>
 <img src="${basepath}/static/website/img/backtotop.jpg" class="backtotop"/>
 <script type="text/javascript" src="${basepath}/static/website/js/jquery-3.4.1.min.js"></script>
 <script type="text/javascript" src="${basepath}/static/website/js/bootstrap.min.js"></script>
@@ -192,7 +192,7 @@
     $('.sharebox').on('click', function () {
         var url = window.location.href;
         copyUrl(url);
-        alert("复制成功！");
+        alert("URL copy completed");
     });
 
     function copyUrl(id) {

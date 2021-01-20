@@ -151,7 +151,7 @@ public class SiteController {
         if (StringUtils.isNotBlank(navId)) {
             Map<String, String> newsParam = new HashMap<>();
             newsParam.put("navigatorID", navId);
-            newsParam.put("pageNumber", "2");
+            newsParam.put("pageNumber", "5");
             if (StringUtils.isNotBlank(s)) {
                 newsParam.put("currentPage", s);
             }
@@ -166,17 +166,17 @@ public class SiteController {
         }
 
         //左侧导航
-        if (StringUtils.isNotBlank(navId)) {
-            Map<String, String> newsParam = new HashMap<>();
-            newsParam.put("navigatorID", navId);
-            newsParam.put("pageNumber", "999");
-            ApiBaseResponseInfo<ApiArticleListBodyInfo> brandArticleBody = apiArticleService.getArticleList(newsParam);
-            if (brandArticleBody != null && brandArticleBody.getBody() != null
-                    && brandArticleBody.getBody().getData() != null
-                    && brandArticleBody.getBody().getData().getRows() != null) {
-                modelMap.put("allBrandArticleList", brandArticleBody.getBody().getData().getRows());
-            }
-        }
+//        if (StringUtils.isNotBlank(navId)) {
+//            Map<String, String> newsParam = new HashMap<>();
+//            newsParam.put("navigatorID", navId);
+//            newsParam.put("pageNumber", "999");
+//            ApiBaseResponseInfo<ApiArticleListBodyInfo> brandArticleBody = apiArticleService.getArticleList(newsParam);
+//            if (brandArticleBody != null && brandArticleBody.getBody() != null
+//                    && brandArticleBody.getBody().getData() != null
+//                    && brandArticleBody.getBody().getData().getRows() != null) {
+//                modelMap.put("allBrandArticleList", brandArticleBody.getBody().getData().getRows());
+//            }
+//        }
         return "/website/brand";
     }
 

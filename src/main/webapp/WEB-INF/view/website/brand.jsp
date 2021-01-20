@@ -41,22 +41,22 @@
 				</div>
 			</section>
 			<section class="brandcontainer">
-				<div class="daoyanbox">
-					<div class="daoyaninfobox">
-						<div class="daoyantitile">
-							<p>成长故事</p>
-						</div>
-						<hr/>
-						<div class="daoyaninfo">
-							<c:forEach items="${allBrandArticleList}" var="item">
-								<div class="storylistitem">
-									<p><a href="${basepath}/brandInfo.html?artId=${item.id}">${item.title}</a></p>
-								</div>
-								<hr/>
-							</c:forEach>
-						</div>
-					</div>
-				</div>
+<%--				<div class="daoyanbox">--%>
+<%--					<div class="daoyaninfobox">--%>
+<%--						<div class="daoyantitile">--%>
+<%--							<p>成长故事</p>--%>
+<%--						</div>--%>
+<%--						<hr/>--%>
+<%--						<div class="daoyaninfo">--%>
+<%--							<c:forEach items="${allBrandArticleList}" var="item">--%>
+<%--								<div class="storylistitem">--%>
+<%--									<p><a href="${basepath}/brandInfo.html?artId=${item.id}">${item.title}</a></p>--%>
+<%--								</div>--%>
+<%--								<hr/>--%>
+<%--							</c:forEach>--%>
+<%--						</div>--%>
+<%--					</div>--%>
+<%--				</div>--%>
 				<div class="brandstoryinfobox">
 					<div class="storylistbox">
 						<c:forEach items="${brandArticleList}" var="item">
@@ -71,19 +71,19 @@
 									</p>
 								</div>
 								<div class="brandmoreinfo">
-									<a href="brandInfo.html?artId=${item.id}">了解详情 > </a>
+									<a href="brandInfo.html?artId=${item.id}">Read more > </a>
 								</div>
 							</div>
 						</c:forEach>
 					</div>
 					<div class="pagesbox">
-						<button class="firstpage" type="button" onclick="pageBrand(1)">第一页</button>
-						<button class="prevpage" type="button" onclick="pageBrand(${currentPage-1==0?1:currentPage-1})">上一页
+						<button class="firstpage" type="button" onclick="pageBrand(1)">The first page</button>
+						<button class="prevpage" type="button" onclick="pageBrand(${currentPage-1==0?1:currentPage-1})">Previous page
                 </button>
 						<p class="currentPage">${currentPage}</p>
-						<button class="nextpage" type="button" onclick="pageBrand(${currentPage==totalPage?currentPage:currentPage+1})">下一页
+						<button class="nextpage" type="button" onclick="pageBrand(${currentPage==totalPage?currentPage:currentPage+1})">Next page
                 </button>
-						<button class="endpage" type="button" onclick="pageBrand(${totalPage})">最末页</button>
+						<button class="endpage" type="button" onclick="pageBrand(${totalPage})">The last page</button>
 					</div>
 				</div>
 			</section>
@@ -92,7 +92,7 @@
 		</div>
 
 		<a class="contracticon"><img src="${basepath}/static/website/img/contracticon.png" />
-			<p>联系我们</p>
+			<p>Feedback</p>
 		</a>
 		<img src="${basepath}/static/website/img/backtotop.jpg" class="backtotop" />
 		<script type="text/javascript" src="${basepath}/static/website/js/jquery-3.4.1.min.js"></script>

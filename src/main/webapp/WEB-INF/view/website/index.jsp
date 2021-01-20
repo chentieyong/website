@@ -102,7 +102,7 @@
                 </div>
                 <div class="compmoreinfobox">
                     <button type="button" onclick="toHref('${basepath}/aboutUs.html')">
-                        查看详情 >>
+                        Read more >>
                     </button>
                 </div>
             </div>
@@ -120,7 +120,7 @@
                 </div>
                 <div class="compmoreinfobox">
                     <button type="button" onclick="toHref('${basepath}/brand.html')">
-                        查看详情 >>
+                        Read more >>
                     </button>
                 </div>
             </div>
@@ -137,7 +137,7 @@
                     <p>${afterServiceArticle.description}</p>
                 </div>
                 <div class="compmoreinfobox">
-                    <button type="button" onclick="toHref('${basepath}/service.html')">查看详情 >></button>
+                    <button type="button" onclick="toHref('${basepath}/service.html')">Read more >></button>
                 </div>
             </div>
         </div>
@@ -154,7 +154,7 @@
                         <p>${item.description}</p>
                     </div>
                     <div class="newsmoreinfobox">
-                        <a href="${basepath}/newsInfo.html?artId=${item.id}">了解详情 ></a>
+                        <a href="${basepath}/newsInfo.html?artId=${item.id}">Read more ></a>
                     </div>
                 </div>
             </c:forEach>
@@ -162,26 +162,26 @@
     </section>
     <section class="contractbox">
         <div class="contractfrmbox">
-            <p class="contracttitle">联系我们</p>
+            <p class="contracttitle">Feedback</p>
             <form class="contractfrm" id="feed_form">
                 <div class="contract_item">
-                    <input type="text" class="ctipt username" name="contact" placeholder="姓名"/>
-                    <input type="text" class="ctipt usersex" name="sex" placeholder="性别"/>
+                    <input type="text" class="ctipt username" name="contact" placeholder="Name"/>
+                    <input type="text" class="ctipt usersex" name="sex" placeholder="Title"/>
                 </div>
                 <div class="contract_item">
-                    <input type="text" class="ctipt usercompname" name="companyName" placeholder="公司名称"/>
-                    <input type="text" class="ctipt userhy" name="industryName" placeholder="所属行业"/>
+                    <input type="text" class="ctipt usercompname" name="companyName" placeholder="Company name"/>
+                    <input type="text" class="ctipt userhy" name="industryName" placeholder="Industry"/>
                 </div>
                 <div class="contract_item">
-                    <input type="text" class="ctipt userdept" name="departmentName" placeholder="所属部门"/>
-                    <input type="text" class="ctipt userpost" name="jobName" placeholder="职务"/>
+                    <input type="text" class="ctipt userdept" name="departmentName" placeholder="Department"/>
+                    <input type="text" class="ctipt userpost" name="jobName" placeholder="Position"/>
                 </div>
                 <div class="contract_item">
-                    <input type="email" class="ctipt useremail" name="email" placeholder="电子邮箱"/>
-                    <input type="tel" class="ctipt usertel" name="contacts" placeholder="电话号码"/>
+                    <input type="email" class="ctipt useremail" name="email" placeholder="E-mail"/>
+                    <input type="tel" class="ctipt usertel" name="contacts" placeholder="Phone"/>
                 </div>
-                <textarea class="usermessage" name="contant" placeholder="如果你想添加任何说明，请在此处留言"></textarea>
-                <input type="button" class="contract_submit" value="提交" onclick="submitOneFeed()"/>
+                <textarea class="usermessage" name="contant" placeholder="Your question"></textarea>
+                <input type="button" class="contract_submit" value="Submit" onclick="submitOneFeed()"/>
             </form>
         </div>
         <div class="contractotherbox">
@@ -194,7 +194,7 @@
                 <p class="telnum">4006 081 080</p>
             </div>
             <img src="${basepath}/static/website/img/QRcode.png" class="qrcodeimg"/>
-            <p class="kfname">添加微信客服：小舟</p>
+            <p class="kfname">WeChat</p>
         </div>
         <img src="${basepath}/static/website/img/contect-productpic.png" class="indexbotimg"/>
     </section>
@@ -205,7 +205,7 @@
 
 <a class="contracticon"><img
         src="${basepath}/static/website/img/contracticon.png"/>
-    <p>联系我们</p></a>
+    <p>Feedback</p></a>
 <img src="${basepath}/static/website/img/backtotop.jpg" class="backtotop"/>
 <script type="text/javascript" src="${basepath}/static/website/js/swiper.min.js"></script>
 <script type="text/javascript" src="${basepath}/static/website/js/common.js"></script>

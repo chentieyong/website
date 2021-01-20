@@ -77,7 +77,7 @@
                                             <p>${item.description}</p>
                                         </div>
                                         <div class="compnewsmoreinfo">
-                                            <a class="moreinfolink" href="newsInfo.html?artId=${item.id}">了解详情 > </a>
+                                            <a class="moreinfolink" href="newsInfo.html?artId=${item.id}">Read more > </a>
                                         </div>
                                     </div>
                                 </div>
@@ -85,15 +85,15 @@
 
                         </div>
                         <div class="pagesbox">
-                            <button class="firstpage" type="button" onclick="pageBrand(1)">第一页</button>
+                            <button class="firstpage" type="button" onclick="pageBrand(1)">The first page</button>
                             <button class="prevpage" type="button"
-                                    onclick="pageBrand(${currentPage-1==0?1:currentPage-1})">上一页
+                                    onclick="pageBrand(${currentPage-1==0?1:currentPage-1})">Previous page
                             </button>
                             <p class="currentPage">${currentPage}</p>
                             <button class="nextpage" type="button"
-                                    onclick="pageBrand(${currentPage==totalPage?currentPage:currentPage+1})">下一页
+                                    onclick="pageBrand(${currentPage==totalPage?currentPage:currentPage+1})">Next page
                             </button>
-                            <button class="endpage" type="button" onclick="pageBrand(${totalPage})">最末页</button>
+                            <button class="endpage" type="button" onclick="pageBrand(${totalPage})">The last page</button>
                         </div>
                     </div>
                 </div>
@@ -105,7 +105,7 @@
 </div>
 <a class="contracticon"><img
         src="${basepath}/static/website/img/contracticon.png"/>
-    <p>联系我们</p></a>
+    <p>Feedback</p></a>
 <img src="${basepath}/static/website/img/backtotop.jpg" class="backtotop"/>
 <script type="text/javascript" src="${basepath}/static/website/js/jquery-3.4.1.min.js"></script>
 <script type="text/javascript" src="${basepath}/static/website/js/bootstrap.min.js"></script>

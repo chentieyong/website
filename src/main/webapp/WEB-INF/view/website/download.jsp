@@ -105,7 +105,7 @@
 </div>
 <a class="contracticon"><img
         src="${basepath}/static/website/img/contracticon.png"/>
-    <p>联系我们</p></a>
+    <p>Feedback</p></a>
 <img src="${basepath}/static/website/img/backtotop.jpg" class="backtotop"/>
 <script type="text/javascript" src="${basepath}/static/website/js/jquery-3.4.1.min.js"></script>
 <script type="text/javascript" src="${basepath}/static/website/js/bootstrap.min.js"></script>
