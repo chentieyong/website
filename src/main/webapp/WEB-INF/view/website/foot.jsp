@@ -26,7 +26,7 @@
 		</div>
 	</div>
 	<div class="copyrightbox">
-		<p>Shanghai ShenZhou Vehicle Energy & Environmental Protection Co., Ltd No. 1858 GuangTai Road, Shanghai (201405) 服务热线：4006-081-080 Email: sales@shjdsz.com</p>
+		<p>上海神舟汽车节能环保股份有限公司 上海市奉贤区光泰路1858号 服务热线：4006-081-080 Email: sales@shjdsz.com</p>
 		<div>
 			<p>Copyright@2020交大神舟 版权所有 |
 				<a href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=31011202002378" target="_blank" style="color: #FFFFFF">沪公网安备 31011202002378号</a>
