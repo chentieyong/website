@@ -15,7 +15,7 @@
 .brandtitle,.branddes,.brandmoreinfo{width: 92%;}
 .brandtitle{margin-top: 2.5%;}
 .brandtitle p{font-size: 3.125rem;color: #004199;line-height:70px;}
-.branddes{height: auto;text-align: justify;margin-top: 1%;}
+.branddes{height: auto;text-align: left;margin-top: 1%;}
 .branddes p{font-size: 1.875rem;color: #606060;line-height: 45px;}
 .brandmoreinfo{margin-top: 1.5%;margin-bottom: 4.2%;text-align: right;}
 .brandmoreinfo a{font-size: 2.5rem;color: #1853A2!important;line-height: 55px;}
@@ -25,14 +25,14 @@
 .brandnextprebox{position: relative;width: 89.6%;height: auto;}
 .brandinfobox{margin: 5.25% auto;}
 .brandinfotitle{margin-bottom: 1.65%;}
-.brandinfotitle p{font-size: 4.375rem;color: #004199;line-height: 1;}
+.brandinfotitle p{font-size: 4.375rem;color: #004199;line-height: 1.3;}
 .brandinfodes,.brandpre{margin-bottom: 3.05%;}
 .brandinfodes p{font-size: 2.5rem;color: #606060;line-height: 80px;text-align: justify;}
 .brandnextprebox{margin-top: 5.8%;margin-bottom: 9.8%;}
 .brandpre a,.brandnext a{font-size: 2.5rem;color: #1853A2!important;line-height: 1;}
 .brandpre a:hover,.brandnext a:hover{text-decoration: none;}
 
-.sharebox{top: 0.5%;}
+.sharebox{top: -0.5%;width: 9%;}
 .sharebox a img{width: 18%;}
 
 .storylistitem{width: 100%;height: auto;margin-top: 2%;}

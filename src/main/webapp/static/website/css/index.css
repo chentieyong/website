@@ -45,7 +45,7 @@
 .newsproitem div p{margin-bottom: 0;}
 .newstitlebox,.newsdesbox,.newsmoreinfobox{width: 100%;}
 .newstitlebox p{font-size: 1.875rem;color: #1F74D6;line-height: 32px;font-weight:500;}
-.newsdesbox p{font-size: 1.25rem;color: #6F6F6F;line-height: 32px;text-align: justify;}
+.newsdesbox p{font-size: 1.25rem;color: #6F6F6F;line-height: 32px;text-align: left;}
 .newstitlebox{margin-top: 1rem;}.newsdesbox{margin-top: 0.5rem;}
 .newsmoreinfobox{margin-top: 1rem;}
 .newsmoreinfobox a{font-size: 1.625rem;color: #1F74D6!important;}

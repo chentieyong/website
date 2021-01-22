@@ -24,11 +24,11 @@ p {margin-top: 0;margin-bottom: 0!important;margin-block-start: 0;margin-block-e
 .navbox ul{height: 100%;height: 100%;display: flex;flex-flow: row nowrap;justify-content: center;align-items: center;}
 .navbox ul li{position: relative;min-width:13%;height: 100%;padding: 0 2.5rem;display: flex;flex-flow: row nowrap;justify-content: center;align-items: center;}
 .navbox ul li:hover{border-bottom: 4px solid #56A4FF;box-sizing: border-box;}
-.navbox ul li a{font-size: 1.875rem;color: #FFFFFF;font-weight: 500;}
+.navbox ul li a{font-size: 1.875rem;color: #FFFFFF;font-weight: 500;white-space:nowrap;}
 .navbox ul li a img{width: 25px;padding-left: 10px;}
 /*二级菜单*/
-.navbox ul li ul{position: absolute;top: 100px;z-index: 9; width: 100%;height: auto;display: flex;flex-flow: column nowrap;justify-content: flex-start;align-items: center;}
-.navbox ul li ul li{opacity: 0;width: 100%;height: 80px;justify-content:flex-start;padding: 0 5%;background:linear-gradient(315deg,rgba(58,118,213,1) 0%,rgba(59,135,225,1) 100%);border-bottom: 2px solid #3A76D5;border-top: 2px solid #3B87E1;}
+.navbox ul li ul{position: absolute;top: 100px;z-index: 9;min-width: 100%;height: auto;display: flex;flex-flow: column nowrap;justify-content: flex-start;align-items: center;}
+.navbox ul li ul li{opacity: 0;min-width: 100%;height: 80px;justify-content:flex-start;background:linear-gradient(315deg,rgba(58,118,213,1) 0%,rgba(59,135,225,1) 100%);border-bottom: 2px solid #3A76D5;border-top: 2px solid #3B87E1;}
 .navbox ul li ul li:hover{border-bottom: none!important;background:linear-gradient(312deg,rgba(11,78,157,1) 0%,rgba(13,82,164,1) 10%,rgba(35,123,225,1) 100%);}
 /*.navbox ul li ul li a{font-size: 1.875rem;}*/
 .navbox ul > li:hover .nav_droplist li, .navbox ul > li:focus .nav_droplist li {opacity: 1!important;}
