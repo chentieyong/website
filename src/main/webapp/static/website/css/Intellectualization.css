@@ -17,7 +17,7 @@
 .Intrightdes{margin-top: 30px;}
 .Intrightdes p{font-size: 1.875rem;color: #4D4D4D;line-height:45px;text-align: justify;}
 .Intrightvideo{margin-top: 20px;}
-.Intrightvideo video{width: 100%;}
+.Intrightvideo video{width: 100%;height: auto;object-fit: contain!important;;}
 .Intrightspecial{margin: 6rem 0;}
 .Intrightspecialtitle{width: 100%;display: flex;flex-flow: row nowrap;justify-content: flex-start;align-items: center;}
 .Intrightspecialtitle p{color: #004199;font-size: 2.5rem;line-height: 50px;}
