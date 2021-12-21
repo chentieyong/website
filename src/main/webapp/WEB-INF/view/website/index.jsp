@@ -187,11 +187,11 @@
         <div class="contractotherbox">
             <div class="QQ">
                 <img src="${basepath}/static/website/img/qq.png"/>
-                <p class="qqnum">2975 463 389</p>
+                <p class="qqnum">297 546 3389</p>
             </div>
             <div class="phone">
                 <img src="${basepath}/static/website/img/contect-phone.png"/>
-                <p class="telnum">4006 081 080</p>
+                <p class="telnum">400 820 9705</p>
             </div>
             <img src="${basepath}/static/website/img/QRcode.png" class="qrcodeimg"/>
             <p class="kfname">添加微信客服：小舟</p>
