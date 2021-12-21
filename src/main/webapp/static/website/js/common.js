@@ -48,7 +48,7 @@ $(function() {
 	$('.contracticon').click(function(event) {
 		event.stopPropagation();
 		if(consclick == 0) {
-			var imgStr = basepath+"/static/website/img/lxkuang.png"
+			var imgStr = basepath+"/static/website/img/lxkuang1.jpg"
 			$(this).append("<div class=\"contracttckbox animated slideInRight\"><img src='"+imgStr+"'/></div>");
 			if($('.contracticon').attr('style')=='top: 0px;'){
 				$('.contracttckbox').css('top','0');
